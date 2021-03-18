@@ -14,7 +14,9 @@
 ### Usage
 
 ```bash
-helm install -n nextcloud  my-release nextcloud/nextcloud -f values.yml --create-namespace  # install nexcloud in custom namespace 'nextcloud'
+# install nexcloud in custom namespace named 'nextcloud'
+helm install -n nextcloud my-release nextcloud/nextcloud -f values.yml --create-namespace
+
 helm uninstall my-release   # uninstall
 ```
 
