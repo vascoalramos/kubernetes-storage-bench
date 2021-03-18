@@ -17,7 +17,13 @@
 # install nexcloud in custom namespace named 'nextcloud'
 helm install -n nextcloud my-release nextcloud/nextcloud -f values.yml --create-namespace
 
-helm uninstall my-release   # uninstall
+# uninstall
+helm uninstall my-release
+```
+
+To switch to a different namespace:
+```bash
+kubectl config set-context --current --namespace=<NAMESPACE_NAME>
 ```
 
 After installing, access [cloud74:30000](http://cloud74:30000).
