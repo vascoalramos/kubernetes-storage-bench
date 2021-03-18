@@ -15,8 +15,10 @@
 
 ```bash
 helm install -n nextcloud  my-release nextcloud/nextcloud -f values.yml --create-namespace  # install
-helm uninstall my-release
+helm uninstall my-release   # uninstall
 ```
+
+After installing, access [cloud74:30000](http://cloud74:30000).
 
 ## Authors
 
