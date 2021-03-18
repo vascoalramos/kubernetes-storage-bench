@@ -1,5 +1,23 @@
 # LEI Project
 
+## NextCloud
+
+### Prerequisites:
+
+-   [Helm](https://helm.sh/docs/intro/install)
+-   Nexcloud Repo (after install helm)
+    ```bash
+    helm repo add nextcloud https://nextcloud.github.io/helm
+    helm repo update
+    ```
+
+### Usage
+
+```bash
+helm install -n nextcloud  my-release nextcloud/nextcloud -f values.yml --create-namespace  # install
+helm uninstall my-release
+```
+
 ## Authors
 
 -   **Daniel Regado:** [guiyrt](https://github.com/guiyrt)
