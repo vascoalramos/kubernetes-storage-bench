@@ -15,7 +15,7 @@
 
 ```bash
 # install nexcloud in custom namespace named 'nextcloud'
-helm install -n nextcloud nextcloud  nextcloud/nextcloud -f values.yml --create-namespace
+helm install -n nextcloud nextcloud  nextcloud/nextcloud -f nextcloud.yml --create-namespace
 
 # uninstall
 helm uninstall nextcloud

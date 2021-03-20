@@ -1,0 +1,111 @@
+image:
+  repository: nextcloud
+  tag: stable-apache
+  pullPolicy: IfNotPresent
+
+
+nameOverride: ""
+fullnameOverride: ""
+
+
+replicaCount: 1
+
+
+nextcloud:
+  host: cloud74
+  # host: 34.105.73.251
+  username: admin
+  password: admin
+  update: 0
+  datadir: /var/www/html/data
+  persistence:
+    subPath:
+  mail:
+    enabled: false
+    fromAddress: user
+    domain: domain.com
+    smtp:
+      host: domain.com
+      secure: ssl
+      port: 465
+      authtype: LOGIN
+      name: user
+      password: pass
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+
+
+internalDatabase:
+  enabled: false
+  name: nextcloud
+
+
+mariadb:
+  enabled: true
+  db:
+    name: nextcloud
+    user: nextcloud
+    password: changeme
+  replication:
+    enabled: true
+  master:
+    persistence:
+      enabled: true
+      storageClass: "-"
+      existingClaim: db-pvc
+      accessMode: ReadWriteOnce
+      size: 8Gi
+  slave:
+    replicas: 2
+    persistence:
+      enabled: false
+      accessMode: ReadWriteOnce
+      size: 8Gi
+
+
+service:
+  type: NodePort
+  port: 8080
+  loadBalancerIP: nil
+  nodePort: 30000
+
+
+persistence:
+  enabled: true
+  storageClass: "-"
+  existingClaim: nextcloud-pvc
+  accessMode: ReadWriteOnce
+  size: 8Gi
+
+
+livenessProbe:
+  enabled: false
+  initialDelaySeconds: 10
+  periodSeconds: 10
+  timeoutSeconds: 5
+  failureThreshold: 3
+  successThreshold: 1
+readinessProbe:
+  enabled: true
+  initialDelaySeconds: 10
+  periodSeconds: 10
+  timeoutSeconds: 5
+  failureThreshold: 3
+  successThreshold: 1
+startupProbe:
+  enabled: false
+  initialDelaySeconds: 30
+  periodSeconds: 10
+  timeoutSeconds: 5
+  failureThreshold: 30
+  successThreshold: 1
+
+
+hpa:
+  enabled: true
+  cputhreshold: 60
+  minPods: 1
+  maxPods: 10
