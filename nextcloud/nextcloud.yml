@@ -16,21 +16,6 @@ nextcloud:
   # host: 34.105.73.251
   username: admin
   password: admin
-  update: 0
-  datadir: /var/www/html/data
-  persistence:
-    subPath:
-  mail:
-    enabled: false
-    fromAddress: user
-    domain: domain.com
-    smtp:
-      host: domain.com
-      secure: ssl
-      port: 465
-      authtype: LOGIN
-      name: user
-      password: pass
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -40,7 +25,6 @@ nextcloud:
 
 internalDatabase:
   enabled: false
-  name: nextcloud
 
 
 mariadb:
@@ -69,7 +53,6 @@ mariadb:
 service:
   type: NodePort
   port: 8080
-  loadBalancerIP: nil
   nodePort: 30000
 
 
