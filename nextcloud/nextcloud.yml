@@ -48,7 +48,7 @@ mariadb:
   db:
     name: nextcloud
     user: nextcloud
-    password: changeme
+    password: passw0rd
   replication:
     enabled: true
   master:
