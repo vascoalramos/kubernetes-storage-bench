@@ -1,0 +1,17 @@
+ 
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+    name: nextcloud-data
+    labels:
+        volume: nextcloud-data
+spec:
+    accessModes:
+        - ReadWriteOnce
+    resources:
+        requests:
+            storage: 8Gi
+    storageClassName: ""
+    selector:
+        matchLabels:
+            volume: nextcloud-data

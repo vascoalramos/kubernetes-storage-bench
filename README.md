@@ -15,13 +15,14 @@
 
 ```bash
 # install nexcloud in custom namespace named 'nextcloud'
-helm install -n nextcloud my-release nextcloud/nextcloud -f values.yml --create-namespace
+helm install -n nextcloud nextcloud  nextcloud/nextcloud -f values.yml --create-namespace
 
 # uninstall
-helm uninstall my-release
+helm uninstall nextcloud
 ```
 
 To switch to a different namespace:
+
 ```bash
 kubectl config set-context --current --namespace=<NAMESPACE_NAME>
 ```
