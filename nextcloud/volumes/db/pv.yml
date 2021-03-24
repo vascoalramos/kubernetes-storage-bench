@@ -12,5 +12,6 @@ spec:
         storage: 8Gi
     nfs:
         server: 10.138.0.28
+        # server: cloud74
         path: "/share/db"
         readOnly: false
