@@ -39,7 +39,6 @@ mariadb:
     persistence:
       enabled: true
       storageClass: nfs-client
-      existingClaim: db-pvc
       accessMode: ReadWriteMany
       size: 8Gi
   slave:
@@ -59,7 +58,6 @@ service:
 persistence:
   enabled: true
   storageClass: nfs-client
-  existingClaim: nextcloud-pvc
   accessMode: ReadWriteMany
   size: 8Gi
 

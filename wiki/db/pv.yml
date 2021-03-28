@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-    name: nextcloud-pv
+    name: db-pv
     labels:
-        app: nextcloud
-        volume: nextcloud
+        app: wiki
+        volume: db
 spec:
     accessModes:
         - ReadWriteOnce
@@ -13,5 +13,5 @@ spec:
     nfs:
         server: 10.138.0.28
         # server: cloud74
-        path: "/share/nextcloud/data"
+        path: "/share/wiki/db"
         readOnly: false
