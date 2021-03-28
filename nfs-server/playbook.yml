@@ -31,4 +31,11 @@
         backup: true
         insertafter: EOF
         block: |
-          /mnt/nfs_share  {{ inventory_hostname }}/24(rw,sync,no_subtree_check)
+          /mnt/nfs-share  {{ inventory_hostname }}/24(rw,sync,no_subtree_check)
+    - name: Configure NFS Server
+      command:
+        cmd: exportfs -a
+    - name: Restart NFS server
+      service:
+        name: nfs-kernel-server
+        state: restarted

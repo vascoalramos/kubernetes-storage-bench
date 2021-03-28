@@ -5,7 +5,7 @@
 ### Prerequisites:
 
 -   [Helm](https://helm.sh/docs/intro/install)
--   Nexcloud Repo (after install helm)
+-   Nextcloud Repo (after install helm)
     ```bash
     helm repo add nextcloud https://nextcloud.github.io/helm
     helm repo update
