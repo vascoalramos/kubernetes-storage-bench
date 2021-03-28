@@ -29,6 +29,34 @@ kubectl config set-context --current --namespace=<NAMESPACE_NAME>
 
 After installing, access [cloud74:30000](http://cloud74:30000).
 
+## Wiki
+
+### Prerequisites:
+
+-   [Helm](https://helm.sh/docs/intro/install)
+-   Nextcloud Repo (after install helm)
+    ```bash
+    ```
+
+### Usage
+
+```bash
+# install nexcloud in custom namespace named 'nextcloud'
+cd wiki
+helm install -n wiki wiki helm -f wiki.yml --create-namespace
+
+# uninstall
+helm uninstall wiki
+```
+
+To switch to a different namespace:
+
+```bash
+kubectl config set-context --current --namespace=<NAMESPACE_NAME>
+```
+
+After installing, access [cloud74:30002](http://cloud74:30002).
+
 ## Authors
 
 -   **Daniel Regado:** [guiyrt](https://github.com/guiyrt)
