@@ -12,8 +12,7 @@ replicaCount: 1
 
 
 nextcloud:
-  host: 192.168.112.74
-  # host: 34.105.73.251
+  host: cloud74
   username: admin
   password: admin
   strategy:
