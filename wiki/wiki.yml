@@ -22,14 +22,29 @@ service:
 
 postgresql:
   enabled: true
-  fullnameOverride: ""
-  postgresqlUser: wiki
+  fullnameOverride: "wiki-postgresql"
+  postgresqlUsername: wiki
   postgresqlDatabase: wiki
+  postgresqlPassword: wiki
   replication:
-    enabled: false
+    enabled: true
+    readReplicas: 2
+  readReplicas:
+    persistence:
+      enabled: false
+      accessMode: ReadWriteOnce
+      size: 8Gi
   persistence:
     enabled: true
     storageClass: "-"
     existingClaim: db-pvc
     accessMode: ReadWriteOnce
     size: 8Gi
+
+
+hpa:
+  enabled: true
+  cputhreshold: 60
+  minPods: 1
+  maxPods: 10
+
