@@ -1,0 +1,41 @@
+---
+
+- name: Update & Upgrade Nodes
+  become: true
+  hosts: all
+  tasks:
+    - name: Update apt repositories
+      apt:
+        name: "*"
+        state: latest
+  
+- name: Install NFS Server
+  become: true
+  hosts:
+    - server
+  tasks:
+    - name: Install required system packages
+      apt:
+        pkg:
+          - nfs-kernel-server
+    - name: Create mount directory
+      file:
+        path: /mnt/nfs-share
+        state: directory
+        owner: nobody
+        group: nogroup
+        mode: 0777
+    - name: Grant NFS access to clients
+      blockinfile:
+        path: /etc/exports
+        backup: true
+        insertafter: EOF
+        block: |
+          /mnt/nfs-share  {{ inventory_hostname.split('.')[:3] | join('.') }}/24(rw,sync,no_subtree_check,no_root_squash)
+    - name: Configure NFS Server
+      command:
+        cmd: exportfs -a
+    - name: Restart NFS server
+      service:
+        name: nfs-kernel-server
+        state: restarted

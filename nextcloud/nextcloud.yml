@@ -12,7 +12,7 @@ replicaCount: 1
 
 
 nextcloud:
-  host: cloud74
+  host: 192.168.112.74
   # host: 34.105.73.251
   username: admin
   password: admin
@@ -34,19 +34,19 @@ mariadb:
     user: nextcloud
     password: passw0rd
   replication:
-    enabled: true
+    enabled: false
   master:
     persistence:
       enabled: true
-      storageClass: "-"
+      storageClass: nfs-client
       existingClaim: db-pvc
-      accessMode: ReadWriteOnce
+      accessMode: ReadWriteMany
       size: 8Gi
   slave:
     replicas: 2
     persistence:
       enabled: false
-      accessMode: ReadWriteOnce
+      accessMode: ReadWriteMany
       size: 8Gi
 
 
@@ -58,9 +58,9 @@ service:
 
 persistence:
   enabled: true
-  storageClass: "-"
+  storageClass: nfs-client
   existingClaim: nextcloud-pvc
-  accessMode: ReadWriteOnce
+  accessMode: ReadWriteMany
   size: 8Gi
 
 
