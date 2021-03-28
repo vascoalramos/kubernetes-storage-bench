@@ -33,7 +33,7 @@ mariadb:
     user: nextcloud
     password: passw0rd
   replication:
-    enabled: false
+    enabled: true
   master:
     persistence:
       enabled: true
