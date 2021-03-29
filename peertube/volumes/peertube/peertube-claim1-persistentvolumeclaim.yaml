@@ -6,10 +6,11 @@ metadata:
     io.kompose.service: peertube-claim1
   name: peertube-claim1
 spec:
+  storageClassName: nfs-client
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
       storage: 10Gi
-  volumeName: peertube-claim1-pv
+  
 status: {}

@@ -6,10 +6,10 @@ metadata:
     io.kompose.service: certbot-claim0
   name: certbot-claim0
 spec:
+  storageClassName: nfs-client
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 100Mi
-  volumeName: certbot-claim0-pv
+      storage: 1Gi
 status: {}

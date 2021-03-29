@@ -3,15 +3,15 @@ kind: PersistentVolume
 metadata:
   creationTimestamp: null
   labels:
-    io.kompose.service: postfix-claim0-pv
-  name: postfix-claim0-pv
+    io.kompose.service: webserver-claim0-pv
+  name: webserver-claim0-pv
 spec:
   accessModes:
     - ReadWriteOnce
   capacity:
       storage: 10Gi
   nfs:
-    server: 10.138.0.28
+    server: 10.233.92.42
     # server: cloud74
-    path: "/share/postfix-claim0-pv"
+    path: "/share/webserver-claim0-pv"
     readOnly: false

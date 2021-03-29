@@ -3,15 +3,15 @@ kind: PersistentVolume
 metadata:
   creationTimestamp: null
   labels:
-    io.kompose.service: assets-pv
-  name: assets-pv
+    io.kompose.service: postgres-claim0-pv
+  name: postgres-claim0-pv
 spec:
   accessModes:
     - ReadWriteOnce
   capacity:
       storage: 10Gi
   nfs:
-    server: 10.138.0.28
+    server: 10.233.92.42
     # server: cloud74
-    path: "/share/assets-pv"
+    path: "/share/postgres-claim0-pv"
     readOnly: false

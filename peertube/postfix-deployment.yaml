@@ -22,7 +22,7 @@ spec:
         kompose.version: 1.22.0 (955b78124)
       creationTimestamp: null
       labels:
-        io.kompose.network/: "true"
+        io.kompose.network: "true"
         io.kompose.service: postfix
     spec:
       containers:
