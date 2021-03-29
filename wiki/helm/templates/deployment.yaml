@@ -30,6 +30,8 @@ spec:
           env:
             - name: DB_TYPE
               value: postgres
+            - name: HA_ACTIVE
+              value: "true"
             - name: DB_HOST
               value: {{ template "wiki.postgresql.host" . }}
             - name: DB_PORT
