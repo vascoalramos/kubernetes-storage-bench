@@ -38,6 +38,7 @@ mariadb:
     persistence:
       enabled: true
       storageClass: nfs-client
+      accessMode: ReadWriteMany
       size: 8Gi
   slave:
     replicas: 2
@@ -53,6 +54,7 @@ redis:
     persistence:
       enabled: true
       storageClass: nfs-client
+      accessMode: ReadWriteMany
       size: 8Gi
   slave:
     replicas: 2
@@ -69,6 +71,7 @@ service:
 persistence:
   enabled: true
   storageClass: nfs-client
+  accessMode: ReadWriteMany
   size: 10Gi
 
 
