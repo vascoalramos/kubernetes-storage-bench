@@ -3,15 +3,15 @@ kind: PersistentVolume
 metadata:
   creationTimestamp: null
   labels:
-    io.kompose.service: certbot-claim0-pv
-  name: certbot-claim0-pv
+    io.kompose.service: peertube-claim2-pv
+  name: peertube-claim2-pv
 spec:
   accessModes:
     - ReadWriteOnce
   capacity:
       storage: 10Gi
   nfs:
-    server: 10.138.0.28
+    server: 10.233.92.42
     # server: cloud74
-    path: "/share/certbot-claim0-pv"
+    path: "/share/peertube-claim2-pv"
     readOnly: false

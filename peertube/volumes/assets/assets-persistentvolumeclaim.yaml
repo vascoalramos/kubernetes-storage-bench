@@ -6,10 +6,10 @@ metadata:
     io.kompose.service: assets
   name: assets
 spec:
+  storageClassName: nfs-client
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
       storage: 10Gi
-  volumeName: assets-pv
 status: {}
