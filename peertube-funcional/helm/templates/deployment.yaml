@@ -60,7 +60,7 @@ spec:
       - name: data
         {{- if .Values.persistence.enabled }}
         persistentVolumeClaim:
-          claimName: {{ .Values.persistence.existingClaim | default (include "peertube.fullname" .) }}
+          claimName: {{ .Values.persistence.existingClaim | default (printf "data-%s" (include "peertube.fullname" .)) }}
         {{- else }}
         emptyDir: {}
         {{- end -}}
@@ -68,6 +68,13 @@ spec:
       nodeSelector:
         {{- toYaml . | nindent 8 }}
       {{- end }}
+      initContainers:
+      - name: postgresql-isready
+        image: {{ .Values.postgresql.image.repository }}:{{ .Values.postgresql.image.tag }}
+        command:
+          - "sh"
+          - "-c"
+          - {{ printf "until pg_isready -h %s-postgresql -U postgres ; do sleep 2 ; done" .Release.Name }}
       {{- with .Values.affinity }}
       affinity:
         {{- toYaml . | nindent 8 }}
@@ -76,3 +83,4 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
+

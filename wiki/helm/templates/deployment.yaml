@@ -64,6 +64,16 @@ spec:
       nodeSelector:
         {{- toYaml . | nindent 8 }}
       {{- end }}
+      initContainers:
+      - name: postgresql-isready
+        image: {{ .Values.postgresql.image.repository }}:{{ .Values.postgresql.image.tag }}
+        env:
+          - name: POSTGRES_USER
+            value: "{{ default "wiki" .Values.postgresql.postgresqlUsername }}"  
+        command:
+          - "sh"
+          - "-c"
+          - {{ printf "until pg_isready -h %s-postgresql -U ${POSTGRES_USER} ; do sleep 2 ; done" .Release.Name }}
     {{- with .Values.affinity }}
       affinity:
         {{- toYaml . | nindent 8 }}
