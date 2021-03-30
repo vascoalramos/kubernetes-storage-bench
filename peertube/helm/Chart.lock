@@ -1,12 +1,12 @@
 dependencies:
 - name: postgresql
   repository: https://charts.bitnami.com/bitnami
-  version: 10.3.13
+  version: 10.3.14
 - name: redis
   repository: https://charts.bitnami.com/bitnami
-  version: 10.6.13
+  version: 12.9.1
 - name: postfix
   repository: https://halkeye.github.io/helm-charts/
-  version: 0.1.2
-digest: sha256:90356184da3c5df5ff941113095a9d013319f1cafbcc69fc761516a0f96f804b
-generated: "2021-03-30T09:58:05.880505847+01:00"
+  version: 0.1.5
+digest: sha256:1ec1345934bd7dbe2857ebdf46cbd0485ed3218bc63209dbae4f768c4167a9aa
+generated: "2021-03-30T12:19:06.573339872+01:00"
