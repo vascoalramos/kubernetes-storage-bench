@@ -25,7 +25,7 @@ keywords:
 type: application
 dependencies:
     - name: postgresql
-      version: 10.3.13
+      version: 10.3.14
       repository: https://charts.bitnami.com/bitnami
       condition: postgresql.enabled
 home: https://wiki.js.org
