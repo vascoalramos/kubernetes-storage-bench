@@ -8,8 +8,9 @@ spec:
   type: {{ .Values.service.type }}
   ports:
     - port: {{ .Values.service.port }}
-      # targetPort: http
-      nodePort: 30001
+      {{- if eq .Values.service.type "NodePort" }}
+      nodePort: {{ default "" .Values.service.nodePort}}
+      {{- end }}
       protocol: TCP
       name: http
   selector:
