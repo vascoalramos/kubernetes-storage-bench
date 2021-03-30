@@ -24,6 +24,6 @@ dependencies:
       repository: https://charts.bitnami.com/bitnami
       condition: redis.enabled
     - name: postfix
-      version: 0.1.2
+      version: 0.1.5
       repository: https://halkeye.github.io/helm-charts/
       condition: postfix.enabled
