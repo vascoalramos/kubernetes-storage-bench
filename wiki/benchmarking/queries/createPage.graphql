@@ -1,0 +1,20 @@
+mutation ($content: String!, $description: String!, $path: String!, $tags: [String]!, $title: String!) {
+  pages {
+    create(content: $content, description: $description, editor: "code", isPrivate: false, isPublished: true, locale: "en", path: $path, publishEndDate: "", publishStartDate: "", scriptCss: "", scriptJs: "", tags: $tags, title: $title) {
+      responseResult {
+        succeeded
+        errorCode
+        slug
+        message
+        __typename
+      }
+      page {
+        id
+        updatedAt
+        __typename
+      }
+      __typename
+    }
+    __typename
+  }
+}

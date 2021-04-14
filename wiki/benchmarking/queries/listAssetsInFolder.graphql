@@ -1,0 +1,16 @@
+query ($folderId: Int!) {
+  assets {
+    list(folderId: $folderId, kind: ALL) {
+      id
+      filename
+      ext
+      kind
+      mime
+      fileSize
+      createdAt
+      updatedAt
+      __typename
+    }
+    __typename
+  }
+}
