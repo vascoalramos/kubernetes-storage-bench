@@ -1,0 +1,9 @@
+antidiscrimination c230c8c8
+
+The Federal Court of Appeals affirmed the defendant's challenge under 6 U.S.C. § 1983, citing United States v. Martinez, 393 U.S. 478 , to require a candidate to disclose "the information requested under section 215 of the Immigration and Nationality Act" when disclosing the name, address, and Social Security number of the applicant in writing, as applicable, to the State in question. Martinez was founded on the principle that disclosing the name of the applicant would violate the right of the applicant to privacy. The Sixth Circuit affirmed, holding that Martinez violated the First Amendment's prohibition against unreasonable searches.
+
+I [3] See United States v. Martinez, supra at 573 N.E.2d at 8-9.
+
+I believe the Fifth Circuit recognized the applicability of 6 U.S.C. § 1983 so it could recognize and take up the case. 6 Circuit held the First Amendment violated this requirement after the Court of Appeals decided Martinez and held the state's failure to request an exemption to the exclusion of the name of the candidate, as in other cases cited in 6 Circuit's opinion, could not be undone by requiring the state to take up the election of the candidate before the public could see his application. 7 C.F.R. § 28-12-4-2 (CFFR&)
+
+5. Appellant's Petition to Issue Presidential
