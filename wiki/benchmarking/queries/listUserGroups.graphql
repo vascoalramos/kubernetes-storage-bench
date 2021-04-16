@@ -1,0 +1,14 @@
+{
+  groups {
+    list {
+      id
+      name
+      isSystem
+      userCount
+      createdAt
+      updatedAt
+      __typename
+    }
+    __typename
+  }
+}
