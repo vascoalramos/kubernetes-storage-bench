@@ -1,19 +1,8 @@
-import pathlib
 from locust import HttpUser
+from actions.common import readFile, inReferencePath
 
-def inReferencePath(path):
-    return "{}/{}".format(str(pathlib.Path(__file__).parent.parent.parent.absolute()), path)
-
-def writeFile(path, content):
-    with open(inReferencePath(path), "w") as f:
-        f.write(content)
-
-def readFile(path):
-    with open(inReferencePath(path)) as f:
-        return f.read()
-
-def graphqlQuery(httpUser, query, variables, auth=True):
-    return httpUser.client.post(url="/graphql", json={"query": query, "variables": variables}, headers={"Connection": "keep-alive", "Authorization": "Bearer {}".format(httpUser.token if auth else "")}).json()
+def graphqlQuery(httpUser, query, variables={}, auth=True):
+    return httpUser.client.post(url="/graphql", json={"query": query, "variables": variables}, headers={"Connection": "keep-alive", "Authorization": "Bearer {}".format(httpUser.token if hasattr(httpUser, "token") and auth else "")}).json()
 
 def pageTreeInParent(httpUser, parent):
     return graphqlQuery(httpUser, readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
@@ -36,11 +25,23 @@ def deletePage(httpUser, pageId):
 def login(httpUser, username, password):
     return graphqlQuery(httpUser, readFile("queries/login.graphql"), {"username": username, "password": password}, auth=False)["data"]["authentication"]["login"]["jwt"]
 
+def manageApiAccessState(httpUser, state):
+    return graphqlQuery(httpUser, readFile("queries/manageApiAccessState.graphql"), {"enabled": state})
+
+def createApiKey(httpUser, name):
+    return graphqlQuery(httpUser, readFile("queries/createApiKey.graphql"), {"name": name})
+
+def listApiKeys(httpUser):
+    return graphqlQuery(httpUser, readFile("queries/listApiKeys.graphql"))["data"]["authentication"]["apiKeys"]
+
+def revokeApiKey(httpUser, key_id):
+    return graphqlQuery(httpUser, readFile("queries/revokeApiKey.graphql"), {"id": key_id})
+
 def createUser(httpUser, group, email, name, password):
     return graphqlQuery(httpUser, readFile("queries/createUser.graphql"), {"group": group, "email": email, "name": name, "passwordRaw": password})
 
 def listUsers(httpUser):
-    return graphqlQuery(httpUser, readFile("queries/listUsers.graphql"), {})["data"]["users"]["list"]
+    return graphqlQuery(httpUser, readFile("queries/listUsers.graphql"))["data"]["users"]["list"]
 
 def deleteUser(httpUser, user_id):
     return graphqlQuery(httpUser, readFile("queries/deleteUser.graphql"), {"id": user_id})
@@ -49,7 +50,10 @@ def comment(httpUser, page_id, content):
     return graphqlQuery(httpUser, readFile("queries/comment.graphql"), {"pageId": page_id, "content": content})
 
 def updateCommentsSettings(httpUser, settings):
-    return graphqlQuery(httpUser, readFile("queries/updateCommentsSettings.graphql"), {"providers": settings})
+    return graphqlQuery(httpUser, readFile("queries/updateCommentsSettings.graphql"), settings)
+
+def updateSecuritySettings(httpUser, settings):
+    return graphqlQuery(httpUser, readFile("queries/updateSecuritySettings.graphql"), settings)
 
 def createPage(httpUser, path, title, content, description="", tags=[]):
     return graphqlQuery(httpUser, readFile("queries/createPage.graphql"), {"path": path, "title": title, "tags": tags, "content": content, "description": description})
