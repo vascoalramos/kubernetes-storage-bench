@@ -1,12 +1,18 @@
 from locust import HttpUser
-from config import config
+from config import AuthConfig
 
-import common
+import actions
 
-class Cleanup(HttpUser): 
+class Cleanup(HttpUser):
 
     def on_start(self):
-        self.token = common.login(self, config.admin_username, config.admin_password)
-        common.deleteGeneratedAssetsAndPages(self)
-        common.deleteGeneratedUsers(self)
+        # Log in as admin
+        self.token = actions.login(self, AuthConfig.admin_username, AuthConfig.admin_password)
+        
+        # Delete generated items
+        actions.deleteGeneratedAssetsAndPages(self)
+        actions.deleteGeneratedUsers(self)
+        actions.deleteGeneratedApiKeys(self)
+        
+        # End session
         self.environment.runner.quit()
