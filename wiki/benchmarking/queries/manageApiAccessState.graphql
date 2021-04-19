@@ -1,0 +1,15 @@
+mutation ($enabled: Boolean!) {
+  authentication {
+    setApiState(enabled: $enabled) {
+      responseResult {
+        succeeded
+        errorCode
+        slug
+        message
+        __typename
+      }
+      __typename
+    }
+    __typename
+  }
+}

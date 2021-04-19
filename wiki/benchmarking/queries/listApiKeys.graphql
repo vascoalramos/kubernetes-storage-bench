@@ -1,0 +1,15 @@
+{
+  authentication {
+    apiKeys {
+      id
+      name
+      keyShort
+      expiration
+      isRevoked
+      createdAt
+      updatedAt
+      __typename
+    }
+    __typename
+  }
+}
