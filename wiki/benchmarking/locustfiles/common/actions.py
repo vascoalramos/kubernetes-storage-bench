@@ -1,8 +1,16 @@
+import pathlib
 from locust import HttpUser
 
+def inReferencePath(path):
+    return "{}/{}".format(str(pathlib.Path(__file__).parent.parent.parent.absolute()), path)
+
+def writeFile(path, content):
+    with open(inReferencePath(path), "w") as f:
+        f.write(content)
+
 def readFile(path):
-    with open(path) as file:
-        return file.read()
+    with open(inReferencePath(path)) as f:
+        return f.read()
 
 def graphqlQuery(httpUser, query, variables, auth=True):
     return httpUser.client.post(url="/graphql", json={"query": query, "variables": variables}, headers={"Connection": "keep-alive", "Authorization": "Bearer {}".format(httpUser.token if auth else "")}).json()
@@ -37,23 +45,14 @@ def listUsers(httpUser):
 def deleteUser(httpUser, user_id):
     return graphqlQuery(httpUser, readFile("queries/deleteUser.graphql"), {"id": user_id})
 
-def createUserGroup(httpUser, group):
-    return graphqlQuery(httpUser, readFile("queries/createUserGroup.graphql"), {"name": group})
-
-def listUserGroups(httpUser):
-    return graphqlQuery(httpUser, readFile("queries/listUserGroups.graphql"), {})["data"]["groups"]["list"]
-
-def deleteUserGroup(httpUser, group_id):
-    return graphqlQuery(httpUser, readFile("queries/deleteUserGroup.graphql"), {"id": group_id})
-
-def updateUserGroupPermissions(httpUser, group_id, name, permissions):
-    return graphqlQuery(httpUser, readFile("queries/updateUserGroupPermissions.graphql"), {"id": group_id, "name": name, "permissions": permissions})
-
 def comment(httpUser, page_id, content):
     return graphqlQuery(httpUser, readFile("queries/comment.graphql"), {"pageId": page_id, "content": content})
+
+def updateCommentsSettings(httpUser, settings):
+    return graphqlQuery(httpUser, readFile("queries/updateCommentsSettings.graphql"), {"providers": settings})
 
 def createPage(httpUser, path, title, content, description="", tags=[]):
     return graphqlQuery(httpUser, readFile("queries/createPage.graphql"), {"path": path, "title": title, "tags": tags, "content": content, "description": description})
 
 def uploadFile(httpUser, parentFolderId, filePath):
-    return httpUser.client.post(url="/u", data={"mediaUpload": '{{"folderId":{}}}'.format(parentFolderId)}, files={"mediaUpload": open(filePath, "rb")}, headers={"Authorization": "Bearer {}".format(httpUser.token), "Connection": "keep-alive"})
+    return httpUser.client.post(url="/u", data={"mediaUpload": '{{"folderId":{}}}'.format(parentFolderId)}, files={"mediaUpload": open(inReferencePath(filePath), "rb")}, headers={"Authorization": "Bearer {}".format(httpUser.token), "Connection": "keep-alive"})
