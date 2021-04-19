@@ -1,0 +1,4 @@
+# Ignore created api keys
+*
+# Keep tracking .gitignore
+!.gitignore
