@@ -1,6 +1,6 @@
-mutation ($id: Int!) {
-  groups {
-    delete(id: $id) {
+mutation ($providers: [CommentProviderInput]!) {
+  comments {
+    updateProviders(providers: $providers) {
       responseResult {
         succeeded
         errorCode
