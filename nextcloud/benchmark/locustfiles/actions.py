@@ -39,3 +39,10 @@ def get_content_list(self, path):
         auth=("admin", "admin"),
     )
     return response.content
+
+
+def delete_file(self, file_path):
+    self.client.delete(
+        f"http://cloud74:30000/remote.php/dav/files/admin/{file_path}",
+        auth=("admin", "admin"),
+    )
