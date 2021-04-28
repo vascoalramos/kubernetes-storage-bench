@@ -30,3 +30,12 @@ def copy(self, src, dest):
             "Destination": f"http://cloud74:30000/remote.php/dav/files/admin/{dest}"
         },
     )
+
+
+def get_content_list(self, path):
+    response = self.client.request(
+        "PROPFIND",
+        f"http://cloud74:30000/remote.php/dav/files/admin/{path}",
+        auth=("admin", "admin"),
+    )
+    return response.content

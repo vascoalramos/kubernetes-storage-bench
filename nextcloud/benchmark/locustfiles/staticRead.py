@@ -1,6 +1,6 @@
 from locust import HttpUser, task
 from config import StaticBenchmarkConfig
-from actions import get_file
+from actions import get_file, get_content_list
 
 
 class StaticBenchmarRead(HttpUser):
