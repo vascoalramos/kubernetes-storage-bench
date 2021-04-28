@@ -1,0 +1,4 @@
+# Ignore created reports
+*
+# Keep tracking .gitignore
+!.gitignore

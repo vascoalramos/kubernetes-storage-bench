@@ -1,0 +1,4 @@
+# To keep small subset of assets in the repository, ignore future changes
+*
+# Keep tracking .gitignore
+!.gitignore

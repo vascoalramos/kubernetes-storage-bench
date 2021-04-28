@@ -1,0 +1,4 @@
+# Ignore created CSVs
+*
+# Keep tracking .gitignore
+!.gitignore
