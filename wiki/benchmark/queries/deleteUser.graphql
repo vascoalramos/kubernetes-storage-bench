@@ -1,0 +1,15 @@
+mutation ($id: Int!) {
+  users {
+    delete(id: $id, replaceId: 1) {
+      responseResult {
+        succeeded
+        errorCode
+        slug
+        message
+        __typename
+      }
+      __typename
+    }
+    __typename
+  }
+}

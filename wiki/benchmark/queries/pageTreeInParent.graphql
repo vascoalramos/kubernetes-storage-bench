@@ -1,0 +1,15 @@
+query ($parent: Int) {
+  pages {
+    tree(parent: $parent, mode: ALL, locale: "en") {
+      id
+      path
+      title
+      isFolder
+      pageId
+      parent
+      locale
+      __typename
+    }
+    __typename
+  }
+}

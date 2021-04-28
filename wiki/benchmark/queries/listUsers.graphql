@@ -1,0 +1,16 @@
+{
+  users {
+    list {
+      id
+      name
+      email
+      providerKey
+      isSystem
+      isActive
+      createdAt
+      lastLoginAt
+      __typename
+    }
+    __typename
+  }
+}

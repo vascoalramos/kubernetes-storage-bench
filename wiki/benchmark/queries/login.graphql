@@ -1,0 +1,22 @@
+mutation ($username: String!, $password: String!) {
+  authentication {
+    login(username: $username, password: $password, strategy: "local") {
+      responseResult {
+        succeeded
+        errorCode
+        slug
+        message
+        __typename
+      }
+      jwt
+      mustChangePwd
+      mustProvideTFA
+      mustSetupTFA
+      continuationToken
+      redirect
+      tfaQRImage
+      __typename
+    }
+    __typename
+  }
+}

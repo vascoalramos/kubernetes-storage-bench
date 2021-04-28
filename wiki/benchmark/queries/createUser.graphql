@@ -1,0 +1,15 @@
+mutation ($email: String!, $name: String!, $passwordRaw: String, $group: Int!) {
+  users {
+    create(providerKey: "local", email: $email, name: $name, passwordRaw: $passwordRaw, groups: [$group], mustChangePassword: false, sendWelcomeEmail: false) {
+      responseResult {
+        succeeded
+        errorCode
+        slug
+        message
+        __typename
+      }
+      __typename
+    }
+    __typename
+  }
+}

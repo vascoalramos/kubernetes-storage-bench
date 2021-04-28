@@ -1,0 +1,38 @@
+{
+  "providers": [
+    {
+      "isEnabled": false,
+      "key": "commento",
+      "config": [
+        {
+          "key": "instanceUrl",
+          "value": "{\"v\":\"https://cdn.commento.io\"}"
+        }
+      ]
+    },
+    {
+      "isEnabled": true,
+      "key": "default",
+      "config": [
+        {
+          "key": "akismet",
+          "value": "{\"v\":\"\"}"
+        },
+        {
+          "key": "minDelay",
+          "value": "{\"v\":\"0\"}"
+        }
+      ]
+    },
+    {
+      "isEnabled": false,
+      "key": "disqus",
+      "config": [
+        {
+          "key": "accountName",
+          "value": "{\"v\":\"\"}"
+        }
+      ]
+    }
+  ]
+}

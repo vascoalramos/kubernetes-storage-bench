@@ -1,0 +1,4 @@
+# Ignore created users
+*
+# Keep tracking .gitignore
+!.gitignore

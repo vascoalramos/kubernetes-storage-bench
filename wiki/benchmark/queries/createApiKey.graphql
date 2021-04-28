@@ -1,0 +1,16 @@
+mutation ($name: String!) {
+  authentication {
+    createApiKey(name: $name, expiration: "1y", fullAccess: true, group: null) {
+      key
+      responseResult {
+        succeeded
+        errorCode
+        slug
+        message
+        __typename
+      }
+      __typename
+    }
+    __typename
+  }
+}

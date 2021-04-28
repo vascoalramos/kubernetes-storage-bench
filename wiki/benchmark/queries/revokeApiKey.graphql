@@ -1,0 +1,15 @@
+mutation ($id: Int!) {
+  authentication {
+    revokeApiKey(id: $id) {
+      responseResult {
+        succeeded
+        errorCode
+        slug
+        message
+        __typename
+      }
+      __typename
+    }
+    __typename
+  }
+}
