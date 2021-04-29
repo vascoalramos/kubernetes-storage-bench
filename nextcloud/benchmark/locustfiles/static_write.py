@@ -34,7 +34,7 @@ class StaticBenchmarkWrite(HttpUser):
         else:
             new_filename = f"{folder}/_generated{datetime.now().timestamp()}{ext}"
 
-        with open("assets.json", "rb") as file:
+        with open(filename, "rb") as file:
             response = actions.upload_file(self, file, new_filename)
 
             if str(response.status_code)[0] != "2":
