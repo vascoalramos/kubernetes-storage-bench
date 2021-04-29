@@ -1,8 +1,9 @@
-from locust import HttpUser, task
+from locust import task
+from locust.contrib.fasthttp import FastHttpUser
 from config import StaticBenchmarkConfig
 
 
-class StaticBenchmarkWrite(HttpUser):
+class StaticBenchmarkWrite(FastHttpUser):
     wait_time = StaticBenchmarkConfig.write_page_wait_seconds
 
     @task
