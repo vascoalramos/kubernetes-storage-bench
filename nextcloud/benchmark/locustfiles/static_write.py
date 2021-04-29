@@ -45,5 +45,6 @@ class StaticBenchmarkWrite(HttpUser):
     @task(1)
     def create_folder(self):
         new_foldername = f"_generated_folder{datetime.now().timestamp()}"
-        actions.create_folder(self, new_foldername)
-        self.inserted_folders.append(new_foldername)
+        response = actions.create_folder(self, new_foldername)
+        if str(response.status_code)[0] == "2":
+            self.inserted_folders.append(new_foldername)

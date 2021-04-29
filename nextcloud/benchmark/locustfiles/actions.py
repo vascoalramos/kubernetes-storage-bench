@@ -14,7 +14,7 @@ def upload_file(self, file, file_path):
 
 
 def create_folder(self, name):
-    self.client.request(
+    return self.client.request(
         "MKCOL",
         f"http://cloud74:30000/remote.php/dav/files/admin/{name}",
         auth=("admin", "admin"),

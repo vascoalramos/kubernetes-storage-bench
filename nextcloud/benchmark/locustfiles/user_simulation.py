@@ -1,32 +1,58 @@
-from locust import HttpUser, task, between
-from config import AuthConfig, Auth, SimulateUser
+from locust import HttpUser, task
+from config import UserSimulationBenchmarkConfig
+from datetime import datetime
 
-import actions, random
+import actions, random, os, json
 
 
 class UserSimulationBenchmark(HttpUser):
-    wait_time = SimulateUser.wait_time_between_tasks
+    wait_time = UserSimulationBenchmarkConfig.wait_time_between_tasks
+    assets = []
+    inserted_files = []
+    inserted_folders = [""]
+    files = []
 
     def on_start(self):
-        # Locust user ID
-        greenlet_id = self._greenlet.getcurrent().minimal_ident
+        with open("content.json", "r") as file:
+            self.files = json.load(file)["files"]
 
-        # Authenticate via API key
-        if AuthConfig.auth == Auth.API_KEY:
-            self.token = actions.getApiKey(greenlet_id)
+        with open("assets.json", "r") as file:
+            self.assets = json.load(file)
 
-        # Authenticate via username and password
+    def on_stop(self):
+        inserted_assets = {
+            "files": self.inserted_files,
+            "folders": self.inserted_folders[1:],
+        }
+        with open("inserted_assets.json", "w") as file:
+            json.dump(inserted_assets, file, indent=4, sort_keys=True)
+
+    @task(30)
+    def readPage(self):
+        actions.get_file(self, random.choice(self.files))
+
+    @task(20)
+    def upload_file(self):
+        filename = random.choice(self.assets)
+        folder = random.choice(self.inserted_folders)
+        _, ext = os.path.splitext(filename)
+
+        if folder == "":
+            new_filename = f"{folder}_generated{datetime.now().timestamp()}{ext}"
         else:
-            user, password = actions.getCredentials(greenlet_id)
-            self.token = actions.login(self, user, password)
+            new_filename = f"{folder}/_generated{datetime.now().timestamp()}{ext}"
+
+        with open("assets.json", "rb") as file:
+            response = actions.upload_file(self, file, new_filename)
+
+            if str(response.status_code)[0] != "2":
+                print(response.content)
+
+        self.inserted_files.append(new_filename)
 
     @task(1)
-    def writePage(self):
-        actions.generatePage(
-            self, SimulateUser.media_instances_per_content_category, True
-        )
-
-    @task(5)
-    def readPage(self):
-        pages = actions.getPageFullTree(self, 0)
-        actions.loadPage(self, random.choice(pages)["path"])
+    def create_folder(self):
+        new_foldername = f"_generated_folder{datetime.now().timestamp()}"
+        response = actions.create_folder(self, new_foldername)
+        if str(response.status_code)[0] == "2":
+            self.inserted_folders.append(new_foldername)

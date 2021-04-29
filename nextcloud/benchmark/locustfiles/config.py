@@ -7,4 +7,4 @@ class StaticBenchmarkConfig:
 
 
 class UserSimulationBenchmarkConfig:
-    wait_time_between_tasks = between(10, 30)
+    wait_time_between_tasks = between(5, 25)
