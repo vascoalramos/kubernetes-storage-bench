@@ -42,12 +42,12 @@ postgresql:
 
 resources:
   requests:
-    cpu: 500m
+    cpu: 350m
 
 
 hpa:
   enabled: true
-  cputhreshold: 50
+  cputhreshold: 5600
   minPods: 1
-  maxPods: 20
+  maxPods: 15
 
