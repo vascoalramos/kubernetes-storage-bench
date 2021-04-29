@@ -6,8 +6,12 @@ from config import StaticBenchmarkConfig
 class StaticBenchmarkWrite(FastHttpUser):
     wait_time = StaticBenchmarkConfig.write_page_wait_seconds
 
-    @task
-    def writePage(self):
+    @task(20)
+    def upload_file(self):
+        
+
+    @task(1)
+    def create_folder(self):
         with open("./assets/files/pa02.pdf", "rb") as file:
             self.client.request(
                 "MKCOL",

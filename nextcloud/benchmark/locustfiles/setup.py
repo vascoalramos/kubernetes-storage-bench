@@ -3,10 +3,13 @@ from locust.contrib.fasthttp import FastHttpUser
 import actions
 import json
 import xmltodict
+import os
 
 
 class Setup(FastHttpUser):
     def on_start(self):
+        self.get_assets()
+
         # get xml list of directories and files
         content_xml = actions.get_content_list(self, "")
 
@@ -44,3 +47,12 @@ class Setup(FastHttpUser):
             else:
                 if entry not in content_dict["files"]:
                     content_dict["files"].append(entry)
+
+    def get_assets(self):
+        files = [
+            os.path.join(path, name)
+            for path, subdirs, files in os.walk("assets")
+            for name in files
+        ]
+        with open("assets.json", "w") as file:
+            json.dump(files, file, indent=4, sort_keys=True)
