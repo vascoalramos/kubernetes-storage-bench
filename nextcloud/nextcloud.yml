@@ -105,6 +105,6 @@ startupProbe:
 
 hpa:
   enabled: true
-  cputhreshold: 60
+  cputhreshold: 50
   minPods: 1
-  maxPods: 10
+  maxPods: 20
