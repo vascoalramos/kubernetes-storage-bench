@@ -1,4 +1,5 @@
-from locust import HttpUser, task
+from locust import task
+from locust.contrib.fasthttp import FastHttpUser
 from config import StaticBenchmarkConfig
 
 import actions
@@ -6,7 +7,7 @@ import json
 import random
 
 
-class StaticBenchmarRead(HttpUser):
+class StaticBenchmarRead(FastHttpUser):
     wait_time = StaticBenchmarkConfig.read_page_wait_seconds
     files = []
 

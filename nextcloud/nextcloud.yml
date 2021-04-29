@@ -1,6 +1,6 @@
 image:
   repository: nextcloud
-  tag: stable-apache
+  tag: 20.0.9-apache
   pullPolicy: IfNotPresent
 
 

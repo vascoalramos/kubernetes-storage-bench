@@ -1,11 +1,11 @@
-from locust import HttpUser
+from locust.contrib.fasthttp import FastHttpUser
 
 import actions
 import json
 import xmltodict
 
 
-class Setup(HttpUser):
+class Setup(FastHttpUser):
     def on_start(self):
         # get xml list of directories and files
         content_xml = actions.get_content_list(self, "")
@@ -30,7 +30,7 @@ class Setup(HttpUser):
             items = items[1:]
 
         for item in items:
-            entry = item[28:].replace("%20", " ") if len(item) > 28 else ""
+            entry = item[28:] if len(item) > 28 else ""
 
             if entry == "" or entry[-1] == "/":
                 if entry not in content_dict["folders"]:
