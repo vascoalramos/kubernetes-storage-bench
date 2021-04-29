@@ -1,25 +1,48 @@
-from locust import task
-from locust.contrib.fasthttp import FastHttpUser
+from locust import task, HttpUser
+
+# from locust.contrib.fasthttp import FastHttpUser
 from config import StaticBenchmarkConfig
+from datetime import datetime
+
+import actions, random, os, json
 
 
-class StaticBenchmarkWrite(FastHttpUser):
+class StaticBenchmarkWrite(HttpUser):
     wait_time = StaticBenchmarkConfig.write_page_wait_seconds
+    assets = []
+    files = []
+    folders = [""]
+
+    def on_start(self):
+        with open("assets.json", "r") as file:
+            self.assets = json.load(file)
+
+    def on_stop(self):
+        inserted_assets = {"files": self.files, "folders": self.folders[1:]}
+        with open("inserted_assets.json", "w") as file:
+            json.dump(inserted_assets, file, indent=4, sort_keys=True)
 
     @task(20)
     def upload_file(self):
-        
+        filename = random.choice(self.assets)
+        folder = random.choice(self.folders)
+        _, ext = os.path.splitext(filename)
+
+        if folder == "":
+            new_filename = f"{folder}_generated{datetime.now().timestamp()}{ext}"
+        else:
+            new_filename = f"{folder}/_generated{datetime.now().timestamp()}{ext}"
+
+        with open("assets.json", "rb") as file:
+            response = actions.upload_file(self, file, new_filename)
+
+            if str(response.status_code)[0] != "2":
+                print(response.content)
+
+        self.files.append(new_filename)
 
     @task(1)
     def create_folder(self):
-        with open("./assets/files/pa02.pdf", "rb") as file:
-            self.client.request(
-                "MKCOL",
-                "http://cloud74:30000/remote.php/dav/files/admin/MyDocuments",
-                auth=("admin", "admin"),
-            )
-            self.client.put(
-                "http://cloud74:30000/remote.php/dav/files/admin/MyDocuments/report3.pdf",
-                data=file,
-                auth=("admin", "admin"),
-            )
+        new_foldername = f"_generated_folder{datetime.now().timestamp()}"
+        actions.create_folder(self, new_foldername)
+        self.folders.append(new_foldername)

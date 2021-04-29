@@ -6,7 +6,7 @@ def get_file(self, file_path):
 
 
 def upload_file(self, file, file_path):
-    self.client.put(
+    return self.client.put(
         f"http://cloud74:30000/remote.php/dav/files/admin/{file_path}",
         data=file,
         auth=("admin", "admin"),
@@ -41,7 +41,7 @@ def get_content_list(self, path):
     return response.content
 
 
-def delete_file(self, file_path):
+def delete_asset(self, file_path):
     self.client.delete(
         f"http://cloud74:30000/remote.php/dav/files/admin/{file_path}",
         auth=("admin", "admin"),
