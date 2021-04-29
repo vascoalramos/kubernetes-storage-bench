@@ -1,6 +1,6 @@
 from locust import HttpUser
-from actions import get_content_list
 
+import actions
 import json
 import xmltodict
 
@@ -8,7 +8,7 @@ import xmltodict
 class Setup(HttpUser):
     def on_start(self):
         # get xml list of directories and files
-        content_xml = get_content_list(self, "")
+        content_xml = actions.get_content_list(self, "")
 
         # get content list of files and folders
         content_list = {"folders": [], "files": []}
@@ -37,7 +37,7 @@ class Setup(HttpUser):
                     content_dict["folders"].append(entry)
 
                 self.retrive_content_from_xml(
-                    get_content_list(self, entry),
+                    actions.get_content_list(self, entry),
                     content_dict,
                     subdir=True,
                 )

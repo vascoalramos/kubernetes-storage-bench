@@ -7,6 +7,6 @@ class StaticBenchmarkConfig:
     media_instances_per_content_category = 3
 
 
-class SimulateUser:
+class UserSimulationBenchmarkConfig:
     media_instances_per_content_category = 5
     wait_time_between_tasks = between(5, 25)

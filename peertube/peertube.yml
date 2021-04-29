@@ -25,6 +25,11 @@ service:
     nodePort: 30001
 
 
+resources:
+  requests:
+    cpu: 500m
+
+
 autoscaling:
     enabled: true
     minReplicas: 1

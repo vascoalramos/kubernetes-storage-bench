@@ -75,6 +75,11 @@ persistence:
   size: 10Gi
 
 
+resources:
+  requests:
+    cpu: 500m
+
+
 livenessProbe:
   enabled: false
   initialDelaySeconds: 10

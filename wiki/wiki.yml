@@ -40,6 +40,11 @@ postgresql:
     size: 8Gi
 
 
+resources:
+  requests:
+    cpu: 500m
+
+
 hpa:
   enabled: true
   cputhreshold: 60

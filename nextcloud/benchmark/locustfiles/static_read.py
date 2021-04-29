@@ -1,7 +1,7 @@
 from locust import HttpUser, task
 from config import StaticBenchmarkConfig
-from actions import get_file
 
+import actions
 import json
 import random
 
@@ -16,4 +16,4 @@ class StaticBenchmarRead(HttpUser):
 
     @task
     def readPage(self):
-        get_file(self, random.choice(self.files))
+        actions.get_file(self, random.choice(self.files))
