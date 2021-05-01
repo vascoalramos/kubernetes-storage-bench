@@ -47,7 +47,7 @@ resources:
 
 hpa:
   enabled: true
-  cputhreshold: 5600
+  cputhreshold: 55
   minPods: 1
   maxPods: 15
 

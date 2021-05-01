@@ -77,7 +77,7 @@ persistence:
 
 resources:
   requests:
-    cpu: 400m
+    cpu: 350m
 
 
 livenessProbe:
