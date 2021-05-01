@@ -25,11 +25,16 @@ service:
     nodePort: 30001
 
 
+resources:
+  requests:
+    cpu: 350m
+
+
 autoscaling:
     enabled: true
     minReplicas: 1
-    maxReplicas: 10
-    targetCPUUtilizationPercentage: 60
+    maxReplicas: 15
+    targetCPUUtilizationPercentage: 55
 
 
 persistence:
