@@ -37,7 +37,8 @@ mariadb:
   master:
     persistence:
       enabled: true
-      storageClass: nfs-client
+      # storageClass: nfs-client
+      storageClass: csi-rbd-sc
       accessMode: ReadWriteMany
       size: 8Gi
   slave:
@@ -53,7 +54,8 @@ redis:
   master:
     persistence:
       enabled: true
-      storageClass: nfs-client
+      # storageClass: nfs-client
+      storageClass: csi-rbd-sc
       accessMode: ReadWriteMany
       size: 8Gi
   slave:
@@ -70,8 +72,10 @@ service:
 
 persistence:
   enabled: true
-  storageClass: nfs-client
-  accessMode: ReadWriteMany
+  # storageClass: nfs-client
+  # accessMode: ReadWriteMany
+  storageClass: csi-rbd-sc
+  accessMode: ReadWriteOnce
   size: 10Gi
 
 
