@@ -311,7 +311,7 @@ config: |-
     # In addition, if some resolutions are enabled the mp4 video file will be transcoded to these new resolutions.
     # Please, do not disable transcoding since many uploaded videos will not work
     transcoding:
-      enabled: true
+      enabled: false
       # Allow your users to upload .mkv, .mov, .avi, .flv videos
       allow_additional_extensions: true
       # If a user uploads an audio file, PeerTube will create a video by merging the preview file and the audio file
