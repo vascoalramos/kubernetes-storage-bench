@@ -1,6 +1,7 @@
 from locust import HttpUser, task
 from config import StaticBenchmarkConfig
 
+import random
 import actions
 
 class StaticBenchmarkWrite(HttpUser):
@@ -9,13 +10,9 @@ class StaticBenchmarkWrite(HttpUser):
     def on_start(self):
         # Get all available pages
         self.pages = actions.getPageFullTree(self, 0)
-        self.currentPage = 0
 
 
     @task
     def readPage(self):
-        # Read page
-        actions.loadPage(self, self.pages[self.currentPage]["path"])
-
-        # Update next page index to read
-        self.currentPage = (self.currentPage + 1) % len(self.pages)
+        # Read random page
+        actions.loadPage(self, random.choice(self.pages)["path"])
