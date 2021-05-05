@@ -12,14 +12,14 @@ def loadPage(httpUser, page):
         page = "/" + page
 
     # Get page
-    index = httpUser.client.get(url=page)
+    index = httpUser.client.get(url=page, name="Load page")
 
     # Use regex to find files to import
     srcs = re.findall("(?<=src=\")(.*?)(?=\")", index.text)
 
     # Load files
     for src in srcs:
-        httpUser.client.get(url=src if src[0] == '/' else re.search(".*\\/", page).group(0) + src)
+        httpUser.client.get(url=src if src[0] == '/' else re.search(".*\\/", page).group(0) + src, name="Load content")
 
 
 def generateComment(httpUser, pageId, commentLength=200):
@@ -68,13 +68,12 @@ def generatePage(httpUser, contentInstancesPerCategory=10, isRandom=True):
     gifs, all_gifs, gif_template = set(), os.listdir(common.inReferencePath("assets/gifs")), common.readFile("templates/gif.html")
     all_texts, text_template = os.listdir(common.inReferencePath("assets/texts")), common.readFile("templates/text.html")
 
-    # Shufle content if random
-    if isRandom:
-        random.shuffle(all_images)
-        random.shuffle(all_videos)
-        random.shuffle(all_audios)
-        random.shuffle(all_gifs)
-        random.shuffle(all_texts)
+    # Shufle content
+    random.shuffle(all_images)
+    random.shuffle(all_videos)
+    random.shuffle(all_audios)
+    random.shuffle(all_gifs)
+    random.shuffle(all_texts)
     
     # Add content
     content += [fillTemplate(image_template, random.choice(all_images) if isRandom else all_images[i], images)
@@ -89,8 +88,7 @@ def generatePage(httpUser, contentInstancesPerCategory=10, isRandom=True):
                 for i in range(randomOrDefault(contentInstancesPerCategory, isRandom))]
 
     # Shuffle content list
-    if isRandom:
-        random.shuffle(content)
+    random.shuffle(content)
 
     # Upload files
     [graphqlQueries.uploadFile(httpUser, folder["id"], "assets/images/{}".format(asset)) for asset in images]
