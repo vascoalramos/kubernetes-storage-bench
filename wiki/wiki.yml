@@ -32,12 +32,12 @@ postgresql:
   readReplicas:
     persistence:
       enabled: false
-      size: 8Gi
+      size: 30Gi
   persistence:
     enabled: true
     storageClass: nfs-client
     accessMode: ReadWriteMany
-    size: 8Gi
+    size: 30Gi
 
 
 resources:

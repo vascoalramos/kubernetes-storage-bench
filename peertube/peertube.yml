@@ -41,7 +41,7 @@ persistence:
     enabled: true
     storageClass: nfs-client
     accessMode: ReadWriteMany
-    size: 8Gi
+    size: 25Gi
 
 
 postgresql:
@@ -55,12 +55,12 @@ postgresql:
     readReplicas:
         persistence:
             enabled: false
-            size: 8Gi
+            size: 10Gi
     persistence:
         enabled: true
         storageClass: nfs-client
         accessMode: ReadWriteMany
-        size: 8Gi
+        size: 10Gi
 
 
 redis:
@@ -71,7 +71,7 @@ redis:
       enabled: true
       storageClass: nfs-client
       accessMode: ReadWriteMany
-      size: 8Gi
+      size: 5Gi
   slave:
     replicas: 2
     persistence:

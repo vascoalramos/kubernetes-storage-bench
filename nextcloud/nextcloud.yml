@@ -40,7 +40,7 @@ mariadb:
       # storageClass: nfs-client
       storageClass: fast-rbd
       accessMode: ReadWriteMany
-      size: 8Gi
+      size: 10Gi
   slave:
     replicas: 2
     persistence:
@@ -76,7 +76,7 @@ persistence:
   # accessMode: ReadWriteMany
   storageClass: cephfs
   accessMode: ReadWriteMany
-  size: 10Gi
+  size: 25Gi
   # existingClaim: nextcloud-nextcloud
 
 
