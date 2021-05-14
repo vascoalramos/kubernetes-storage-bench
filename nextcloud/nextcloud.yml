@@ -37,8 +37,8 @@ mariadb:
   master:
     persistence:
       enabled: true
-      # storageClass: nfs-client
-      storageClass: fast-rbd
+      storageClass: nfs-client
+      # storageClass: fast-rbd
       accessMode: ReadWriteMany
       size: 10Gi
   slave:
@@ -54,8 +54,8 @@ redis:
   master:
     persistence:
       enabled: true
-      # storageClass: nfs-client
-      storageClass: fast-rbd
+      storageClass: nfs-client
+      # storageClass: fast-rbd
       accessMode: ReadWriteMany
       size: 8Gi
   slave:
@@ -72,10 +72,10 @@ service:
 
 persistence:
   enabled: true
-  # storageClass: nfs-client
-  # accessMode: ReadWriteMany
-  storageClass: cephfs
+  storageClass: nfs-client
   accessMode: ReadWriteMany
+  # storageClass: cephfs
+  # accessMode: ReadWriteMany
   size: 25Gi
   # existingClaim: nextcloud-nextcloud
 
