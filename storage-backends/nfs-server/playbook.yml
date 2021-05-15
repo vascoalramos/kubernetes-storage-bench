@@ -31,7 +31,7 @@
         backup: true
         insertafter: EOF
         block: |
-          /mnt/nfs-share  {{ inventory_hostname.split('.')[:3] | join('.') }}/24(rw,sync,no_subtree_check,no_root_squash)
+          /mnt/nfs-share  {{ inventory_hostname.split('.')[:3] | join('.') }}.0/24(rw,sync,no_subtree_check,no_root_squash)
     - name: Configure NFS Server
       command:
         cmd: exportfs -a
