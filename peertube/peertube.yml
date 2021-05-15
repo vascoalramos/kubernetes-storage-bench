@@ -27,14 +27,14 @@ service:
 
 resources:
   requests:
-    cpu: 350m
+    cpu: 1000m
 
 
 autoscaling:
-    enabled: true
-    minReplicas: 1
-    maxReplicas: 15
-    targetCPUUtilizationPercentage: 55
+    enabled: false
+    # minReplicas: 1
+    # maxReplicas: 15
+    # targetCPUUtilizationPercentage: 55
 
 
 persistence:
