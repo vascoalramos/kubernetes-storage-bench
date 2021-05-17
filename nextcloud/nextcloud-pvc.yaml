@@ -2,12 +2,40 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: nextcloud-nextcloud
+  name: nextcloud-mariadb
 spec:
+  storageClassName: manual
+  volumeName: cephfs-vol3
   accessModes:
     - ReadWriteMany
-  volumeMode: Block
   resources:
     requests:
       storage: 10Gi
-  storageClassName: csi-rbd-sc
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: redis-data-nextcloud-redis-master-0
+spec:
+  storageClassName: manual
+  volumeName: cephfs-vol2
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 8Gi
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: nextcloud-nextcloud
+spec:
+  storageClassName: manual
+  volumeName: cephfs-vol1
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 25Gi
