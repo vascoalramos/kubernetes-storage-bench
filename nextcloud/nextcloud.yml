@@ -95,8 +95,8 @@ livenessProbe:
 readinessProbe:
   enabled: true
   initialDelaySeconds: 10
-  periodSeconds: 10
-  timeoutSeconds: 5
+  periodSeconds: 30
+  timeoutSeconds: 15
   failureThreshold: 3
   successThreshold: 1
 startupProbe:
