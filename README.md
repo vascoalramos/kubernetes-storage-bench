@@ -18,7 +18,7 @@
 helm install -n nextcloud nextcloud  nextcloud/nextcloud -f nextcloud.yml --create-namespace
 
 # uninstall
-helm uninstall nextcloud
+helm uninstall -n nextcloud nextcloud
 ```
 
 To switch to a different namespace:
@@ -34,9 +34,6 @@ After installing, access [cloud74:30000](http://cloud74:30000).
 ### Prerequisites:
 
 -   [Helm](https://helm.sh/docs/intro/install)
--   Nextcloud Repo (after install helm)
-    ```bash
-    ```
 
 ### Usage
 
@@ -46,16 +43,35 @@ cd wiki
 helm install -n wiki wiki helm -f wiki.yml --create-namespace
 
 # uninstall
-helm uninstall wiki
+helm uninstall -n wiki wiki
 ```
+
+After installing, access [cloud74:30002](http://cloud74:30002).
+
+## Peertube
+
+### Prerequisites:
+
+-   [Helm](https://helm.sh/docs/intro/install)
+
+### Usage
+
+```bash
+# install nexcloud in custom namespace named 'nextcloud'
+cd wiki
+helm install -n peertube peertube helm -f peertube.yml --create-namespace
+
+# uninstall
+helm uninstall -n peertube peertube
+```
+
+After installing, access [cloud74.cluster.lsd.di.uminho.pt:30001](http://cloud74.cluster.lsd.di.uminho.pt:30001).
 
 To switch to a different namespace:
 
 ```bash
 kubectl config set-context --current --namespace=<NAMESPACE_NAME>
 ```
-
-After installing, access [cloud74:30002](http://cloud74:30002).
 
 ## Authors
 
