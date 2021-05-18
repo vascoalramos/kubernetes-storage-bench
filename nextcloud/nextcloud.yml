@@ -64,8 +64,6 @@ redis:
     replicas: 2
     persistence:
       enabled: false
-      # Este nome nao está a ser usado for some reason :(
-      existingClaim: nextcloud-redis
 
 
 service:
