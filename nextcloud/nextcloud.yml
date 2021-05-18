@@ -37,11 +37,10 @@ mariadb:
   master:
     persistence:
       enabled: true
-      # storageClass: nfs-client
-      # storageClass: fast-rbd
-      # accessMode: ReadWriteMany
-      # size: 10Gi
-      existingClaim: nextcloud-mariadb
+      storageClass: nfs-client
+      accessMode: ReadWriteMany
+      size: 10Gi
+      # existingClaim: nextcloud-mariadb
   slave:
     replicas: 2
     persistence:
@@ -55,13 +54,12 @@ redis:
   master:
     persistence:
       enabled: true
-      # storageClass: nfs-client
-      # storageClass: fast-rbd
-      # accessMode: ReadWriteMany
-      # size: 8Gi
-      storageClass: manual
+      storageClass: nfs-client
+      accessMode: ReadWriteMany
+      size: 8Gi
+      # storageClass: manual
       # Este nome nao está a ser usado for some reason :(
-      existingClaim: nextcloud-redis
+      # existingClaim: nextcloud-redis
   slave:
     replicas: 2
     persistence:
@@ -78,12 +76,10 @@ service:
 
 persistence:
   enabled: true
-  # storageClass: nfs-client
-  # accessMode: ReadWriteMany
-  # storageClass: cephfs
-  # accessMode: ReadWriteMany
-  # size: 25Gi
-  existingClaim: nextcloud-nextcloud
+  storageClass: nfs-client
+  accessMode: ReadWriteMany
+  size: 25Gi
+  # existingClaim: nextcloud-nextcloud
 
 
 resources:
