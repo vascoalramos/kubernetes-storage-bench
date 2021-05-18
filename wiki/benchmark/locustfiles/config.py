@@ -8,8 +8,8 @@ class Auth(Enum):
 
 class AuthConfig:
     auth = Auth.API_KEY
-    admin_username = "pg42577@alunos.uminho.pt"
-    admin_password = "112233"
+    admin_username = "admin@example.com"
+    admin_password = "admin1234"
     
 class SetupConfig:
     generate_users_count = 50
