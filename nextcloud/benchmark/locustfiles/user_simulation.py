@@ -7,7 +7,7 @@ import actions, random, os, json, load_dataset
 
 class UserSimulationBenchmark(HttpUser):
     wait_time = UserSimulationBenchmarkConfig.wait_time_between_tasks
-    assets = []
+    assets_size = len(load_dataset.assets) - 1
     inserted_files = []
     inserted_folders = [""]
     files = []
@@ -30,7 +30,7 @@ class UserSimulationBenchmark(HttpUser):
 
     @task(20)
     def upload_file(self):
-        i = random.randint(0, len(load_dataset.assets) - 1)
+        i = random.randint(0, self.assets_size)
         filename = load_dataset.assets[i]
         folder = random.choice(self.inserted_folders)
         _, ext = os.path.splitext(filename)

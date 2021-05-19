@@ -7,6 +7,7 @@ import actions, random, os, json, load_dataset
 
 class StaticBenchmarkWrite(HttpUser):
     wait_time = StaticBenchmarkConfig.write_page_wait_seconds
+    assets_size = len(load_dataset.assets) - 1
     inserted_files = []
     inserted_folders = [""]
 
@@ -20,7 +21,7 @@ class StaticBenchmarkWrite(HttpUser):
 
     @task(20)
     def upload_file(self):
-        i = random.randint(0, len(load_dataset.assets) - 1)
+        i = random.randint(0, self.assets_size)
         filename = load_dataset.assets[i]
         folder = random.choice(self.inserted_folders)
         _, ext = os.path.splitext(filename)
