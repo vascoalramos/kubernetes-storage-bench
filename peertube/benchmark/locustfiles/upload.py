@@ -40,7 +40,7 @@ class QuickstartUser(HttpUser):
             "grant_type":"password",
             "response_type":"code",
             "username":"root",
-            "password":"tipizodeteqosutu"
+            "password":"ratazolojizefixu"
         })
 
         self.path = os.path.abspath("../videos")
@@ -48,3 +48,4 @@ class QuickstartUser(HttpUser):
         
         self.count=0
         self.token = resptoken.json()['access_token']
+        print(self.token)
