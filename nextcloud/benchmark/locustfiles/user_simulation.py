@@ -16,9 +16,6 @@ class UserSimulationBenchmark(HttpUser):
         with open("content.json", "r") as file:
             self.files = json.load(file)["files"]
 
-        with open("assets.json", "r") as file:
-            self.assets = json.load(file)
-
     def on_stop(self):
         inserted_assets = {
             "files": self.inserted_files,
