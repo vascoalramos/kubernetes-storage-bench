@@ -57,8 +57,6 @@ redis:
       storageClass: nfs-client
       accessMode: ReadWriteMany
       size: 8Gi
-      # storageClass: manual
-      # Este nome nao está a ser usado for some reason :(
       # existingClaim: nextcloud-redis
   slave:
     replicas: 2
