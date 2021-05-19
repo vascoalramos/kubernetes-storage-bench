@@ -2,7 +2,7 @@ from locust import HttpUser, task
 from config import UserSimulationBenchmarkConfig
 from datetime import datetime
 
-import actions, random, os, json
+import actions, random, os, json, load_dataset
 
 
 class UserSimulationBenchmark(HttpUser):
@@ -33,7 +33,8 @@ class UserSimulationBenchmark(HttpUser):
 
     @task(20)
     def upload_file(self):
-        filename = random.choice(self.assets)
+        i = random.randint(0, len(load_dataset.assets) - 1)
+        filename = load_dataset.assets[i]
         folder = random.choice(self.inserted_folders)
         _, ext = os.path.splitext(filename)
 
@@ -42,11 +43,10 @@ class UserSimulationBenchmark(HttpUser):
         else:
             new_filename = f"{folder}/_generated{datetime.now().timestamp()}{ext}"
 
-        with open(filename, "rb") as file:
-            response = actions.upload_file(self, file, new_filename)
+        response = actions.upload_file(self, load_dataset.files[i], new_filename)
 
-            if str(response.status_code)[0] != "2":
-                print(response.content)
+        if str(response.status_code)[0] != "2":
+            print(response.content)
 
         self.inserted_files.append(new_filename)
 
