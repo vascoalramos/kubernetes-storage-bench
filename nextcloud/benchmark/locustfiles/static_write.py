@@ -2,18 +2,14 @@ from locust import task, HttpUser
 from config import StaticBenchmarkConfig
 from datetime import datetime
 
-import actions, random, os, json
+import actions, random, os, json, load_dataset
 
 
 class StaticBenchmarkWrite(HttpUser):
     wait_time = StaticBenchmarkConfig.write_page_wait_seconds
-    assets = []
+    assets_size = len(load_dataset.assets) - 1
     inserted_files = []
     inserted_folders = [""]
-
-    def on_start(self):
-        with open("assets.json", "r") as file:
-            self.assets = json.load(file)
 
     def on_stop(self):
         inserted_assets = {
@@ -25,7 +21,8 @@ class StaticBenchmarkWrite(HttpUser):
 
     @task(20)
     def upload_file(self):
-        filename = random.choice(self.assets)
+        i = random.randint(0, self.assets_size)
+        filename = load_dataset.assets[i]
         folder = random.choice(self.inserted_folders)
         _, ext = os.path.splitext(filename)
 
@@ -34,11 +31,10 @@ class StaticBenchmarkWrite(HttpUser):
         else:
             new_filename = f"{folder}/_generated{datetime.now().timestamp()}{ext}"
 
-        with open(filename, "rb") as file:
-            response = actions.upload_file(self, file, new_filename)
+        response = actions.upload_file(self, load_dataset.files[i], new_filename)
 
-            if str(response.status_code)[0] != "2":
-                print(response.content)
+        if str(response.status_code)[0] != "2":
+            print(response.content)
 
         self.inserted_files.append(new_filename)
 
