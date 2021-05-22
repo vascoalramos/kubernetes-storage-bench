@@ -12,12 +12,12 @@ class AuthConfig:
     admin_password = "admin1234"
     
 class SetupConfig:
-    generate_users_count = 50
+    generate_users_count = 200
 
 class StaticBenchmarkConfig:
     write_page_wait_seconds = constant(10)
     read_page_wait_seconds = constant(5)
-    media_instances_per_content_category = 3
+    media_instances_per_content_category = 5
 
 class SimulateUser:
     media_instances_per_content_category = 5
