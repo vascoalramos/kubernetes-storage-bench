@@ -1,0 +1,17 @@
+carmaker .
+
+We can do the following:
+
+Create a new file called 'dav.vbsx' in your directory ' /path/to/bin/python ' and add an api endpoint to it (for example to allow you to add a "Hello World" to your project in your Python application). To import from outside of Python, add 'dav' as the host.
+
+Create a directory called 'python_example.py at the position you want a local test script to run. You can create such a directory from anywhere, as long as you have the necessary Python code in there. This file is not needed for every python program.
+
+Create a directory for the project at the position you want to test the script for. As long as you have the necessary Python code in there. This file is not needed for every python program. Add an entry in your python.init.py file in a local directory where Python will create testing for the script, along with setting up the python backend server (if that is needed for it to run).
+
+In this directory, you can add a lot of python code to your test script before you compile it. In this directory, you can add a lot of python code to your test script before you compile it.
+
+Now build your script using the python command-line.
+
+Note: Remember this assumes you have python installed:
+
+>>> import json >>> def __init

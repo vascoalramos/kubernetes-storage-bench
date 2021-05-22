@@ -1,0 +1,13 @@
+files (at least a few) are available in other languages (especially if they're part of the same repository). We may not be able to create a new version for every language, let alone complete it on top of any existing ones. Fortunately, there are lots of other projects which can do this (which we'll cover in a second).
+
+The best thing to start with is downloading the file you want to play on, using the following command:
+
+git clone https://github.com/lehwin/lehwin-lisp.git cd lehwin-lisp-lisp
+
+If you're using Python 1.7 or later you may be able to move some older versions of Git in your local copy with git clone . However, it's very tedious, and it takes a lot of time, and many other stuff.
+
+To finish this guide we'll start by creating a couple of projects that we're using to control file and directory navigation. First, we're going to create a project named lehwin-lisp-lisp , the one we started this tool. Once we have that we need to make three additional files in the project (and then we should add them up ourselves):
+
+repository, src, and librepository , (which can be changed from the git repo)
+
+, (which can be changed from the git repo) librepository , which can be changed from the

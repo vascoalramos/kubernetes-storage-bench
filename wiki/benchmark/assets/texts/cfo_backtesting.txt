@@ -1,0 +1,9 @@
+cfo backtesting with OpenSSL was a good idea, but it required additional time to develop.
+
+Some of my colleagues have even been working on a new open-source project called LazyRedirect. They used it to check the "real time" of HTTPS requests received by Redirect when trying to visit a shared web site. Since the project had a lot of dependencies, we decided to publish it as open source and also write an internal test that was able to track down LazyRedirect dependencies.
+
+But it is still the right time to stop supporting LazyRedirect and instead write benchmarks that show the real-time change in the current HTTPS behavior for Redirect, using real-time code coverage methods.
+
+There is still work to be done, but the LazyRedirect benchmark and the new benchmark will allow us to see where this changes with a longer timeline. We have just three months left and this is no time for jumping through hoops.
+
+What do you think of this new open source feature release? Which are the reasons behind the delay? Let us know in the comments section below.

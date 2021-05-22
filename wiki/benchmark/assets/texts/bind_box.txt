@@ -1,0 +1,5 @@
+bind box. I then click on your Home Menu from the left and follow the instructions there.
+
+1: A prompt populates your home screen to give you some key bindings. Note: Some keyboards that support this feature have to be used for a few extra options.
+
+This will now enable everything called Home, Press, Control, Delete, and All. If you don't have any key bindings enabled, just change the defaults with the "add to keyboard" option by clicking on the keyboard you want to use. Some key shortcuts have no effect.

@@ -1,0 +1,21 @@
+projectwe def headline oct01 ( argc = nil , text = nil ) " :title.add_comment("{{title }}", text)
+
+When a new text is displayed, it starts with a single `line` and it displays a single character.
+
+// {{title}} / - - {{icon }} / - {{color-coding}}/ - {{title-label}} / - {{icon-label}} */
+
+You can configure the form using the form . The form.add_comment() method will add an additional `line` to a single line of text. However, the `line` is defined by the `{text-number}` parameter of the `def{lines}` expression:
+
+def line ( text : string , type : string , _ , options = ' ' ) ... def run ( argc : boolean , text : string , options = ' text ' ). add_comment ( text , ' :{text : ' )} ' ) ... }
+
+The form.add_comment() method will add an additional `line` to any one of the options and set a new line.
+
+Here's a screenshot from the code of the form
+
+I wrote the form using my own method calls in the first version of JSFiddle::Classes.
+
+You can run it via:
+
+JSFiddle::Classes::run
+
+The forms work without a file. The files

@@ -1,0 +1,31 @@
+xcelerator
+
+#include <iostream>
+
+typedef struct { // __int_type int i;
+
+__int_offset
+
+size_t
+
+m_malloc_offset; // memcpy allocates one
+
+m_malloc_malloc; // memcpy allocates two
+
+} ABOVE_EXPERIENCE_INTERPOLATIONS::ABOVE{
+
+for (size_t m_malloc: ABOVE_EXPERIENCE_INTERPOLATIONS::count_to = 1 ; m_malloc; --malloc) {
+
+size_t size_type = (size_type*)((size_type|((size_type| size_type) % 0xfffffffff));
+
+}
+
+} ABOVE_EXPERIENCE_INTERPOLATIONS::EXPERIENCE_INTERPOLATES_LONG {
+
+for (size_t m_malloc: ABOVE_EXPERIENCE_INTERPOLATIONS::count_to = 1 ; m_malloc; --malloc) {
+
+size_t size_type = (size_type|((size_type| ((size_type| size_type) % 0xfffffffff));
+
+}
+
+} ABOVE_EXPERIENCE_INTERPOLATIONS::EXPERIENCE_INTERPOLATES_PILLON {

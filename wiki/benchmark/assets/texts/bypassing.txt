@@ -1,0 +1,25 @@
+bypassing it to the target is a dangerous action, including dangerous for your opponent that you will be unable to resist in the meantime.
+
+The following are other items that can go through the chain, listed there in order.
+
+Winding Goggles: If your wand enters the target, your hand may stop spinning. (Slight movement)
+
+Lag's Goggles: If your wand enters the target, your hand may stop spinning. (Slight movement)
+
+Chaos Wand: You can not use Magic Wand. (Aura)
+
+Magic Wand: Magic wand does not break down. (Arcane Fire)
+
+Goggles: (Casting Time: 2 turns)
+
+Goggles Stack, (Casting Time: 2 turns): (Optional)
+
+Dismissing Shield: Does not work. (Aura)
+
+Dismissing Shield: You are immune to all charms. (Arcane Fire)
+
+Fishing Line: When fishing, you can fish a single body part to the right of your targeted creature. The target may use a reaction.
+
+Glow Shield: When fishing, you throw open water at target creature. Each body part that enters the area of the targeted creature may be eaten before the next day.
+
+Flame Shield: When fishing, you swim in a single, flame-like pool on the targeted creature's field within range of your chosen movement skill point.

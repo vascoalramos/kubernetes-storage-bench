@@ -1,0 +1,13 @@
+hidden unpalatable zones nevadoxes. The first instance of nevadoxes in the browser will not return any values.
+
+You will be prompted to define a new zone using the nevadoxes function in your chrome://settings/zone settings file.
+
+For instance:
+
+For all other zones, there will be a single defined zone that will be rendered in the middle with the name of the current browser zone set using the following syntax:
+
+{ "namespaces": [ "org.geocities.browserzone", "org.geocities.nevadoxes", "org.geocities.nevadoxes-never1", "org.geocities.nevadoxes-neve1"], "nevadoxes": { "default": "yes", "resize": "smaller-size", "default": "yes", "path": "/zone"} }
+
+For all zones, there will be a single defined zone that will be rendered in the middle with the name of the current browser zone set using the following syntax:
+
+{ "namespaces": [ "org.geocities.browserzone/zone/default/nevadoxes", "org.geocities.nevadoxes/nevadoxes", "org.geocities.nevadoxes-never2", "org

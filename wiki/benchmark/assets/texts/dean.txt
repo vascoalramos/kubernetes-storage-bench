@@ -1,0 +1,27 @@
+dean (7.11.1+dfsg-1.2.0-1.1.dynamic.installer.packages.com/src/main/)
+
+Usage: libxml2-dev (7.11.1+dfsg-1.2.0-1.1.dynamic.installer.packages.com/src/main/versions.dynamic.version)
+
+This program includes "libxml2" (7.11.1+.jar) in its source code. For more information, see libxml2 - libxml2
+
+Installation
+
+After using this program, do the following:
+
+sudo apt-get install libxml2
+
+(this will install "LIBxml2/libxml2.so.7-version.dynamic.installer.packages.com" for DYNAMIC_EXTENSIONS)
+
+Using Xorg
+
+If you want to use the source code for Xorg, you just need to use the Xorg-related options:
+
+sudo apt-get install libxml2
+
+Note that if you download Xorg from a source server (eg. xorg-server.org), don't try to install it if it won't work on your system.
+
+Once Xorg-based system is installed, you simply run /usr/sbin/Xorg -S .
+
+Building
+
+You can run lib

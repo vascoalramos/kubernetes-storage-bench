@@ -1,0 +1,7 @@
+ispheres are not in a stable state yet; or, for that matter, there is much uncertainty about how they might actually behave.
+
+However, this isn't because these models are incorrect. They're based on things like the mathematical formulas that make up most of the human genome. They might make mistakes — such as mutations among the cells dividing into the DNA and other materials — or, more particularly, not fit very well to the picture of how the body is wired, because they require a lot of energy. Scientists haven't solved them yet, though. They will need, for instance, to investigate how to use an MRI machine to probe the brain, for instance, or to figure out how to measure the size of the brains of those who become elderly. And they may need long-term studies to answer those questions.
+
+The point is that these experiments require computational computing, but those are mostly human-made. All the pieces of this puzzle will be eventually solved. But when it isn't, it's not all good news, either.
+
+That's what we need for the next step, after some big breakthroughs like the One.com search. That search is already generating some very exciting results about the way human brain is structured.

@@ -1,0 +1,35 @@
+ticket-county-and-counties-will-initiate.txt>
+
+or
+
+in the file /etc/v2/conf.d/rvccontrol.conf.
+
+# or
+
+# or
+
+# <filename> /var/lib/rvccontrol.so
+
+RVC_C_OP_EXPLAIN | grep ' * .rcv ' | cut -d -f 1 ' < /var/lib/>
+
+or
+
+RVC_C_OP_EXPLAIN | grep ' * .rcv 1 '
+
+$rvac_c_compose " vccontrol.conf "
+
+or
+
+rcvccontrol.conf " :
+
+# <repository> ( <repository>/ rvccontrol/ ) ( <repository>/rvccontrol/ )
+
+# <version> ( <version>/ rvccontrol/ ) :
+
+# <repository> ( <repository>/rvccontrol/ ) :
+
+# <repository> ( <repository>/rvccontrol/ ) :
+
+# <repository> ( <repository>/rvccontrol/ ) :
+
+# <repository> ( <repository>/
