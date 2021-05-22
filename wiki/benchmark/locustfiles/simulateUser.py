@@ -1,7 +1,8 @@
-from locust import HttpUser, task, between
+from locust import HttpUser, task
 from config import AuthConfig, Auth, SimulateUser
 
 import actions, random
+import actions.loadAssets as dataset
 
 class StaticBenchmarkWrite(HttpUser):
     wait_time = SimulateUser.wait_time_between_tasks
@@ -22,7 +23,7 @@ class StaticBenchmarkWrite(HttpUser):
 
     @task(1)
     def writePage(self):
-        actions.generatePage(self, SimulateUser.media_instances_per_content_category, True)
+        actions.generatePage(self, dataset.data, SimulateUser.media_instances_per_content_category, False)
 
     @task(5)
     def readPage(self):

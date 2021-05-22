@@ -2,6 +2,8 @@ from locust import HttpUser, task
 from config import AuthConfig, Auth, StaticBenchmarkConfig
 
 import actions
+import actions.loadAssets as dataset
+
 
 class StaticBenchmarkWrite(HttpUser):
     wait_time = StaticBenchmarkConfig.write_page_wait_seconds
@@ -19,7 +21,6 @@ class StaticBenchmarkWrite(HttpUser):
             user, password = actions.getCredentials(greenlet_id)
             self.token = actions.login(self, user, password)
 
-
     @task
     def writePage(self):
-        actions.generatePage(self, StaticBenchmarkConfig.media_instances_per_content_category, False)
+        actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)

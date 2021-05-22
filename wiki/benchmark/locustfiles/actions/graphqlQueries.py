@@ -58,5 +58,5 @@ def updateSecuritySettings(httpUser, settings):
 def createPage(httpUser, path, title, content, description="", tags=[]):
     return graphqlQuery(httpUser, "Create Page", readFile("queries/createPage.graphql"), {"path": path, "title": title, "tags": tags, "content": content, "description": description})
 
-def uploadFile(httpUser, parentFolderId, filePath):
-    return httpUser.client.post(url="/u", name="Upload file", data={"mediaUpload": '{{"folderId":{}}}'.format(parentFolderId)}, files={"mediaUpload": open(inReferencePath(filePath), "rb")}, headers={"Authorization": "Bearer {}".format(httpUser.token), "Connection": "keep-alive"})
+def uploadFile(httpUser, parentFolderId, binaryFile, filename):
+    return httpUser.client.post(url="/u", name="Upload file", data={"mediaUpload": '{{"folderId":{}}}'.format(parentFolderId)}, files={"mediaUpload": (filename, binaryFile)}, headers={"Authorization": "Bearer {}".format(httpUser.token), "Connection": "keep-alive"})

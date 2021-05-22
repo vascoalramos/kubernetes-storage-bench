@@ -5,7 +5,6 @@ import actions.graphqlQueries as graphqlQueries
 
 GENERATED_FOLDER_PREFIX = "locust-"
 
-
 def loadPage(httpUser, page):
     # Prepare url
     if page[0] != "/":
@@ -27,7 +26,7 @@ def generateComment(httpUser, pageId, commentLength=200):
     return graphqlQueries.comment(httpUser, pageId, comment)
 
 
-def generatePage(httpUser, contentInstancesPerCategory=10, isRandom=True):
+def generatePage(httpUser, dataset, contentInstancesPerCategory=10, constant=False):
     # Function that fills a template with a value
     def fillTemplate(template, value, tracker_set=None):
         # Add value to set
@@ -38,8 +37,8 @@ def generatePage(httpUser, contentInstancesPerCategory=10, isRandom=True):
         return template.replace("PLACEHOLDER", value)
 
     # Function to calculate how many content instances depending on "random" flag
-    def randomOrDefault(content_instances_per_category, isRandom):
-        return random.randint(math.floor(content_instances_per_category/2), content_instances_per_category) if isRandom else content_instances_per_category
+    def randomOrDefault(content_instances_per_category, constant):
+        return random.randint(math.floor(content_instances_per_category/2), content_instances_per_category) if constant else content_instances_per_category
 
     # Generate random folder to save content
     slug = GENERATED_FOLDER_PREFIX + ''.join(random.choice(string.ascii_lowercase + string.digits) for _ in range(10))
@@ -61,41 +60,34 @@ def generatePage(httpUser, contentInstancesPerCategory=10, isRandom=True):
     assert folder != None
 
     # Create sets to keep record of which files to upload later, list with existing content options and templates
-    content, page_template, icons = [], common.readFile("templates/index.html"), os.listdir(common.inReferencePath("assets/icons"))
-    images, all_images, image_template = set(), os.listdir(common.inReferencePath("assets/images")), common.readFile("templates/img.html")
-    videos, all_videos, video_template = set(), os.listdir(common.inReferencePath("assets/videos")), common.readFile("templates/video.html")
-    audios, all_audios, audio_template = set(), os.listdir(common.inReferencePath("assets/audios")), common.readFile("templates/audio.html")
-    gifs, all_gifs, gif_template = set(), os.listdir(common.inReferencePath("assets/gifs")), common.readFile("templates/gif.html")
-    all_texts, text_template = os.listdir(common.inReferencePath("assets/texts")), common.readFile("templates/text.html")
-
-    # Shufle content
-    random.shuffle(all_images)
-    random.shuffle(all_videos)
-    random.shuffle(all_audios)
-    random.shuffle(all_gifs)
-    random.shuffle(all_texts)
+    content, page_template, icons = [], common.readFile("templates/index.html"), dataset["icons"]
+    images, image_template, all_images = set(), common.readFile("templates/img.html"), dataset["images"]
+    videos, video_template, all_videos = set(), common.readFile("templates/video.html"), dataset["videos"]
+    audios, audio_template, all_audios = set(), common.readFile("templates/audio.html"), dataset["audios"]
+    gifs, gif_template, all_gifs = set(), common.readFile("templates/gif.html"), dataset["gifs"]
+    all_texts, text_template = dataset["texts"], common.readFile("templates/text.html")
     
     # Add content
-    content += [fillTemplate(image_template, random.choice(all_images) if isRandom else all_images[i], images)
-                for i in range(randomOrDefault(contentInstancesPerCategory, isRandom))]
-    content += [fillTemplate(video_template, random.choice(all_videos) if isRandom else all_videos[i], videos)
-                for i in range(randomOrDefault(contentInstancesPerCategory, isRandom))]
-    content += [fillTemplate(audio_template, random.choice(all_audios) if isRandom else all_audios[i], audios)
-                for i in range(randomOrDefault(contentInstancesPerCategory, isRandom))]
-    content += [fillTemplate(gif_template, random.choice(all_gifs) if isRandom else all_gifs[i], gifs) 
-                for i in range(randomOrDefault(contentInstancesPerCategory, isRandom))]
-    content += [fillTemplate(text_template, common.readFile("assets/texts/{}".format(random.choice(all_texts) if isRandom else all_texts[i]))) 
-                for i in range(randomOrDefault(contentInstancesPerCategory, isRandom))]
+    content += [fillTemplate(image_template, random.choice(list(all_images.keys())), images)
+                for i in range(randomOrDefault(contentInstancesPerCategory, constant))]
+    content += [fillTemplate(video_template, random.choice(list(all_videos.keys())), videos)
+                for i in range(randomOrDefault(contentInstancesPerCategory, constant))]
+    content += [fillTemplate(audio_template, random.choice(list(all_audios.keys())), audios)
+                for i in range(randomOrDefault(contentInstancesPerCategory, constant))]
+    content += [fillTemplate(gif_template, random.choice(list(all_gifs.keys())), gifs) 
+                for i in range(randomOrDefault(contentInstancesPerCategory, constant))]
+    content += [fillTemplate(text_template, (random.choice(list(map(lambda x: str(x), all_texts.values())))))
+                for i in range(randomOrDefault(contentInstancesPerCategory, constant))]
 
     # Shuffle content list
     random.shuffle(content)
 
     # Upload files
-    [graphqlQueries.uploadFile(httpUser, folder["id"], "assets/images/{}".format(asset)) for asset in images]
-    [graphqlQueries.uploadFile(httpUser, folder["id"], "assets/videos/{}".format(asset)) for asset in videos]
-    [graphqlQueries.uploadFile(httpUser, folder["id"], "assets/audios/{}".format(asset)) for asset in audios]
-    [graphqlQueries.uploadFile(httpUser, folder["id"], "assets/gifs/{}".format(asset)) for asset in gifs]
-    [graphqlQueries.uploadFile(httpUser, folder["id"], "assets/icons/{}".format(icon)) for icon in icons]
+    [graphqlQueries.uploadFile(httpUser, folder["id"], all_images[asset], asset) for asset in images]
+    [graphqlQueries.uploadFile(httpUser, folder["id"], all_videos[asset], asset) for asset in videos]
+    [graphqlQueries.uploadFile(httpUser, folder["id"], all_audios[asset], asset) for asset in audios]
+    [graphqlQueries.uploadFile(httpUser, folder["id"], all_gifs[asset], asset) for asset in gifs]
+    [graphqlQueries.uploadFile(httpUser, folder["id"], icons[icon], icon) for icon in icons.keys()]
 
     # Fill content to index template and create page
     page = page_template.replace("PLACEHOLDER", '\n'.join(content))
