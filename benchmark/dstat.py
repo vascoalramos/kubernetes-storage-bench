@@ -13,8 +13,6 @@ if __name__ == "__main__":
     output_file = sys.argv[1]
     duration_in_minutes = int(sys.argv[2])
 
-    print(sys.argv[1])
-
     # Print headers to know which values correspond to what metrics
     print(HEADERS)
 
@@ -57,7 +55,6 @@ if __name__ == "__main__":
     except:
         # Print error
         print(sys.exc_info()[0])
-        print(output)
 
         # Tranform to CSV lines
         entries = map(lambda x: ",".join(x)+"\n", entries)
