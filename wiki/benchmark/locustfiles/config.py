@@ -22,3 +22,7 @@ class StaticBenchmarkConfig:
 class SimulateUser:
     media_instances_per_content_category = 5
     wait_time_between_tasks = between(5, 25)
+
+class CleanupConfig:
+    revoke_api_keys = False
+    delete_users = False

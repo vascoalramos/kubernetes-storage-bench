@@ -1,7 +1,0 @@
-custody_of_a_knight, _.py:744, '', np.mean(t, 2) }; __str__ = str; endgame(); __func__ = '__str__(str, n)', __str__, { __str_t: '#, '} }, 100, 4999): print:__str__(["$", [__$]).append(py.rstrip().replace('#', '#'))).replace('$', []), '$', 100), "$" }; # python 2.6
-
-2.11.9.8 (2016-08-16): add support for nested sequences
-
-4.0.0-alpha0 (2015-09-03): added a support for sequences and nested sequences (1.9, 3.2). 2.12.6 (2015-09-11): added support for nested sequences (1.9, 3.2).
-
-2.12.5 (2013-09-09): added Python support for sequences and nested sequences. The Python interpreter in this version also supports sequences. Python version 2.12.6 includes two new support files [py.rstrip] and [py.rstrip@6f3f5b] . 2.15.2 (2013-11-03): added support for nested sequences by default from 1.9 to Python 2.6. This change
