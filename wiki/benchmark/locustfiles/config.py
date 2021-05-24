@@ -12,16 +12,16 @@ class AuthConfig:
     admin_password = "admin1234"
     
 class SetupConfig:
-    generate_users_count = 200
+    generate_users_count = 50
 
 class StaticBenchmarkConfig:
-    write_page_wait_seconds = constant(10)
-    read_page_wait_seconds = constant(5)
-    media_instances_per_content_category = 5
+    write_page_wait_seconds = constant(15)
+    read_page_wait_seconds = constant(10)
+    media_instances_per_content_category = 4
 
 class SimulateUser:
-    media_instances_per_content_category = 5
-    wait_time_between_tasks = between(5, 25)
+    media_instances_per_content_category = 4
+    wait_time_between_tasks = between(10, 25)
 
 class CleanupConfig:
     revoke_api_keys = False
