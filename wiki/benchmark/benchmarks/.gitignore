@@ -1,0 +1,5 @@
+# Ignore benchmarks
+# This is a temporary folder, all benchmarks output is located in benchmark/wiki
+*
+# Keep tracking .gitignore
+!.gitignore

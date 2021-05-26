@@ -5,7 +5,7 @@ import random
 import actions
 
 
-class StaticBenchmarkWrite(HttpUser):
+class StaticBenchmarkRead(HttpUser):
     wait_time = StaticBenchmarkConfig.read_page_wait_seconds
 
     def on_start(self):
