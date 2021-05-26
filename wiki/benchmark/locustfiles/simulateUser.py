@@ -4,7 +4,7 @@ from config import AuthConfig, Auth, SimulateUser
 import actions, random
 import actions.loadAssets as dataset
 
-class StaticBenchmarkWrite(HttpUser):
+class SimulateUserBenchmark(HttpUser):
     wait_time = SimulateUser.wait_time_between_tasks
 
     def on_start(self):
