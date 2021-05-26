@@ -58,13 +58,13 @@ if __name__ == "__main__":
         print("Starting monitoring tools...")
         for machine in CLUSTER_MACHINES:
             with open(f"{folder}/logs/{machine}_metrics.log", "w") as log: 
-                metrics.append(subprocess.Popen(f"ssh gsd@{machine} collectl -i 5 -c 204 -oT -scmn -P --sep ',' > {folder}/{machine}_{scenario}_{users}_system.csv",
+                metrics.append(subprocess.Popen(f'ssh gsd@{machine} "collectl -i 5 -c 204 -oT -scmn -P --sep ," > {folder}/{machine}_{scenario}_{users}_system.csv',
                     shell=True, stdout=log, stderr=log))
 
         # Start monitoring storage
         for machine in STORAGE_MACHINES:
             with open(f"{folder}/logs/{machine}_metrics.log", "w") as log: 
-                metrics.append(subprocess.Popen(f"ssh gsd@{machine} collectl -i 5 -c 204 -oT -sd --dskfilt nvme0n1 -P --sep ',' > {folder}/{machine}_{scenario}_{users}_io.csv",
+                metrics.append(subprocess.Popen(f'ssh gsd@{machine} "collectl -i 5 -c 204 -oT -sd --dskfilt nvme0n1 -P --sep ," > {folder}/{machine}_{scenario}_{users}_io.csv',
                     shell=True, stdout=log, stderr=log))
 
         # Collect some data before test starts
@@ -72,12 +72,12 @@ if __name__ == "__main__":
         sleep(50)
 
         # Start locust workers
+        print("Starting Locust workers...")
         for machine in LOCUST_MACHINES:
             # Locust sugests one worker per CPU core
-            print("Starting Locust workers...")
             for i in range(LOCUST_MACHINES_CORES):
                 with open(f"{folder}/logs/{machine}_locust_worker{i}.log", "w") as log: 
-                    workers.append(subprocess.Popen(f"ssh gsd@{machine} cd benchmark/wiki; locust --conf={scenario}Worker.conf --master-host={ip}",
+                    workers.append(subprocess.Popen(f'ssh gsd@{machine} "cd benchmark/wiki; locust --conf={scenario}Worker.conf --master-host={ip}"',
                         shell=True, stdout=log, stderr=log))
 
         # Start locust master
