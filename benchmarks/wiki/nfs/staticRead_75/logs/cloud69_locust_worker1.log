@@ -1,0 +1,38 @@
+[2021-05-27 15:53:22,377] cloud69/WARNING/locust.main: System open file limit '1024' is below minimum setting '10000'. It's not high enough for load testing, and the OS didn't allow locust to increase it by itself. See https://github.com/locustio/locust/wiki/Installation#increasing-maximum-number-of-open-files-limit for more info.
+[2021-05-27 15:53:22,378] cloud69/INFO/locust.main: Starting Locust 1.5.3
+[2021-05-27 15:53:23,424] cloud69/INFO/locust.runners: Spawning 18 users at the rate 0.375 users/s (0 users already running)...
+[2021-05-27 15:54:08,774] cloud69/INFO/locust.runners: All users spawned: StaticBenchmarkRead: 18 (18 total running)
+[2021-05-27 16:03:35,268] cloud69/ERROR/locust.user.task: list index out of range
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticRead.py", line 14, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 119, in getSinglePage
+    return graphqlQueries.pageTreeInParent(httpUser, folder["id"])[0]
+IndexError: list index out of range
+
+[2021-05-27 16:03:35,350] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticRead.py", line 20, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-05-27 16:08:23,439] cloud69/INFO/locust.runners: Stopping 18 users
+[2021-05-27 16:08:23,443] cloud69/INFO/locust.runners: 18 Users have been stopped, 0 still running
+[2021-05-27 16:08:23,444] cloud69/INFO/locust.runners: Got quit message from master, shutting down...
+[2021-05-27 16:08:23,444] cloud69/INFO/locust.main: Running teardowns...
+[2021-05-27 16:08:23,444] cloud69/INFO/locust.main: Shutting down (exit code 0), bye.
+[2021-05-27 16:08:23,444] cloud69/INFO/locust.main: Cleaning up runner...

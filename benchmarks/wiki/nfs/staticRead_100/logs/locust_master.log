@@ -1,0 +1,48 @@
+[2021-05-27 17:11:09,363] daniel-Lenovo/INFO/root: Waiting for workers to be ready, 0 of 4 connected
+[2021-05-27 17:11:09,851] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_d668786d65e4479398213bc61c509c38' reported as ready. Currently 1 clients ready to swarm.
+[2021-05-27 17:11:09,852] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_26dc4565f5f642e2bb1526ae5fe2ab98' reported as ready. Currently 2 clients ready to swarm.
+[2021-05-27 17:11:10,365] daniel-Lenovo/INFO/root: Waiting for workers to be ready, 2 of 4 connected
+[2021-05-27 17:11:10,481] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_237c278219b04a89a6d37320e1eba368' reported as ready. Currently 3 clients ready to swarm.
+[2021-05-27 17:11:10,482] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_134012d6bbd24671a3c886d860ad7ef6' reported as ready. Currently 4 clients ready to swarm.
+[2021-05-27 17:11:11,366] daniel-Lenovo/INFO/locust.runners: Sending spawn jobs of 25 users and 0.50 spawn rate to 4 ready clients
+[2021-05-27 17:11:11,367] daniel-Lenovo/INFO/locust.main: Run time limit set to 900 seconds
+[2021-05-27 17:11:11,367] daniel-Lenovo/INFO/locust.main: Starting Locust 1.4.3
+[2021-05-27 17:26:11,366] daniel-Lenovo/INFO/locust.main: Time limit reached. Stopping Locust.
+[2021-05-27 17:26:11,389] daniel-Lenovo/INFO/locust.runners: Removing cloud50_26dc4565f5f642e2bb1526ae5fe2ab98 client from running clients
+[2021-05-27 17:26:11,389] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_26dc4565f5f642e2bb1526ae5fe2ab98' reported as ready. Currently 4 clients ready to swarm.
+[2021-05-27 17:26:11,392] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_26dc4565f5f642e2bb1526ae5fe2ab98' quit. Currently 0 clients connected.
+[2021-05-27 17:26:11,393] daniel-Lenovo/INFO/locust.runners: Removing cloud69_134012d6bbd24671a3c886d860ad7ef6 client from running clients
+[2021-05-27 17:26:11,393] daniel-Lenovo/INFO/locust.runners: Removing cloud69_237c278219b04a89a6d37320e1eba368 client from running clients
+[2021-05-27 17:26:11,394] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_134012d6bbd24671a3c886d860ad7ef6' reported as ready. Currently 2 clients ready to swarm.
+[2021-05-27 17:26:11,394] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_237c278219b04a89a6d37320e1eba368' reported as ready. Currently 3 clients ready to swarm.
+[2021-05-27 17:26:11,395] daniel-Lenovo/INFO/locust.runners: Removing cloud50_d668786d65e4479398213bc61c509c38 client from running clients
+[2021-05-27 17:26:11,396] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_134012d6bbd24671a3c886d860ad7ef6' quit. Currently 1 clients connected.
+[2021-05-27 17:26:11,396] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_237c278219b04a89a6d37320e1eba368' quit. Currently 0 clients connected.
+[2021-05-27 17:26:11,397] daniel-Lenovo/INFO/locust.runners: The last worker quit, stopping test.
+[2021-05-27 17:26:11,924] daniel-Lenovo/INFO/locust.main: Running teardowns...
+[2021-05-27 17:26:12,425] daniel-Lenovo/INFO/locust.main: Shutting down (exit code 1), bye.
+[2021-05-27 17:26:12,425] daniel-Lenovo/INFO/locust.main: Cleaning up runner...
+ Name                                                          # reqs      # fails  |     Avg     Min     Max  Median  |   req/s failures/s
+--------------------------------------------------------------------------------------------------------------------------------------------
+ GET Load content                                              133266     0(0.00%)  |      62       2    3995      16  |  148.07    0.00
+ GET Load page                                                   6704    39(0.58%)  |      76      22     446      66  |    7.45    0.04
+ POST Query Page Tree                                           13473     1(0.01%)  |      36       3  129931      20  |   14.97    0.00
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregated                                                    153443    40(0.03%)  |      60       2  129931      18  |  170.49    0.04
+
+Response time percentiles (approximated)
+ Type     Name                                                              50%    66%    75%    80%    90%    95%    98%    99%  99.9% 99.99%   100% # reqs
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ GET      Load content                                                       16     34     58     81    150    250    450    680   1800   3000   4000 133266
+ GET      Load page                                                          66     81     92    100    130    160    200    240    340    450    450   6704
+ POST     Query Page Tree                                                    20     28     32     35     47     63     95    140   1000   1100 130000  13473
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ None     Aggregated                                                         18     37     57     77    140    230    410    630   1800   2900 130000 153443
+
+Error report
+ # occurrences      Error                                                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------
+ 39                 GET Load page: "HTTPError('500 Server Error: Internal Server Error for url: Load page')"            
+ 1                  POST Query Page Tree: 'ConnectionError(MaxRetryError("HTTPConnectionPool(host=\'cloud74\', port=30002): Max retries exceeded with url: /graphql (Caused by NewConnectionError(\'<urllib3.connection.HTTPConnection object at 0x....>: Failed to establish a new connection: [Errno 110] Connection timed out\'))"))'
+--------------------------------------------------------------------------------------------------------------------------------------------
+

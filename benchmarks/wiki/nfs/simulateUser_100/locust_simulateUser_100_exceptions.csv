@@ -1,0 +1,46 @@
+Count,Message,Traceback,Nodes
+646,Cannot choose from an empty sequence,"  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 290, in run
+    self.execute_next_task()
+  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 428, in execute_task
+    task(self.user)
+  File ""/home/gsd/benchmark/wiki/locustfiles/simulateUser.py"", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)[""path""])
+  File ""/usr/lib/python3.8/random.py"", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+","c, l, o, u, d, 5, 0, _, 1, 5, 2, 1, b, 0, 3, 7, e, b, 5, 4, 4, f, 4, d, 9, a, c, d, f, 4, 7, 2, 9, d, 5, 5, d, 2, a, 4, ,,  , c, l, o, u, d, 5, 0, _, 7, 3, 8, a, 5, 5, b, 4, 7, 8, e, d, 4, b, 4, 4, a, a, 3, 1, b, 8, 8, 5, 9, 5, f, e, 7, b, 4, 2"
+636,Cannot choose from an empty sequence,"  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 290, in run
+    self.execute_next_task()
+  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 428, in execute_task
+    task(self.user)
+  File ""/home/gsd/benchmark/wiki/locustfiles/simulateUser.py"", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)[""path""])
+  File ""/usr/lib/python3.8/random.py"", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+","c, l, o, u, d, 6, 9, _, d, 9, 2, a, c, d, d, 2, 3, 0, 7, a, 4, a, 0, 9, b, b, c, 1, 6, 5, 9, 6, 3, 0, b, 9, a, 6, a, c, ,,  , c, l, o, u, d, 6, 9, _, 3, 9, c, 2, 0, 2, 7, c, 3, e, a, e, 4, 0, 0, 2, 9, 7, e, 5, a, 6, 6, d, 4, 1, 5, 8, a, 3, 5, f"
+2,Expecting value: line 1 column 1 (char 0),"  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 290, in run
+    self.execute_next_task()
+  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 428, in execute_task
+    task(self.user)
+  File ""/home/gsd/benchmark/wiki/locustfiles/simulateUser.py"", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File ""/home/gsd/benchmark/wiki/locustfiles/actions/content.py"", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x[""title""], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File ""/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py"", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, ""Query Page Tree"", readFile(""queries/pageTreeInParent.graphql""), {""parent"": parent})[""data""][""pages""][""tree""]
+  File ""/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py"", line 6, in graphqlQuery
+    return httpUser.client.post(url=""/graphql"", name=name, json={""query"": query, ""variables"": variables}, headers={""Connection"": ""keep-alive"", ""Authorization"": ""Bearer {}"".format(httpUser.token if hasattr(httpUser, ""token"") and auth else """")}).json()
+  File ""/usr/lib/python3/dist-packages/requests/models.py"", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File ""/usr/lib/python3.8/json/__init__.py"", line 357, in loads
+    return _default_decoder.decode(s)
+  File ""/usr/lib/python3.8/json/decoder.py"", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File ""/usr/lib/python3.8/json/decoder.py"", line 355, in raw_decode
+    raise JSONDecodeError(""Expecting value"", s, err.value) from None
+","c, l, o, u, d, 5, 0, _, 1, 5, 2, 1, b, 0, 3, 7, e, b, 5, 4, 4, f, 4, d, 9, a, c, d, f, 4, 7, 2, 9, d, 5, 5, d, 2, a, 4, ,,  , c, l, o, u, d, 5, 0, _, 7, 3, 8, a, 5, 5, b, 4, 7, 8, e, d, 4, b, 4, 4, a, a, 3, 1, b, 8, 8, 5, 9, 5, f, e, 7, b, 4, 2"

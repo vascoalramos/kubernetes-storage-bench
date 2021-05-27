@@ -1,0 +1,3 @@
+Method,Name,Error,Occurrences
+POST,Create Folder,HTTPError('500 Server Error: Internal Server Error for url: Create Folder'),678
+POST,List Folders,HTTPError('500 Server Error: Internal Server Error for url: List Folders'),678

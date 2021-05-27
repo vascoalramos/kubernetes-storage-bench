@@ -1,0 +1,52 @@
+[2021-05-27 13:23:24,886] daniel-Lenovo/INFO/root: Waiting for workers to be ready, 0 of 4 connected
+[2021-05-27 13:23:25,486] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_18151401e24f4c28af2345e1e74a11d8' reported as ready. Currently 1 clients ready to swarm.
+[2021-05-27 13:23:25,486] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_8a9172ef59ca494f9c79f626507f7f1c' reported as ready. Currently 2 clients ready to swarm.
+[2021-05-27 13:23:25,887] daniel-Lenovo/INFO/root: Waiting for workers to be ready, 2 of 4 connected
+[2021-05-27 13:23:25,918] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_c42cdff6ae034af1a18298a199e1af94' reported as ready. Currently 3 clients ready to swarm.
+[2021-05-27 13:23:25,918] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_2568858c692c457fadcf46e571c4d6c3' reported as ready. Currently 4 clients ready to swarm.
+[2021-05-27 13:23:26,888] daniel-Lenovo/INFO/locust.runners: Sending spawn jobs of 18 users and 0.38 spawn rate to 4 ready clients
+[2021-05-27 13:23:26,889] daniel-Lenovo/INFO/locust.main: Run time limit set to 900 seconds
+[2021-05-27 13:23:26,890] daniel-Lenovo/INFO/locust.main: Starting Locust 1.4.3
+[2021-05-27 13:38:26,889] daniel-Lenovo/INFO/locust.main: Time limit reached. Stopping Locust.
+[2021-05-27 13:38:26,921] daniel-Lenovo/INFO/locust.runners: Removing cloud50_18151401e24f4c28af2345e1e74a11d8 client from running clients
+[2021-05-27 13:38:26,922] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_18151401e24f4c28af2345e1e74a11d8' reported as ready. Currently 4 clients ready to swarm.
+[2021-05-27 13:38:26,922] daniel-Lenovo/INFO/locust.runners: Removing cloud69_c42cdff6ae034af1a18298a199e1af94 client from running clients
+[2021-05-27 13:38:26,922] daniel-Lenovo/INFO/locust.runners: Removing cloud69_2568858c692c457fadcf46e571c4d6c3 client from running clients
+[2021-05-27 13:38:26,923] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_c42cdff6ae034af1a18298a199e1af94' reported as ready. Currently 3 clients ready to swarm.
+[2021-05-27 13:38:26,923] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_2568858c692c457fadcf46e571c4d6c3' reported as ready. Currently 4 clients ready to swarm.
+[2021-05-27 13:38:26,923] daniel-Lenovo/INFO/locust.runners: Removing cloud50_8a9172ef59ca494f9c79f626507f7f1c client from running clients
+[2021-05-27 13:38:26,924] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_18151401e24f4c28af2345e1e74a11d8' quit. Currently 2 clients connected.
+[2021-05-27 13:38:26,924] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_8a9172ef59ca494f9c79f626507f7f1c' reported as ready. Currently 3 clients ready to swarm.
+[2021-05-27 13:38:26,925] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_c42cdff6ae034af1a18298a199e1af94' quit. Currently 2 clients connected.
+[2021-05-27 13:38:26,925] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_2568858c692c457fadcf46e571c4d6c3' quit. Currently 1 clients connected.
+[2021-05-27 13:38:26,925] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_8a9172ef59ca494f9c79f626507f7f1c' quit. Currently 0 clients connected.
+[2021-05-27 13:38:26,925] daniel-Lenovo/INFO/locust.runners: The last worker quit, stopping test.
+[2021-05-27 13:38:27,467] daniel-Lenovo/INFO/locust.main: Running teardowns...
+[2021-05-27 13:38:27,969] daniel-Lenovo/INFO/locust.main: Shutting down (exit code 1), bye.
+[2021-05-27 13:38:27,969] daniel-Lenovo/INFO/locust.main: Cleaning up runner...
+ Name                                                          # reqs      # fails  |     Avg     Min     Max  Median  |   req/s failures/s
+--------------------------------------------------------------------------------------------------------------------------------------------
+ POST Create Folder                                              1892  678(35.84%)  |      90       3    4984      40  |    2.10    0.75
+ POST Create Page                                                1177     0(0.00%)  |   13649    1712   71780   11000  |    1.31    0.00
+ POST List Folders                                               1892  678(35.84%)  |      62       2    1542      32  |    2.10    0.75
+ POST Upload file                                               12994     0(0.00%)  |     963      20   40138     350  |   14.44    0.00
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregated                                                     17955  1356(7.55%)  |    1607       2   71780     270  |   19.95    1.51
+
+Response time percentiles (approximated)
+ Type     Name                                                              50%    66%    75%    80%    90%    95%    98%    99%  99.9% 99.99%   100% # reqs
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ POST     Create Folder                                                      40     68     92    110    200    380    600    770   1900   5000   5000   1892
+ POST     Create Page                                                     11000  14000  16000  19000  25000  39000  49000  51000  60000  72000  72000   1177
+ POST     List Folders                                                       32     48     65     81    140    220    480    600   1300   1500   1500   1892
+ POST     Upload file                                                       350    640   1000   1300   2300   3400   5700   8200  33000  40000  40000  12994
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ None     Aggregated                                                        270    560    980   1400   3300   8200  16000  23000  50000  60000  72000  17955
+
+Error report
+ # occurrences      Error                                                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------
+ 678                POST Create Folder: "HTTPError('500 Server Error: Internal Server Error for url: Create Folder')"   
+ 678                POST List Folders: "HTTPError('500 Server Error: Internal Server Error for url: List Folders')"     
+--------------------------------------------------------------------------------------------------------------------------------------------
+

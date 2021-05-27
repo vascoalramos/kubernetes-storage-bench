@@ -1,0 +1,96 @@
+Count,Message,Traceback,Nodes
+1,'NoneType' object is not subscriptable,"  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 290, in run
+    self.execute_next_task()
+  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 428, in execute_task
+    task(self.user)
+  File ""/home/gsd/benchmark/wiki/locustfiles/simulateUser.py"", line 26, in writePage
+    actions.generatePage(self, dataset.data, SimulateUser.media_instances_per_content_category, False)
+  File ""/home/gsd/benchmark/wiki/locustfiles/actions/content.py"", line 88, in generatePage
+    return graphqlQueries.createPage(httpUser, ""{}/index"".format(slug), ""Generated page"", page, tags=[""locust""])[""data""][""pages""][""create""][""page""][""id""]
+","c, l, o, u, d, 6, 9, _, d, 6, a, 5, 7, 3, 1, 3, 3, b, 7, 3, 4, f, 0, 0, 9, 0, 1, 6, 0, c, 1, 8, d, 9, 2, 8, e, a, 2, 1"
+79,Cannot choose from an empty sequence,"  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 290, in run
+    self.execute_next_task()
+  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 428, in execute_task
+    task(self.user)
+  File ""/home/gsd/benchmark/wiki/locustfiles/simulateUser.py"", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)[""path""])
+  File ""/usr/lib/python3.8/random.py"", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+","c, l, o, u, d, 5, 0, _, e, b, 2, 7, d, 0, a, b, 6, 3, 5, 0, 4, 0, 4, 7, 8, 1, 6, 8, 1, a, 8, e, c, d, 0, d, 4, 6, 7, 3, ,,  , c, l, o, u, d, 5, 0, _, d, b, 6, 3, 6, 6, 7, 8, 3, e, b, b, 4, f, 0, 4, a, 5, f, 5, 9, 1, 2, f, 5, 3, a, 6, 6, d, 9, e"
+91,Cannot choose from an empty sequence,"  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 290, in run
+    self.execute_next_task()
+  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 428, in execute_task
+    task(self.user)
+  File ""/home/gsd/benchmark/wiki/locustfiles/simulateUser.py"", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)[""path""])
+  File ""/usr/lib/python3.8/random.py"", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+","c, l, o, u, d, 6, 9, _, d, 6, a, 5, 7, 3, 1, 3, 3, b, 7, 3, 4, f, 0, 0, 9, 0, 1, 6, 0, c, 1, 8, d, 9, 2, 8, e, a, 2, 1, ,,  , c, l, o, u, d, 6, 9, _, f, f, a, 9, d, a, f, 0, f, 6, d, 5, 4, a, e, 2, b, 5, 6, 9, 4, d, 9, a, f, d, 7, e, 1, 6, 0, 8"
+3,'data',"  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 290, in run
+    self.execute_next_task()
+  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 428, in execute_task
+    task(self.user)
+  File ""/home/gsd/benchmark/wiki/locustfiles/simulateUser.py"", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File ""/home/gsd/benchmark/wiki/locustfiles/actions/content.py"", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x[""title""], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File ""/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py"", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, ""Query Page Tree"", readFile(""queries/pageTreeInParent.graphql""), {""parent"": parent})[""data""][""pages""][""tree""]
+","c, l, o, u, d, 5, 0, _, e, b, 2, 7, d, 0, a, b, 6, 3, 5, 0, 4, 0, 4, 7, 8, 1, 6, 8, 1, a, 8, e, c, d, 0, d, 4, 6, 7, 3, ,,  , c, l, o, u, d, 5, 0, _, d, b, 6, 3, 6, 6, 7, 8, 3, e, b, b, 4, f, 0, 4, a, 5, f, 5, 9, 1, 2, f, 5, 3, a, 6, 6, d, 9, e"
+2,'data',"  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 290, in run
+    self.execute_next_task()
+  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 428, in execute_task
+    task(self.user)
+  File ""/home/gsd/benchmark/wiki/locustfiles/simulateUser.py"", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File ""/home/gsd/benchmark/wiki/locustfiles/actions/content.py"", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x[""title""], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File ""/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py"", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, ""Query Page Tree"", readFile(""queries/pageTreeInParent.graphql""), {""parent"": parent})[""data""][""pages""][""tree""]
+","c, l, o, u, d, 6, 9, _, f, f, a, 9, d, a, f, 0, f, 6, d, 5, 4, a, e, 2, b, 5, 6, 9, 4, d, 9, a, f, d, 7, e, 1, 6, 0, 8"
+1,'data',"  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 290, in run
+    self.execute_next_task()
+  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 428, in execute_task
+    task(self.user)
+  File ""/home/gsd/benchmark/wiki/locustfiles/simulateUser.py"", line 26, in writePage
+    actions.generatePage(self, dataset.data, SimulateUser.media_instances_per_content_category, False)
+  File ""/home/gsd/benchmark/wiki/locustfiles/actions/content.py"", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File ""/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py"", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, ""List Folders"", readFile(""queries/listFoldersInParent.graphql""), {""parentFolderId"": parent})[""data""][""assets""][""folders""]
+","c, l, o, u, d, 6, 9, _, d, 6, a, 5, 7, 3, 1, 3, 3, b, 7, 3, 4, f, 0, 0, 9, 0, 1, 6, 0, c, 1, 8, d, 9, 2, 8, e, a, 2, 1"
+1,Expecting value: line 1 column 1 (char 0),"  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 290, in run
+    self.execute_next_task()
+  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 428, in execute_task
+    task(self.user)
+  File ""/home/gsd/benchmark/wiki/locustfiles/simulateUser.py"", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File ""/home/gsd/benchmark/wiki/locustfiles/actions/content.py"", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x[""title""], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File ""/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py"", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, ""Query Page Tree"", readFile(""queries/pageTreeInParent.graphql""), {""parent"": parent})[""data""][""pages""][""tree""]
+  File ""/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py"", line 6, in graphqlQuery
+    return httpUser.client.post(url=""/graphql"", name=name, json={""query"": query, ""variables"": variables}, headers={""Connection"": ""keep-alive"", ""Authorization"": ""Bearer {}"".format(httpUser.token if hasattr(httpUser, ""token"") and auth else """")}).json()
+  File ""/usr/lib/python3/dist-packages/requests/models.py"", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File ""/usr/lib/python3.8/json/__init__.py"", line 357, in loads
+    return _default_decoder.decode(s)
+  File ""/usr/lib/python3.8/json/decoder.py"", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File ""/usr/lib/python3.8/json/decoder.py"", line 355, in raw_decode
+    raise JSONDecodeError(""Expecting value"", s, err.value) from None
+","c, l, o, u, d, 5, 0, _, d, b, 6, 3, 6, 6, 7, 8, 3, e, b, b, 4, f, 0, 4, a, 5, f, 5, 9, 1, 2, f, 5, 3, a, 6, 6, d, 9, e"

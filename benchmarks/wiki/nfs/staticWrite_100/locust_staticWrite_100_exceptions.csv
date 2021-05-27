@@ -1,0 +1,71 @@
+Count,Message,Traceback,Nodes
+54,'NoneType' object is not subscriptable,"  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 290, in run
+    self.execute_next_task()
+  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 428, in execute_task
+    task(self.user)
+  File ""/home/gsd/benchmark/wiki/locustfiles/staticWrite.py"", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File ""/home/gsd/benchmark/wiki/locustfiles/actions/content.py"", line 88, in generatePage
+    return graphqlQueries.createPage(httpUser, ""{}/index"".format(slug), ""Generated page"", page, tags=[""locust""])[""data""][""pages""][""create""][""page""][""id""]
+","c, l, o, u, d, 5, 0, _, e, 2, e, f, 2, c, f, 3, e, e, 1, 1, 4, 7, f, c, 9, 6, 8, 0, b, d, c, a, 3, 9, 1, 6, f, a, 9, 9, ,,  , c, l, o, u, d, 5, 0, _, 8, 6, d, 0, d, 8, c, e, 3, 5, 9, e, 4, 2, 4, a, 8, b, 7, 4, 5, f, 6, c, d, 3, b, 5, c, 8, f, a"
+3,'NoneType' object is not iterable,"  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 290, in run
+    self.execute_next_task()
+  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 428, in execute_task
+    task(self.user)
+  File ""/home/gsd/benchmark/wiki/locustfiles/staticWrite.py"", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File ""/home/gsd/benchmark/wiki/locustfiles/actions/content.py"", line 51, in generatePage
+    folder = next(filter(lambda folder: folder[""slug""] == slug, folders), None)
+","c, l, o, u, d, 6, 9, _, c, 5, 1, 0, e, 6, c, 7, f, b, e, 6, 4, 9, 9, 8, b, c, 4, 9, c, 3, 2, e, c, 3, e, 1, 2, 4, b, d, ,,  , c, l, o, u, d, 6, 9, _, 4, 4, 7, e, 4, e, 1, 8, 2, 6, 2, 6, 4, f, a, 1, 8, 6, 8, 5, 4, e, 5, e, c, 4, c, e, 0, 9, e, 2"
+202,'assets',"  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 290, in run
+    self.execute_next_task()
+  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 428, in execute_task
+    task(self.user)
+  File ""/home/gsd/benchmark/wiki/locustfiles/staticWrite.py"", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File ""/home/gsd/benchmark/wiki/locustfiles/actions/content.py"", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File ""/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py"", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, ""List Folders"", readFile(""queries/listFoldersInParent.graphql""), {""parentFolderId"": parent})[""data""][""assets""][""folders""]
+","c, l, o, u, d, 5, 0, _, e, 2, e, f, 2, c, f, 3, e, e, 1, 1, 4, 7, f, c, 9, 6, 8, 0, b, d, c, a, 3, 9, 1, 6, f, a, 9, 9, ,,  , c, l, o, u, d, 5, 0, _, 8, 6, d, 0, d, 8, c, e, 3, 5, 9, e, 4, 2, 4, a, 8, b, 7, 4, 5, f, 6, c, d, 3, b, 5, c, 8, f, a"
+169,'assets',"  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 290, in run
+    self.execute_next_task()
+  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 428, in execute_task
+    task(self.user)
+  File ""/home/gsd/benchmark/wiki/locustfiles/staticWrite.py"", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File ""/home/gsd/benchmark/wiki/locustfiles/actions/content.py"", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File ""/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py"", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, ""List Folders"", readFile(""queries/listFoldersInParent.graphql""), {""parentFolderId"": parent})[""data""][""assets""][""folders""]
+","c, l, o, u, d, 6, 9, _, c, 5, 1, 0, e, 6, c, 7, f, b, e, 6, 4, 9, 9, 8, b, c, 4, 9, c, 3, 2, e, c, 3, e, 1, 2, 4, b, d, ,,  , c, l, o, u, d, 6, 9, _, 4, 4, 7, e, 4, e, 1, 8, 2, 6, 2, 6, 4, f, a, 1, 8, 6, 8, 5, 4, e, 5, e, c, 4, c, e, 0, 9, e, 2"
+50,'NoneType' object is not subscriptable,"  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 290, in run
+    self.execute_next_task()
+  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 428, in execute_task
+    task(self.user)
+  File ""/home/gsd/benchmark/wiki/locustfiles/staticWrite.py"", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File ""/home/gsd/benchmark/wiki/locustfiles/actions/content.py"", line 88, in generatePage
+    return graphqlQueries.createPage(httpUser, ""{}/index"".format(slug), ""Generated page"", page, tags=[""locust""])[""data""][""pages""][""create""][""page""][""id""]
+","c, l, o, u, d, 6, 9, _, c, 5, 1, 0, e, 6, c, 7, f, b, e, 6, 4, 9, 9, 8, b, c, 4, 9, c, 3, 2, e, c, 3, e, 1, 2, 4, b, d, ,,  , c, l, o, u, d, 6, 9, _, 4, 4, 7, e, 4, e, 1, 8, 2, 6, 2, 6, 4, f, a, 1, 8, 6, 8, 5, 4, e, 5, e, c, 4, c, e, 0, 9, e, 2"
+1,'NoneType' object is not iterable,"  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 290, in run
+    self.execute_next_task()
+  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 428, in execute_task
+    task(self.user)
+  File ""/home/gsd/benchmark/wiki/locustfiles/staticWrite.py"", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File ""/home/gsd/benchmark/wiki/locustfiles/actions/content.py"", line 51, in generatePage
+    folder = next(filter(lambda folder: folder[""slug""] == slug, folders), None)
+","c, l, o, u, d, 5, 0, _, 8, 6, d, 0, d, 8, c, e, 3, 5, 9, e, 4, 2, 4, a, 8, b, 7, 4, 5, f, 6, c, d, 3, b, 5, c, 8, f, a"

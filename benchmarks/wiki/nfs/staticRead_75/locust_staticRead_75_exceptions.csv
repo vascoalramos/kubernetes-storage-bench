@@ -1,0 +1,45 @@
+Count,Message,Traceback,Nodes
+2,Cannot choose from an empty sequence,"  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 290, in run
+    self.execute_next_task()
+  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 428, in execute_task
+    task(self.user)
+  File ""/home/gsd/benchmark/wiki/locustfiles/staticRead.py"", line 20, in readPage
+    actions.loadPage(self, random.choice(pages)[""path""])
+  File ""/usr/lib/python3.8/random.py"", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+","c, l, o, u, d, 5, 0, _, 2, 7, a, 3, d, 2, 0, 1, b, f, 7, e, 4, e, 3, 7, a, 9, 7, 4, 2, 5, 2, 6, e, d, 1, 4, f, 1, 5, 8, ,,  , c, l, o, u, d, 5, 0, _, e, f, a, 2, c, f, c, c, a, c, a, b, 4, 1, 8, 6, 8, 0, e, c, 6, 2, a, a, 4, 0, 2, b, a, b, 4, 2"
+1,list index out of range,"  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 290, in run
+    self.execute_next_task()
+  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 428, in execute_task
+    task(self.user)
+  File ""/home/gsd/benchmark/wiki/locustfiles/staticRead.py"", line 14, in readPage
+    page = actions.getSinglePage(self)
+  File ""/home/gsd/benchmark/wiki/locustfiles/actions/content.py"", line 119, in getSinglePage
+    return graphqlQueries.pageTreeInParent(httpUser, folder[""id""])[0]
+","c, l, o, u, d, 6, 9, _, d, 1, 2, 3, 6, b, 3, 7, f, 9, 6, 3, 4, 1, 6, b, 8, e, f, 2, f, 0, 1, e, 4, c, c, 6, c, b, 4, b"
+3,Cannot choose from an empty sequence,"  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 290, in run
+    self.execute_next_task()
+  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File ""/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py"", line 428, in execute_task
+    task(self.user)
+  File ""/home/gsd/benchmark/wiki/locustfiles/staticRead.py"", line 20, in readPage
+    actions.loadPage(self, random.choice(pages)[""path""])
+  File ""/usr/lib/python3.8/random.py"", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+","c, l, o, u, d, 6, 9, _, 8, f, 0, e, 7, 5, 7, 4, 9, 2, 5, b, 4, 6, 9, a, a, f, 7, 5, e, d, a, 7, 1, 6, 4, c, b, d, 0, c, ,,  , c, l, o, u, d, 6, 9, _, d, 1, 2, 3, 6, b, 3, 7, f, 9, 6, 3, 4, 1, 6, b, 8, e, f, 2, f, 0, 1, e, 4, c, c, 6, c, b, 4, b"
+1,list index out of range,"  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 290, in run
+    self.execute_next_task()
+  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File ""/usr/local/lib/python3.8/dist-packages/locust/user/task.py"", line 428, in execute_task
+    task(self.user)
+  File ""/home/gsd/benchmark/wiki/locustfiles/staticRead.py"", line 14, in readPage
+    page = actions.getSinglePage(self)
+  File ""/home/gsd/benchmark/wiki/locustfiles/actions/content.py"", line 119, in getSinglePage
+    return graphqlQueries.pageTreeInParent(httpUser, folder[""id""])[0]
+","c, l, o, u, d, 5, 0, _, e, f, a, 2, c, f, c, c, a, c, a, b, 4, 1, 8, 6, 8, 0, e, c, 6, 2, a, a, 4, 0, 2, b, a, b, 4, 2"

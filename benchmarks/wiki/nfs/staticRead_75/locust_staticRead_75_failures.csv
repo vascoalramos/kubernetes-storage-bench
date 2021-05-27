@@ -1,0 +1,3 @@
+Method,Name,Error,Occurrences
+GET,Load page,HTTPError('500 Server Error: Internal Server Error for url: Load page'),26
+GET,Load content,"ConnectionError(ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))",1

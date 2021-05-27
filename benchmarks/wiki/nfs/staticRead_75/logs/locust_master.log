@@ -1,0 +1,51 @@
+[2021-05-27 16:53:20,425] daniel-Lenovo/INFO/root: Waiting for workers to be ready, 0 of 4 connected
+[2021-05-27 16:53:21,427] daniel-Lenovo/INFO/root: Waiting for workers to be ready, 0 of 4 connected
+[2021-05-27 16:53:21,441] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_27a3d201bf7e4e37a9742526ed14f158' reported as ready. Currently 1 clients ready to swarm.
+[2021-05-27 16:53:21,441] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_efa2cfccacab418680ec62aa402bab42' reported as ready. Currently 2 clients ready to swarm.
+[2021-05-27 16:53:21,810] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_8f0e7574925b469aaf75eda7164cbd0c' reported as ready. Currently 3 clients ready to swarm.
+[2021-05-27 16:53:22,429] daniel-Lenovo/INFO/root: Waiting for workers to be ready, 3 of 4 connected
+[2021-05-27 16:53:22,613] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_d1236b37f963416b8ef2f01e4cc6cb4b' reported as ready. Currently 4 clients ready to swarm.
+[2021-05-27 16:53:23,429] daniel-Lenovo/INFO/locust.runners: Sending spawn jobs of 18 users and 0.38 spawn rate to 4 ready clients
+[2021-05-27 16:53:23,431] daniel-Lenovo/INFO/locust.main: Run time limit set to 900 seconds
+[2021-05-27 16:53:23,431] daniel-Lenovo/INFO/locust.main: Starting Locust 1.4.3
+[2021-05-27 17:08:23,430] daniel-Lenovo/INFO/locust.main: Time limit reached. Stopping Locust.
+[2021-05-27 17:08:23,452] daniel-Lenovo/INFO/locust.runners: Removing cloud50_27a3d201bf7e4e37a9742526ed14f158 client from running clients
+[2021-05-27 17:08:23,453] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_27a3d201bf7e4e37a9742526ed14f158' reported as ready. Currently 4 clients ready to swarm.
+[2021-05-27 17:08:23,457] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_27a3d201bf7e4e37a9742526ed14f158' quit. Currently 0 clients connected.
+[2021-05-27 17:08:23,458] daniel-Lenovo/INFO/locust.runners: Removing cloud50_efa2cfccacab418680ec62aa402bab42 client from running clients
+[2021-05-27 17:08:23,459] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_efa2cfccacab418680ec62aa402bab42' reported as ready. Currently 3 clients ready to swarm.
+[2021-05-27 17:08:23,460] daniel-Lenovo/INFO/locust.runners: Removing cloud69_d1236b37f963416b8ef2f01e4cc6cb4b client from running clients
+[2021-05-27 17:08:23,460] daniel-Lenovo/INFO/locust.runners: Removing cloud69_8f0e7574925b469aaf75eda7164cbd0c client from running clients
+[2021-05-27 17:08:23,461] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_d1236b37f963416b8ef2f01e4cc6cb4b' reported as ready. Currently 2 clients ready to swarm.
+[2021-05-27 17:08:23,462] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_8f0e7574925b469aaf75eda7164cbd0c' reported as ready. Currently 3 clients ready to swarm.
+[2021-05-27 17:08:23,462] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_efa2cfccacab418680ec62aa402bab42' quit. Currently 2 clients connected.
+[2021-05-27 17:08:23,464] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_8f0e7574925b469aaf75eda7164cbd0c' quit. Currently 1 clients connected.
+[2021-05-27 17:08:23,464] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_d1236b37f963416b8ef2f01e4cc6cb4b' quit. Currently 0 clients connected.
+[2021-05-27 17:08:23,465] daniel-Lenovo/INFO/locust.runners: The last worker quit, stopping test.
+[2021-05-27 17:08:23,987] daniel-Lenovo/INFO/locust.main: Running teardowns...
+[2021-05-27 17:08:24,487] daniel-Lenovo/INFO/locust.main: Shutting down (exit code 1), bye.
+[2021-05-27 17:08:24,487] daniel-Lenovo/INFO/locust.main: Cleaning up runner...
+ Name                                                          # reqs      # fails  |     Avg     Min     Max  Median  |   req/s failures/s
+--------------------------------------------------------------------------------------------------------------------------------------------
+ GET Load content                                              108861     1(0.00%)  |      34       2    1698      12  |  120.95    0.00
+ GET Load page                                                   5468    26(0.48%)  |      64      21     313      57  |    6.08    0.03
+ POST Query Page Tree                                           10952     0(0.00%)  |      22       3    1085      18  |   12.17    0.00
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregated                                                    125281    27(0.02%)  |      35       2    1698      13  |  139.20    0.03
+
+Response time percentiles (approximated)
+ Type     Name                                                              50%    66%    75%    80%    90%    95%    98%    99%  99.9% 99.99%   100% # reqs
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ GET      Load content                                                       12     22     34     46     91    130    220    300    670   1100   1700 108861
+ GET      Load page                                                          57     69     78     84    100    120    150    170    270    310    310   5468
+ POST     Query Page Tree                                                    18     25     29     31     40     49     68     93   1000   1100   1100  10952
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ None     Aggregated                                                         13     25     38     49     89    130    210    290    660   1100   1700 125281
+
+Error report
+ # occurrences      Error                                                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------
+ 26                 GET Load page: "HTTPError('500 Server Error: Internal Server Error for url: Load page')"            
+ 1                  GET Load content: "ConnectionError(ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))"
+--------------------------------------------------------------------------------------------------------------------------------------------
+
