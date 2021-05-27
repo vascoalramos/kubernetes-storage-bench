@@ -27,5 +27,11 @@ class SimulateUserBenchmark(HttpUser):
 
     @task(5)
     def readPage(self):
-        pages = actions.getPageFullTree(self, 0)
-        actions.loadPage(self, random.choice(pages)["path"])
+        # Read random page
+        page = actions.getSinglePage(self)
+
+        if (page is not None):
+            actions.loadPage(self, page["path"])
+        else:
+            pages = actions.getPageFullTree(self, 0)
+            actions.loadPage(self, random.choice(pages)["path"])

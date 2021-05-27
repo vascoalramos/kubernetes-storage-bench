@@ -25,8 +25,8 @@ SCENARIOS = ["staticRead", "staticWrite", "simulateUser"]
 if __name__ == "__main__":
     # Check if there are enough input arguments
     if len(sys.argv) != 3:
-            print("Invalid parameters! Usage: python3 benchmark.py <SCENARIO> <USERS>")
-            sys.exit(-1)
+        print("Invalid parameters! Usage: python3 benchmark.py <SCENARIO> <USERS>")
+        sys.exit(-1)
 
     scenario = sys.argv[1]
     users = int(sys.argv[2])
@@ -59,13 +59,13 @@ if __name__ == "__main__":
         for machine in CLUSTER_MACHINES:
             with open(f"{folder}/logs/{machine}_metrics.log", "w") as log: 
                 metrics.append(subprocess.Popen(f'ssh gsd@{machine} "collectl -i 5 -c 204 -oT -scmn -P --sep ," > {folder}/{machine}_{scenario}_{users}_system.csv',
-                    shell=True, stdout=log, stderr=log))
+                               shell=True, stdout=log, stderr=log))
 
         # Start monitoring storage
         for machine in STORAGE_MACHINES:
             with open(f"{folder}/logs/{machine}_metrics.log", "w") as log: 
                 metrics.append(subprocess.Popen(f'ssh gsd@{machine} "collectl -i 5 -c 204 -oT -sd --dskfilt nvme0n1 -P --sep ," > {folder}/{machine}_{scenario}_{users}_io.csv',
-                    shell=True, stdout=log, stderr=log))
+                               shell=True, stdout=log, stderr=log))
 
         # Collect some data before test starts
         print("Accumulating initial data...")
@@ -78,13 +78,13 @@ if __name__ == "__main__":
             for i in range(LOCUST_MACHINES_CORES):
                 with open(f"{folder}/logs/{machine}_locust_worker{i}.log", "w") as log: 
                     workers.append(subprocess.Popen(f'ssh gsd@{machine} "cd benchmark/wiki; locust --conf={scenario}Worker.conf --master-host={ip}"',
-                        shell=True, stdout=log, stderr=log))
+                                   shell=True, stdout=log, stderr=log))
 
         # Start locust master
         print("Starting Locust master...")
         with open(f"{folder}/logs/locust_master.log", "w") as log:
             master = subprocess.Popen(f"locust --conf={scenario}Master.conf --users={users} --spawn-rate={SPAWN_RATES[str(users)]} \
-                --csv={folder}/locust_{scenario}_{users} --html={folder}/report.html", shell=True, stdout=log, stderr=log)
+                        --csv={folder}/locust_{scenario}_{users} --html={folder}/report.html", shell=True, stdout=log, stderr=log)
 
         # Check if processes are still alive
         isExecuting = True

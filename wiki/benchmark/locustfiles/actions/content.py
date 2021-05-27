@@ -41,15 +41,7 @@ def generatePage(httpUser, dataset, contentInstancesPerCategory=10, constant=Fal
         return random.randint(math.floor(content_instances_per_category/2), content_instances_per_category) if constant else content_instances_per_category
 
     # Generate random folder to save content
-    slug = GENERATED_FOLDER_PREFIX + ''.join(random.choice(string.ascii_lowercase + string.digits) for _ in range(10))
-
-    # Get existing folders in root
-    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
-
-    # Guarantee generated slug is not taken
-    taken_slugs = list(map(lambda folder: folder["slug"], folders))
-    while (slug in taken_slugs):
-        slug = GENERATED_FOLDER_PREFIX + ''.join(random.choice(string.ascii_lowercase + string.digits) for _ in range(10))
+    slug = GENERATED_FOLDER_PREFIX + ''.join(random.choice(string.ascii_lowercase + string.digits) for _ in range(15))
 
     # Create folder with generated slug
     graphqlQueries.createFolder(httpUser, 0, slug)
@@ -111,6 +103,24 @@ def getPageFullTree(httpUser, parentId):
             pages.append(leaf)
 
     return pages
+
+
+def getSinglePage(httpUser):
+    # Get page tree from root
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+
+    # Check if there are generated pages
+    if len(page_tree) == 0:
+        return None
+
+    # Pick random folder
+    folder = random.choice(page_tree)
+
+    # Return index.html path
+    leafs = graphqlQueries.pageTreeInParent(httpUser, folder["id"])
+
+    # Check if folder is empty
+    return leafs[0] if len(leafs) > 0 else None
 
 
 def deleteGeneratedAssetsAndPages(httpUser):

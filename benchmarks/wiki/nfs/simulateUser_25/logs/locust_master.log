@@ -1,0 +1,51 @@
+[2021-05-27 17:55:53,885] daniel-Lenovo/INFO/root: Waiting for workers to be ready, 0 of 4 connected
+[2021-05-27 17:55:54,424] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_32fff319a6174c83acdad2ff6590fb2b' reported as ready. Currently 1 clients ready to swarm.
+[2021-05-27 17:55:54,424] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_cbf1a643d3cf4c599ffd32e2ff729b21' reported as ready. Currently 2 clients ready to swarm.
+[2021-05-27 17:55:54,885] daniel-Lenovo/INFO/root: Waiting for workers to be ready, 2 of 4 connected
+[2021-05-27 17:55:55,169] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_e8d45446f7ad48ef8d65d790ea966123' reported as ready. Currently 3 clients ready to swarm.
+[2021-05-27 17:55:55,169] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_2adf9853132644ed8efc8362ba9dd745' reported as ready. Currently 4 clients ready to swarm.
+[2021-05-27 17:55:55,887] daniel-Lenovo/INFO/locust.runners: Sending spawn jobs of 6 users and 0.12 spawn rate to 4 ready clients
+[2021-05-27 17:55:55,889] daniel-Lenovo/INFO/locust.main: Run time limit set to 900 seconds
+[2021-05-27 17:55:55,889] daniel-Lenovo/INFO/locust.main: Starting Locust 1.4.3
+[2021-05-27 18:10:55,889] daniel-Lenovo/INFO/locust.main: Time limit reached. Stopping Locust.
+[2021-05-27 18:10:55,909] daniel-Lenovo/INFO/locust.runners: Removing cloud50_cbf1a643d3cf4c599ffd32e2ff729b21 client from running clients
+[2021-05-27 18:10:55,910] daniel-Lenovo/INFO/locust.runners: Removing cloud50_32fff319a6174c83acdad2ff6590fb2b client from running clients
+[2021-05-27 18:10:55,910] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_cbf1a643d3cf4c599ffd32e2ff729b21' reported as ready. Currently 3 clients ready to swarm.
+[2021-05-27 18:10:55,910] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_32fff319a6174c83acdad2ff6590fb2b' reported as ready. Currently 4 clients ready to swarm.
+[2021-05-27 18:10:55,911] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_cbf1a643d3cf4c599ffd32e2ff729b21' quit. Currently 1 clients connected.
+[2021-05-27 18:10:55,911] daniel-Lenovo/INFO/locust.runners: Removing cloud69_2adf9853132644ed8efc8362ba9dd745 client from running clients
+[2021-05-27 18:10:55,912] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_32fff319a6174c83acdad2ff6590fb2b' quit. Currently 0 clients connected.
+[2021-05-27 18:10:55,912] daniel-Lenovo/INFO/locust.runners: Removing cloud69_e8d45446f7ad48ef8d65d790ea966123 client from running clients
+[2021-05-27 18:10:55,912] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_2adf9853132644ed8efc8362ba9dd745' reported as ready. Currently 1 clients ready to swarm.
+[2021-05-27 18:10:55,913] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_e8d45446f7ad48ef8d65d790ea966123' reported as ready. Currently 2 clients ready to swarm.
+[2021-05-27 18:10:55,913] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_2adf9853132644ed8efc8362ba9dd745' quit. Currently 1 clients connected.
+[2021-05-27 18:10:55,913] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_e8d45446f7ad48ef8d65d790ea966123' quit. Currently 0 clients connected.
+[2021-05-27 18:10:55,913] daniel-Lenovo/INFO/locust.runners: The last worker quit, stopping test.
+[2021-05-27 18:10:56,453] daniel-Lenovo/INFO/locust.main: Running teardowns...
+[2021-05-27 18:10:56,954] daniel-Lenovo/INFO/locust.main: Shutting down (exit code 1), bye.
+[2021-05-27 18:10:56,954] daniel-Lenovo/INFO/locust.main: Cleaning up runner...
+ Name                                                          # reqs      # fails  |     Avg     Min     Max  Median  |   req/s failures/s
+--------------------------------------------------------------------------------------------------------------------------------------------
+ POST Create Folder                                               197     0(0.00%)  |      44      16    1040      31  |    0.22    0.00
+ POST Create Page                                                 196     0(0.00%)  |    2765    2262    3873    2700  |    0.22    0.00
+ POST List Folders                                                197     0(0.00%)  |      16       6      67      16  |    0.22    0.00
+ GET Load content                                               19306     0(0.00%)  |      26       2     490       9  |   21.47    0.00
+ GET Load page                                                    968     0(0.00%)  |      73      19     358      70  |    1.08    0.00
+ POST Query Page Tree                                            2196     0(0.00%)  |      18       4    1061       9  |    2.44    0.00
+ POST Upload file                                                2518     0(0.00%)  |      92      18     726      51  |    2.80    0.00
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregated                                                     25578     0(0.00%)  |      54       2    3873      13  |   28.44    0.00
+
+Response time percentiles (approximated)
+ Type     Name                                                              50%    66%    75%    80%    90%    95%    98%    99%  99.9% 99.99%   100% # reqs
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ POST     Create Folder                                                      31     36     39     41     57     83    260    320   1000   1000   1000    197
+ POST     Create Page                                                      2700   2800   3000   3100   3200   3300   3500   3500   3900   3900   3900    196
+ POST     List Folders                                                       16     17     18     19     21     23     39     46     68     68     68    197
+ GET      Load content                                                        9     18     27     36     81    100    160    200    320    460    490  19306
+ GET      Load page                                                          70     81     88     94    110    120    150    170    360    360    360    968
+ POST     Query Page Tree                                                     9     21     25     27     35     42     59     82    230   1100   1100   2196
+ POST     Upload file                                                        51     78    100    140    230    320    420    470    650    730    730   2518
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ None     Aggregated                                                         13     27     39     51     89    140    250    420   3100   3500   3900  25578
+

@@ -1,0 +1,43 @@
+[2021-05-27 12:22:56,301] daniel-Lenovo/INFO/root: Waiting for workers to be ready, 0 of 4 connected
+[2021-05-27 12:22:57,032] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_63432202b12b4830b42bca765d85f5fc' reported as ready. Currently 1 clients ready to swarm.
+[2021-05-27 12:22:57,033] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_2d7225f039ae4f34be8ffae93029120d' reported as ready. Currently 2 clients ready to swarm.
+[2021-05-27 12:22:57,302] daniel-Lenovo/INFO/root: Waiting for workers to be ready, 2 of 4 connected
+[2021-05-27 12:22:57,427] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_72d5b9b019be4c4ba7b70387746ed0ab' reported as ready. Currently 3 clients ready to swarm.
+[2021-05-27 12:22:57,441] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_91be4474a65946f58765179a02825baf' reported as ready. Currently 4 clients ready to swarm.
+[2021-05-27 12:22:58,304] daniel-Lenovo/INFO/locust.runners: Sending spawn jobs of 12 users and 0.25 spawn rate to 4 ready clients
+[2021-05-27 12:22:58,305] daniel-Lenovo/INFO/locust.main: Run time limit set to 900 seconds
+[2021-05-27 12:22:58,306] daniel-Lenovo/INFO/locust.main: Starting Locust 1.4.3
+[2021-05-27 12:37:58,305] daniel-Lenovo/INFO/locust.main: Time limit reached. Stopping Locust.
+[2021-05-27 12:37:58,325] daniel-Lenovo/INFO/locust.runners: Removing cloud69_72d5b9b019be4c4ba7b70387746ed0ab client from running clients
+[2021-05-27 12:37:58,325] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_72d5b9b019be4c4ba7b70387746ed0ab' reported as ready. Currently 4 clients ready to swarm.
+[2021-05-27 12:37:58,325] daniel-Lenovo/INFO/locust.runners: Removing cloud69_91be4474a65946f58765179a02825baf client from running clients
+[2021-05-27 12:37:58,326] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_72d5b9b019be4c4ba7b70387746ed0ab' quit. Currently 0 clients connected.
+[2021-05-27 12:37:58,326] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_91be4474a65946f58765179a02825baf' reported as ready. Currently 3 clients ready to swarm.
+[2021-05-27 12:37:58,326] daniel-Lenovo/INFO/locust.runners: Removing cloud50_2d7225f039ae4f34be8ffae93029120d client from running clients
+[2021-05-27 12:37:58,327] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_2d7225f039ae4f34be8ffae93029120d' reported as ready. Currently 3 clients ready to swarm.
+[2021-05-27 12:37:58,327] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_91be4474a65946f58765179a02825baf' quit. Currently 1 clients connected.
+[2021-05-27 12:37:58,328] daniel-Lenovo/INFO/locust.runners: Removing cloud50_63432202b12b4830b42bca765d85f5fc client from running clients
+[2021-05-27 12:37:58,328] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_2d7225f039ae4f34be8ffae93029120d' quit. Currently 0 clients connected.
+[2021-05-27 12:37:58,328] daniel-Lenovo/INFO/locust.runners: The last worker quit, stopping test.
+[2021-05-27 12:37:58,865] daniel-Lenovo/INFO/locust.main: Running teardowns...
+[2021-05-27 12:37:59,366] daniel-Lenovo/INFO/locust.main: Shutting down (exit code 1), bye.
+[2021-05-27 12:37:59,366] daniel-Lenovo/INFO/locust.main: Cleaning up runner...
+ Name                                                          # reqs      # fails  |     Avg     Min     Max  Median  |   req/s failures/s
+--------------------------------------------------------------------------------------------------------------------------------------------
+ POST Create Folder                                              1139     0(0.00%)  |     107      13    1168      74  |    1.26    0.00
+ POST Create Page                                                1133     0(0.00%)  |   10701      49   56806    9700  |    1.26    0.00
+ POST List Folders                                               1139     0(0.00%)  |      68      11     550      49  |    1.26    0.00
+ POST Upload file                                               12365     0(0.00%)  |     757      21   12049     330  |   13.73    0.00
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregated                                                     15776     0(0.00%)  |    1375      11   56806     290  |   17.52    0.00
+
+Response time percentiles (approximated)
+ Type     Name                                                              50%    66%    75%    80%    90%    95%    98%    99%  99.9% 99.99%   100% # reqs
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ POST     Create Folder                                                      74    100    130    140    210    300    470    610   1100   1200   1200   1139
+ POST     Create Page                                                      9700  12000  13000  14000  17000  19000  25000  44000  54000  57000  57000   1133
+ POST     List Folders                                                       49     69     83     96    140    190    250    280    420    550    550   1139
+ POST     Upload file                                                       330    580    840   1100   1900   2900   4700   5900   9300  12000  12000  12365
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ None     Aggregated                                                        290    570    930   1300   3400   7900  13000  15000  41000  54000  57000  15776
+

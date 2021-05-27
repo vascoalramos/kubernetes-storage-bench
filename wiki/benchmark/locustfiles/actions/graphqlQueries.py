@@ -1,5 +1,6 @@
+import json
 from locust import HttpUser
-from actions.common import readFile, inReferencePath
+from actions.common import readFile
 
 def graphqlQuery(httpUser, name, query, variables={}, auth=True):
     return httpUser.client.post(url="/graphql", name=name, json={"query": query, "variables": variables}, headers={"Connection": "keep-alive", "Authorization": "Bearer {}".format(httpUser.token if hasattr(httpUser, "token") and auth else "")}).json()
@@ -57,6 +58,9 @@ def updateSecuritySettings(httpUser, settings):
 
 def createPage(httpUser, path, title, content, description="", tags=[]):
     return graphqlQuery(httpUser, "Create Page", readFile("queries/createPage.graphql"), {"path": path, "title": title, "tags": tags, "content": content, "description": description})
+
+def initWikiInstance(httpUser):
+    return httpUser.client.post(url="/finalize", name="Init Wiki instance", data=json.loads(readFile("settings/init.json")))
 
 def uploadFile(httpUser, parentFolderId, binaryFile, filename):
     return httpUser.client.post(url="/u", name="Upload file", data={"mediaUpload": '{{"folderId":{}}}'.format(parentFolderId)}, files={"mediaUpload": (filename, binaryFile)}, headers={"Authorization": "Bearer {}".format(httpUser.token), "Connection": "keep-alive"})

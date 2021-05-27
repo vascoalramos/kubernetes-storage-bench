@@ -1,0 +1,7 @@
+{
+    "adminEmail":"admin@example.com",
+    "adminPassword":"admin1234",
+    "adminPasswordConfirm":"admin1234",
+    "siteUrl":"http://cloud74:30002",
+    "telemetry":true
+ }
