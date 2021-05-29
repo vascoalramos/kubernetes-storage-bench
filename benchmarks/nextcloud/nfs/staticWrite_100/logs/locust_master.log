@@ -1,0 +1,47 @@
+[2021-05-29 14:05:49,716] pop-os/INFO/root: Waiting for workers to be ready, 0 of 4 connected
+[2021-05-29 14:05:50,231] pop-os/INFO/locust.runners: Client 'cloud50_de378dec75844414a80ead9e258d9e0b' reported as ready. Currently 1 clients ready to swarm.
+[2021-05-29 14:05:50,231] pop-os/INFO/locust.runners: Client 'cloud50_fb9bf97db6a84a858763caac7d1d3f86' reported as ready. Currently 2 clients ready to swarm.
+[2021-05-29 14:05:50,718] pop-os/INFO/root: Waiting for workers to be ready, 2 of 4 connected
+[2021-05-29 14:05:50,752] pop-os/INFO/locust.runners: Client 'cloud69_fab3617af4494592ac30747617d275be' reported as ready. Currently 3 clients ready to swarm.
+[2021-05-29 14:05:50,753] pop-os/INFO/locust.runners: Client 'cloud69_221fa24cce7e46339a0c44d343fd5327' reported as ready. Currently 4 clients ready to swarm.
+[2021-05-29 14:05:51,720] pop-os/INFO/locust.runners: Sending spawn jobs of 25 users and 0.50 spawn rate to 4 ready clients
+[2021-05-29 14:05:51,721] pop-os/INFO/locust.main: Run time limit set to 900 seconds
+[2021-05-29 14:05:51,721] pop-os/INFO/locust.main: Starting Locust 1.4.4
+[2021-05-29 14:20:51,721] pop-os/INFO/locust.main: Time limit reached. Stopping Locust.
+[2021-05-29 14:20:51,802] pop-os/INFO/locust.runners: Removing cloud69_221fa24cce7e46339a0c44d343fd5327 client from running clients
+[2021-05-29 14:20:51,803] pop-os/INFO/locust.runners: Client 'cloud69_221fa24cce7e46339a0c44d343fd5327' reported as ready. Currently 4 clients ready to swarm.
+[2021-05-29 14:20:51,804] pop-os/INFO/locust.runners: Client 'cloud69_221fa24cce7e46339a0c44d343fd5327' quit. Currently 0 clients connected.
+[2021-05-29 14:20:51,805] pop-os/INFO/locust.runners: Removing cloud69_fab3617af4494592ac30747617d275be client from running clients
+[2021-05-29 14:20:51,805] pop-os/INFO/locust.runners: Client 'cloud69_fab3617af4494592ac30747617d275be' reported as ready. Currently 3 clients ready to swarm.
+[2021-05-29 14:20:51,806] pop-os/INFO/locust.runners: Client 'cloud69_fab3617af4494592ac30747617d275be' quit. Currently 0 clients connected.
+[2021-05-29 14:20:51,808] pop-os/INFO/locust.runners: Removing cloud50_de378dec75844414a80ead9e258d9e0b client from running clients
+[2021-05-29 14:20:51,808] pop-os/INFO/locust.runners: Removing cloud50_fb9bf97db6a84a858763caac7d1d3f86 client from running clients
+[2021-05-29 14:20:51,809] pop-os/INFO/locust.runners: Client 'cloud50_de378dec75844414a80ead9e258d9e0b' reported as ready. Currently 1 clients ready to swarm.
+[2021-05-29 14:20:51,809] pop-os/INFO/locust.runners: Client 'cloud50_fb9bf97db6a84a858763caac7d1d3f86' reported as ready. Currently 2 clients ready to swarm.
+[2021-05-29 14:20:51,810] pop-os/INFO/locust.runners: Client 'cloud50_de378dec75844414a80ead9e258d9e0b' quit. Currently 1 clients connected.
+[2021-05-29 14:20:51,810] pop-os/INFO/locust.runners: Client 'cloud50_fb9bf97db6a84a858763caac7d1d3f86' quit. Currently 0 clients connected.
+[2021-05-29 14:20:51,810] pop-os/INFO/locust.runners: The last worker quit, stopping test.
+[2021-05-29 14:20:52,286] pop-os/INFO/locust.main: Running teardowns...
+[2021-05-29 14:20:52,788] pop-os/INFO/locust.main: Shutting down (exit code 1), bye.
+[2021-05-29 14:20:52,788] pop-os/INFO/locust.main: Cleaning up runner...
+ Name                                                          # reqs      # fails  |     Avg     Min     Max  Median  |   req/s failures/s
+--------------------------------------------------------------------------------------------------------------------------------------------
+ MKCOL Create folder                                              384     0(0.00%)  |     735     108    6445     250  |    0.43    0.00
+ PUT Upload file                                                 7666     1(0.01%)  |     956     146    7909     480  |    8.52    0.00
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregated                                                      8050     1(0.01%)  |     945     108    7909     470  |    8.94    0.00
+
+Response time percentiles (approximated)
+ Type     Name                                                              50%    66%    75%    80%    90%    95%    98%    99%  99.9% 99.99%   100% # reqs
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ MKCOL    Create folder                                                     250    440    600    810   1500   4100   5500   5900   6400   6400   6400    384
+ PUT      Upload file                                                       480    730    990   1200   2200   4100   5600   6100   7200   7900   7900   7666
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ None     Aggregated                                                        470    720    970   1200   2200   4100   5600   6100   7100   7900   7900   8050
+
+Error report
+ # occurrences      Error                                                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------
+ 1                  PUT Upload file: "HTTPError('423 Client Error: Locked for url: Upload file')"                       
+--------------------------------------------------------------------------------------------------------------------------------------------
+
