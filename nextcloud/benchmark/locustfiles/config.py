@@ -2,9 +2,9 @@ from locust import between, constant
 
 
 class StaticBenchmarkConfig:
-    write_page_wait_seconds = constant(20)
-    read_page_wait_seconds = constant(10)
+    write_page_wait_seconds = constant(15)
+    read_page_wait_seconds = constant(5)
 
 
 class UserSimulationBenchmarkConfig:
-    wait_time_between_tasks = between(10, 25)
+    wait_time_between_tasks = between(5, 25)
