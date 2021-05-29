@@ -1,0 +1,49 @@
+[2021-05-29 15:27:36,982] pop-os/INFO/root: Waiting for workers to be ready, 0 of 4 connected
+[2021-05-29 15:27:37,899] pop-os/INFO/locust.runners: Client 'cloud50_bc63480963844e6b975f1fd9966c5acb' reported as ready. Currently 1 clients ready to swarm.
+[2021-05-29 15:27:37,900] pop-os/INFO/locust.runners: Client 'cloud50_92a65366836f4909b0995f50ab0713d4' reported as ready. Currently 2 clients ready to swarm.
+[2021-05-29 15:27:37,984] pop-os/INFO/root: Waiting for workers to be ready, 2 of 4 connected
+[2021-05-29 15:27:38,695] pop-os/INFO/locust.runners: Client 'cloud69_717c39ebc0304240924c3512bcf87f7b' reported as ready. Currently 3 clients ready to swarm.
+[2021-05-29 15:27:38,695] pop-os/INFO/locust.runners: Client 'cloud69_de1b5e77496c4c7896c278f9d40c8de3' reported as ready. Currently 4 clients ready to swarm.
+[2021-05-29 15:27:38,985] pop-os/INFO/locust.runners: Sending spawn jobs of 12 users and 0.25 spawn rate to 4 ready clients
+[2021-05-29 15:27:38,986] pop-os/INFO/locust.main: Run time limit set to 900 seconds
+[2021-05-29 15:27:38,986] pop-os/INFO/locust.main: Starting Locust 1.4.4
+[2021-05-29 15:42:38,986] pop-os/INFO/locust.main: Time limit reached. Stopping Locust.
+[2021-05-29 15:42:39,023] pop-os/INFO/locust.runners: Removing cloud69_de1b5e77496c4c7896c278f9d40c8de3 client from running clients
+[2021-05-29 15:42:39,024] pop-os/INFO/locust.runners: Client 'cloud69_de1b5e77496c4c7896c278f9d40c8de3' reported as ready. Currently 4 clients ready to swarm.
+[2021-05-29 15:42:39,025] pop-os/INFO/locust.runners: Removing cloud69_717c39ebc0304240924c3512bcf87f7b client from running clients
+[2021-05-29 15:42:39,025] pop-os/INFO/locust.runners: Client 'cloud69_de1b5e77496c4c7896c278f9d40c8de3' quit. Currently 0 clients connected.
+[2021-05-29 15:42:39,026] pop-os/INFO/locust.runners: Client 'cloud69_717c39ebc0304240924c3512bcf87f7b' reported as ready. Currently 3 clients ready to swarm.
+[2021-05-29 15:42:39,026] pop-os/INFO/locust.runners: Removing cloud50_bc63480963844e6b975f1fd9966c5acb client from running clients
+[2021-05-29 15:42:39,026] pop-os/INFO/locust.runners: Removing cloud50_92a65366836f4909b0995f50ab0713d4 client from running clients
+[2021-05-29 15:42:39,026] pop-os/INFO/locust.runners: Client 'cloud50_92a65366836f4909b0995f50ab0713d4' reported as ready. Currently 2 clients ready to swarm.
+[2021-05-29 15:42:39,027] pop-os/INFO/locust.runners: Client 'cloud50_bc63480963844e6b975f1fd9966c5acb' reported as ready. Currently 3 clients ready to swarm.
+[2021-05-29 15:42:39,028] pop-os/INFO/locust.runners: Client 'cloud69_717c39ebc0304240924c3512bcf87f7b' quit. Currently 2 clients connected.
+[2021-05-29 15:42:39,028] pop-os/INFO/locust.runners: Client 'cloud50_92a65366836f4909b0995f50ab0713d4' quit. Currently 1 clients connected.
+[2021-05-29 15:42:39,029] pop-os/INFO/locust.runners: Client 'cloud50_bc63480963844e6b975f1fd9966c5acb' quit. Currently 0 clients connected.
+[2021-05-29 15:42:39,029] pop-os/INFO/locust.runners: The last worker quit, stopping test.
+[2021-05-29 15:42:39,526] pop-os/INFO/locust.main: Running teardowns...
+[2021-05-29 15:42:40,027] pop-os/INFO/locust.main: Shutting down (exit code 1), bye.
+[2021-05-29 15:42:40,028] pop-os/INFO/locust.main: Cleaning up runner...
+ Name                                                          # reqs      # fails  |     Avg     Min     Max  Median  |   req/s failures/s
+--------------------------------------------------------------------------------------------------------------------------------------------
+ MKCOL Create folder                                               71     0(0.00%)  |     178     109     541     150  |    0.08    0.00
+ GET Get file                                                    2901     0(0.00%)  |     114      37    1085      72  |    3.22    0.00
+ PUT Upload file                                                 1396     1(0.07%)  |     282       4    1402     240  |    1.55    0.00
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregated                                                      4368     1(0.02%)  |     169       4    1402     110  |    4.85    0.00
+
+Response time percentiles (approximated)
+ Type     Name                                                              50%    66%    75%    80%    90%    95%    98%    99%  99.9% 99.99%   100% # reqs
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ MKCOL    Create folder                                                     150    150    160    180    280    440    480    540    540    540    540     71
+ GET      Get file                                                           72     86    100    120    310    360    430    520    850   1100   1100   2901
+ PUT      Upload file                                                       240    280    310    330    460    550    640    720   1200   1400   1400   1396
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ None     Aggregated                                                        110    200    240    270    350    430    550    630    880   1400   1400   4368
+
+Error report
+ # occurrences      Error                                                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------
+ 1                  PUT Upload file: 'ConnectionError(MaxRetryError("HTTPConnectionPool(host=\'cloud74\', port=30000): Max retries exceeded with url: /remote.php/dav/files/admin/_generated_folder1622298656.452193/_generated1622298717.293046.pdf (Caused by NewConnectionError(\'<urllib3.connection.HTTPConnection object at 0x....>: Failed to establish a new connection: [Errno 111] Connection refused\'))"))'
+--------------------------------------------------------------------------------------------------------------------------------------------
+

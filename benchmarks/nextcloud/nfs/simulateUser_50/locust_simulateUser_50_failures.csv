@@ -1,0 +1,2 @@
+Method,Name,Error,Occurrences
+PUT,Upload file,"ConnectionError(MaxRetryError(""HTTPConnectionPool(host='cloud74', port=30000): Max retries exceeded with url: /remote.php/dav/files/admin/_generated_folder1622298656.452193/_generated1622298717.293046.pdf (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x....>: Failed to establish a new connection: [Errno 111] Connection refused'))""))",1
