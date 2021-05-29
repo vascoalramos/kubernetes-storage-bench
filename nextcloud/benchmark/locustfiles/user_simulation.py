@@ -24,7 +24,7 @@ class UserSimulationBenchmark(HttpUser):
         with open("inserted_assets.json", "w") as file:
             json.dump(inserted_assets, file, indent=4, sort_keys=True)
 
-    @task(30)
+    @task(40)
     def readPage(self):
         actions.get_file(self, random.choice(self.files))
 
