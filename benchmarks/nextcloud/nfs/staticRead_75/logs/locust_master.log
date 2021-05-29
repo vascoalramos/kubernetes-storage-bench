@@ -1,0 +1,35 @@
+[2021-05-29 12:28:24,506] pop-os/INFO/root: Waiting for workers to be ready, 0 of 4 connected
+[2021-05-29 12:28:25,214] pop-os/INFO/locust.runners: Client 'cloud50_c3791f8ec60c40c6be6a8ce55f2eec71' reported as ready. Currently 1 clients ready to swarm.
+[2021-05-29 12:28:25,215] pop-os/INFO/locust.runners: Client 'cloud50_ef06f8f4174e40a6ab8aeec6d455ebcc' reported as ready. Currently 2 clients ready to swarm.
+[2021-05-29 12:28:25,507] pop-os/INFO/root: Waiting for workers to be ready, 2 of 4 connected
+[2021-05-29 12:28:25,757] pop-os/INFO/locust.runners: Client 'cloud69_9f260e4306884be185cd9cc45e1c7b7e' reported as ready. Currently 3 clients ready to swarm.
+[2021-05-29 12:28:25,757] pop-os/INFO/locust.runners: Client 'cloud69_e883b251c1b24d5dbc3a6ef42feb7fdb' reported as ready. Currently 4 clients ready to swarm.
+[2021-05-29 12:28:26,508] pop-os/INFO/locust.runners: Sending spawn jobs of 18 users and 0.38 spawn rate to 4 ready clients
+[2021-05-29 12:28:26,509] pop-os/INFO/locust.main: Run time limit set to 900 seconds
+[2021-05-29 12:28:26,513] pop-os/INFO/locust.main: Starting Locust 1.4.4
+[2021-05-29 12:43:26,509] pop-os/INFO/locust.main: Time limit reached. Stopping Locust.
+[2021-05-29 12:43:26,530] pop-os/INFO/locust.runners: Removing cloud50_ef06f8f4174e40a6ab8aeec6d455ebcc client from running clients
+[2021-05-29 12:43:26,531] pop-os/INFO/locust.runners: Removing cloud50_c3791f8ec60c40c6be6a8ce55f2eec71 client from running clients
+[2021-05-29 12:43:26,531] pop-os/INFO/locust.runners: Client 'cloud50_ef06f8f4174e40a6ab8aeec6d455ebcc' reported as ready. Currently 3 clients ready to swarm.
+[2021-05-29 12:43:26,532] pop-os/INFO/locust.runners: Client 'cloud50_c3791f8ec60c40c6be6a8ce55f2eec71' reported as ready. Currently 4 clients ready to swarm.
+[2021-05-29 12:43:26,532] pop-os/INFO/locust.runners: Removing cloud69_e883b251c1b24d5dbc3a6ef42feb7fdb client from running clients
+[2021-05-29 12:43:26,533] pop-os/INFO/locust.runners: Removing cloud69_9f260e4306884be185cd9cc45e1c7b7e client from running clients
+[2021-05-29 12:43:26,533] pop-os/INFO/locust.runners: Client 'cloud50_ef06f8f4174e40a6ab8aeec6d455ebcc' quit. Currently 1 clients connected.
+[2021-05-29 12:43:26,533] pop-os/INFO/locust.runners: Client 'cloud50_c3791f8ec60c40c6be6a8ce55f2eec71' quit. Currently 0 clients connected.
+[2021-05-29 12:43:26,533] pop-os/INFO/locust.runners: The last worker quit, stopping test.
+[2021-05-29 12:43:27,076] pop-os/INFO/locust.main: Running teardowns...
+[2021-05-29 12:43:27,577] pop-os/INFO/locust.main: Shutting down (exit code 0), bye.
+[2021-05-29 12:43:27,577] pop-os/INFO/locust.main: Cleaning up runner...
+ Name                                                          # reqs      # fails  |     Avg     Min     Max  Median  |   req/s failures/s
+--------------------------------------------------------------------------------------------------------------------------------------------
+ GET Get file                                                   12862     0(0.00%)  |     122      30    1776      74  |   14.29    0.00
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregated                                                     12862     0(0.00%)  |     122      30    1776      74  |   14.29    0.00
+
+Response time percentiles (approximated)
+ Type     Name                                                              50%    66%    75%    80%    90%    95%    98%    99%  99.9% 99.99%   100% # reqs
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ GET      Get file                                                           74     93    110    130    210    420    700    890   1500   1700   1800  12862
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ None     Aggregated                                                         74     93    110    130    210    420    700    890   1500   1700   1800  12862
+
