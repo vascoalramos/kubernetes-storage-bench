@@ -2,6 +2,7 @@ import time
 import os
 import random
 from locust import HttpUser, task, between
+from config import StaticBenchmarkConfig
 
 import load
 
@@ -9,7 +10,7 @@ import load
 
 
 class QuickstartUser(HttpUser):
-    wait_time = between(1, 2.5)
+    wait_time = StaticBenchmarkConfig.write_page_wait_seconds
     token=''
 
     @task
@@ -43,7 +44,7 @@ class QuickstartUser(HttpUser):
             "grant_type":"password",
             "response_type":"code",
             "username":"root",
-            "password":"ratazolojizefixu"
+            "password":"vekiduvesavipiko"
         })
 
         #self.path = os.path.abspath("../videos")
@@ -51,4 +52,3 @@ class QuickstartUser(HttpUser):
         
         self.count=0
         self.token = resptoken.json()['access_token']
-        print(self.token)
