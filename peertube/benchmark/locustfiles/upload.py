@@ -29,7 +29,7 @@ class QuickstartUser(HttpUser):
         },files=[('videofile',(load.videos[i],load.files[i],'video/mp4'))]
         )
         self.count += 1
-        print(responsepost.json())
+        #print(responsepost.json())
 
 
 
