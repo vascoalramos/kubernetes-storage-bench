@@ -18,7 +18,7 @@ CLUSTER_MACHINES = ["cloud74", "cloud75", "cloud76"]
 STORAGE_MACHINES = ["cloud108"]
 LOCUST_MACHINES = ["cloud50", "cloud69"]
 LOCUST_MACHINES_CORES = 2
-SPAWN_RATES = {"1": 1, "25": 0.5, "50": 1, "75": 1.5, "100": 2}
+SPAWN_RATES = {"1": 1, "25": 2, "50": 1, "75": 1.5, "100": 2}
 SCENARIOS = ["staticRead", "staticWrite", "simulateUser"]
 
 # Script flow
@@ -49,9 +49,9 @@ if __name__ == "__main__":
 
     # Get IP in VPN (locust workers need to know where the master lives)
     print("Getting IP address...")
-    ip_exec = subprocess.run(["ip","-json","-f","inet","addr","show","tun0"], capture_output=True)
-    ip = json.loads(ip_exec.stdout.decode("utf-8"))[0]["addr_info"][0]["local"]
-
+    #ip_exec = subprocess.run(["ip","-json","-f","inet","addr","show","tun0"], capture_output=True)
+    #ip = json.loads(ip_exec.stdout.decode("utf-8"))[0]["addr_info"][0]["local"]
+    ip = "10.100.100.14"
     # Start benchmark
     try:
         # Start monitoring cluster

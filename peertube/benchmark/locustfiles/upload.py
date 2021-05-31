@@ -44,7 +44,7 @@ class QuickstartUser(HttpUser):
             "grant_type":"password",
             "response_type":"code",
             "username":"root",
-            "password":"vekiduvesavipiko"
+            "password":"leyosijuhaqeqeti"
         })
 
         #self.path = os.path.abspath("../videos")

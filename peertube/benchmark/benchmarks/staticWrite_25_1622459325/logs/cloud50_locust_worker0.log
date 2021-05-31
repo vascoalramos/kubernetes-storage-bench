@@ -1,0 +1,67 @@
+[2021-05-31 12:09:36,591] cloud50/WARNING/locust.main: System open file limit '1024' is below minimum setting '10000'. It's not high enough for load testing, and the OS didn't allow locust to increase it by itself. See https://github.com/locustio/locust/wiki/Installation#increasing-maximum-number-of-open-files-limit for more info.
+[2021-05-31 12:09:36,592] cloud50/INFO/locust.main: Starting Locust 1.5.3
+[2021-05-31 12:09:37,531] cloud50/INFO/locust.runners: Spawning 6 users at the rate 0.125 users/s (0 users already running)...
+Traceback (most recent call last):
+  File "src/gevent/greenlet.py", line 906, in gevent._gevent_cgreenlet.Greenlet.run
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/users.py", line 166, in run_user
+    user.run()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/users.py", line 132, in run
+    self.on_start()
+  File "/home/gsd/benchmark/peertube/locustfiles/upload.py", line 54, in on_start
+    self.token = resptoken.json()['access_token']
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-05-31T11:10:01Z <Greenlet at 0x7f0cbac15e10: run_user(<upload.QuickstartUser object at 0x7f0cb910bc70>)> failed with JSONDecodeError
+
+Traceback (most recent call last):
+  File "src/gevent/greenlet.py", line 906, in gevent._gevent_cgreenlet.Greenlet.run
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/users.py", line 166, in run_user
+    user.run()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/users.py", line 132, in run
+    self.on_start()
+  File "/home/gsd/benchmark/peertube/locustfiles/upload.py", line 54, in on_start
+    self.token = resptoken.json()['access_token']
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-05-31T11:10:09Z <Greenlet at 0x7f0cb881c040: run_user(<upload.QuickstartUser object at 0x7f0cb90e7d30>)> failed with JSONDecodeError
+
+[2021-05-31 12:10:17,541] cloud50/INFO/locust.runners: All users spawned: QuickstartUser: 6 (4 total running)
+Traceback (most recent call last):
+  File "src/gevent/greenlet.py", line 906, in gevent._gevent_cgreenlet.Greenlet.run
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/users.py", line 166, in run_user
+    user.run()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/users.py", line 132, in run
+    self.on_start()
+  File "/home/gsd/benchmark/peertube/locustfiles/upload.py", line 54, in on_start
+    self.token = resptoken.json()['access_token']
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-05-31T11:10:17Z <Greenlet at 0x7f0cbac15e10: run_user(<upload.QuickstartUser object at 0x7f0cb90e7b80>)> failed with JSONDecodeError
+
+[2021-05-31 12:24:37,535] cloud50/INFO/locust.runners: Stopping 3 users
+[2021-05-31 12:24:37,536] cloud50/INFO/locust.runners: 3 Users have been stopped, 0 still running
+[2021-05-31 12:24:37,536] cloud50/INFO/locust.runners: Got quit message from master, shutting down...
+[2021-05-31 12:24:37,537] cloud50/INFO/locust.main: Running teardowns...
+[2021-05-31 12:24:37,537] cloud50/INFO/locust.main: Shutting down (exit code 0), bye.
+[2021-05-31 12:24:37,537] cloud50/INFO/locust.main: Cleaning up runner...

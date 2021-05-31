@@ -1,0 +1,67 @@
+[2021-05-31 13:30:38,514] cloud50/WARNING/locust.main: System open file limit '1024' is below minimum setting '10000'. It's not high enough for load testing, and the OS didn't allow locust to increase it by itself. See https://github.com/locustio/locust/wiki/Installation#increasing-maximum-number-of-open-files-limit for more info.
+[2021-05-31 13:30:38,515] cloud50/INFO/locust.main: Starting Locust 1.5.3
+[2021-05-31 13:30:39,571] cloud50/INFO/locust.runners: Spawning 7 users at the rate 0.125 users/s (0 users already running)...
+Traceback (most recent call last):
+  File "src/gevent/greenlet.py", line 906, in gevent._gevent_cgreenlet.Greenlet.run
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/users.py", line 166, in run_user
+    user.run()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/users.py", line 132, in run
+    self.on_start()
+  File "/home/gsd/benchmark/peertube/locustfiles/mixed.py", line 65, in on_start
+    self.token = resptoken.json()['access_token']
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-05-31T12:31:11Z <Greenlet at 0x7fcfe3144040: run_user(<mixed.QuickstartUser object at 0x7fcfe39d5400>)> failed with JSONDecodeError
+
+Traceback (most recent call last):
+  File "src/gevent/greenlet.py", line 906, in gevent._gevent_cgreenlet.Greenlet.run
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/users.py", line 166, in run_user
+    user.run()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/users.py", line 132, in run
+    self.on_start()
+  File "/home/gsd/benchmark/peertube/locustfiles/mixed.py", line 65, in on_start
+    self.token = resptoken.json()['access_token']
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-05-31T12:31:19Z <Greenlet at 0x7fcfe3144150: run_user(<mixed.QuickstartUser object at 0x7fcfe39d5610>)> failed with JSONDecodeError
+
+[2021-05-31 13:31:27,576] cloud50/INFO/locust.runners: All users spawned: QuickstartUser: 7 (5 total running)
+Traceback (most recent call last):
+  File "src/gevent/greenlet.py", line 906, in gevent._gevent_cgreenlet.Greenlet.run
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/users.py", line 166, in run_user
+    user.run()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/users.py", line 132, in run
+    self.on_start()
+  File "/home/gsd/benchmark/peertube/locustfiles/mixed.py", line 65, in on_start
+    self.token = resptoken.json()['access_token']
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-05-31T12:31:27Z <Greenlet at 0x7fcfe3144040: run_user(<mixed.QuickstartUser object at 0x7fcfe31479d0>)> failed with JSONDecodeError
+
+[2021-05-31 13:45:39,570] cloud50/INFO/locust.runners: Stopping 4 users
+[2021-05-31 13:45:39,571] cloud50/INFO/locust.runners: 4 Users have been stopped, 0 still running
+[2021-05-31 13:45:39,572] cloud50/INFO/locust.runners: Got quit message from master, shutting down...
+[2021-05-31 13:45:39,572] cloud50/INFO/locust.main: Running teardowns...
+[2021-05-31 13:45:39,573] cloud50/INFO/locust.main: Shutting down (exit code 0), bye.
+[2021-05-31 13:45:39,573] cloud50/INFO/locust.main: Cleaning up runner...
