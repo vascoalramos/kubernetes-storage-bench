@@ -1,6 +1,6 @@
 import os
 
-path = os.path.abspath("../videos")
+path = os.path.abspath("videos")
 videos = os.listdir(path)
 
 files = []
