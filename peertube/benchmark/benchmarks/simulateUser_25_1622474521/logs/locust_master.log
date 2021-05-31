@@ -1,0 +1,435 @@
+[2021-05-31 16:22:51,984] MacBook-Pro.local/INFO/root: Waiting for workers to be ready, 0 of 4 connected
+[2021-05-31 16:22:52,125] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,125] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,125] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,126] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,126] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,126] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,127] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,127] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,127] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,127] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,128] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,128] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,128] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,128] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,129] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,129] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,130] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,130] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,130] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,143] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,144] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,144] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,144] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,144] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,144] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,145] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,145] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,145] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,146] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,146] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,146] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,146] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,147] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,147] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,147] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,147] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,147] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,162] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,162] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,163] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,163] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,163] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,163] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,164] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,164] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,164] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,164] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,165] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,165] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,165] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,165] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,166] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,166] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,166] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:52,187] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,188] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,188] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,189] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,189] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,189] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,189] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,190] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,190] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,190] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,190] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,191] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,191] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,191] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,191] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,191] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,192] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,192] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,192] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,208] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,208] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,209] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,209] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,209] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,209] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,209] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,210] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,210] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,210] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,210] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,211] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,211] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,211] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,211] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,211] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,212] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,212] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,212] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,212] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,226] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,227] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,228] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,228] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,228] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,229] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,229] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,229] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,230] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,230] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,230] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,230] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,231] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,231] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,231] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:52,254] MacBook-Pro.local/INFO/locust.runners: Client 'cloud50_42d6ecdcb9744b9dab63c5ca0fe221ec' reported as ready. Currently 1 clients ready to swarm.
+[2021-05-31 16:22:52,254] MacBook-Pro.local/INFO/locust.runners: Client 'cloud50_bd2dc1ec39ad476c87b443bbdb77787c' reported as ready. Currently 2 clients ready to swarm.
+[2021-05-31 16:22:52,656] MacBook-Pro.local/INFO/locust.runners: Client 'cloud69_953e62b0e2c5457fa8018f24e3904f56' reported as ready. Currently 3 clients ready to swarm.
+[2021-05-31 16:22:52,679] MacBook-Pro.local/INFO/locust.runners: Client 'cloud69_fca6b6013ac74902aa78a75c14c75808' reported as ready. Currently 4 clients ready to swarm.
+[2021-05-31 16:22:52,989] MacBook-Pro.local/INFO/locust.runners: Sending spawn jobs of 6 users and 0.50 spawn rate to 4 ready clients
+[2021-05-31 16:22:52,990] MacBook-Pro.local/INFO/locust.main: Run time limit set to 900 seconds
+[2021-05-31 16:22:52,991] MacBook-Pro.local/INFO/locust.main: Starting Locust 1.4.4
+[2021-05-31 16:22:53,523] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:53,580] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:56,524] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:56,581] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:22:59,663] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:22:59,663] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:23:02,553] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:23:02,598] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:23:05,527] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:23:05,583] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:23:08,534] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:23:08,584] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:23:11,686] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:23:11,686] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:23:14,529] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:23:14,602] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:23:17,549] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:23:17,587] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:23:20,532] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:23:20,599] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:23:23,531] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:23:23,589] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:23:26,582] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:23:26,590] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:23:29,532] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:23:29,592] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:23:32,543] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:23:32,592] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:23:35,630] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:23:35,630] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:23:38,538] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:23:38,604] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:23:41,536] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:23:41,599] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:23:44,602] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:23:44,602] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:23:47,539] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:23:47,598] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:23:50,543] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:23:50,602] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:23:53,540] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:23:53,600] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:23:56,541] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:23:56,610] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:23:59,653] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:23:59,654] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:24:02,554] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:24:02,604] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:24:05,543] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:24:05,606] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:24:08,641] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:24:08,641] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:24:11,545] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:24:11,606] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:24:14,548] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:24:14,606] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:24:17,548] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:24:17,607] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:24:20,550] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:24:20,618] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:24:23,712] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:24:23,716] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:24:26,552] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:24:26,610] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:24:29,552] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:24:29,610] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:24:32,556] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:24:32,612] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:24:35,661] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:24:35,662] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:24:38,568] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:24:38,614] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:24:41,559] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:24:41,615] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:24:44,558] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:24:44,619] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:24:47,559] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:24:47,617] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:24:50,559] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:24:50,619] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:24:53,560] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:24:53,624] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:24:56,563] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:24:56,621] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:24:59,563] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:24:59,621] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:25:02,565] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:25:02,621] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:25:05,564] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:25:05,632] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:25:08,566] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:25:08,624] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:25:11,698] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:25:11,699] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:25:14,651] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:25:14,652] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:25:17,578] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:25:17,627] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:25:20,574] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:25:20,630] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:25:23,571] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:25:23,630] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:25:26,579] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:25:26,630] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:25:29,573] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:25:29,639] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:25:32,574] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:25:32,636] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:25:35,577] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:25:35,639] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:25:38,575] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:25:38,635] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:25:41,577] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:25:41,641] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:25:44,582] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:25:44,642] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:25:47,589] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:25:47,637] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:25:50,579] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:25:50,637] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:25:53,583] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:25:53,640] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:25:56,601] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:25:56,641] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:25:59,585] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:25:59,640] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:26:02,585] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:26:02,642] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:26:05,585] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:26:05,644] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:26:08,588] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:26:08,650] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:26:11,587] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:26:11,645] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:26:14,589] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:26:14,647] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:26:17,590] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:26:17,649] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:26:20,589] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:26:20,649] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:26:23,593] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:26:23,651] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:26:26,596] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:26:26,652] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:26:29,593] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:26:29,650] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:26:32,594] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:26:32,653] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:26:35,595] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:26:35,656] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:26:38,596] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:26:38,653] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:26:41,597] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:26:41,659] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:26:44,600] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:26:44,656] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:26:47,606] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:26:47,657] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:26:50,601] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:26:50,660] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:26:53,605] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:26:53,663] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:26:56,606] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:26:56,690] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:26:59,603] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:26:59,660] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:27:02,610] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:27:02,677] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:27:05,610] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:27:05,662] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:27:08,606] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:27:08,665] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:27:11,606] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:27:11,671] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:27:14,607] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:27:14,665] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:27:17,609] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:27:17,666] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:27:20,619] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:27:20,666] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:27:23,612] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:27:23,666] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:27:26,620] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:27:26,895] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:27:29,612] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:27:29,674] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:27:32,613] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:27:32,670] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:27:35,621] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:27:35,671] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:27:38,614] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:27:38,671] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:27:41,618] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:27:41,674] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:27:44,618] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:27:44,675] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:27:47,658] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:27:47,694] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:27:50,622] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:27:50,676] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:27:53,623] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:27:53,677] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:27:56,629] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:27:56,678] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:27:59,642] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:27:59,680] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:28:02,628] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:28:02,680] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:28:05,660] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:28:05,682] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:28:08,630] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:28:08,682] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:28:11,631] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:28:11,684] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:28:14,635] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:28:14,698] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:28:17,635] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:28:17,689] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:28:20,637] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:28:20,689] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:28:23,640] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:28:23,690] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:28:26,639] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:28:26,692] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:28:29,660] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:28:29,695] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:28:32,641] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:28:32,699] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:28:35,645] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:28:35,699] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:28:38,644] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:28:38,702] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:28:41,646] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:28:41,701] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:28:44,647] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:28:44,702] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:28:47,662] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:28:47,719] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:28:50,650] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:28:50,711] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:28:53,652] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:28:53,708] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:28:56,654] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:28:56,711] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:28:59,655] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:28:59,712] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:29:02,657] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:29:02,716] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:29:05,658] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:29:05,715] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:29:08,658] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:29:08,721] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:29:11,660] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:29:11,718] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:29:14,662] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:29:14,722] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:29:17,664] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:29:17,723] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:29:20,666] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:29:20,724] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:29:23,715] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:29:23,725] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:29:26,676] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:29:26,727] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:29:29,671] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:29:29,729] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:29:32,673] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:29:32,738] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:29:35,675] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:29:35,737] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:29:38,677] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:29:38,734] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:29:41,676] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:29:41,736] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+[2021-05-31 16:29:44,677] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_98eaf13098d84c80a66553c57e427b15
+[2021-05-31 16:29:44,737] MacBook-Pro.local/INFO/locust.runners: Discarded report from unrecognized worker cloud69_54e4a2e4196145f5880e13cd19ee4440
+KeyboardInterrupt
+2021-05-31T15:29:45Z
+[2021-05-31 16:29:45,098] MacBook-Pro.local/INFO/locust.main: Running teardowns...
+[2021-05-31 16:29:45,114] MacBook-Pro.local/INFO/locust.main: Got SIGTERM signal
+[2021-05-31 16:29:45,114] MacBook-Pro.local/INFO/locust.main: Running teardowns...
+[2021-05-31 16:29:45,132] MacBook-Pro.local/INFO/locust.runners: Removing cloud69_953e62b0e2c5457fa8018f24e3904f56 client from running clients
+[2021-05-31 16:29:45,133] MacBook-Pro.local/INFO/locust.runners: Client 'cloud69_953e62b0e2c5457fa8018f24e3904f56' reported as ready. Currently 4 clients ready to swarm.
+[2021-05-31 16:29:45,133] MacBook-Pro.local/INFO/locust.runners: Removing cloud50_42d6ecdcb9744b9dab63c5ca0fe221ec client from running clients
+[2021-05-31 16:29:45,134] MacBook-Pro.local/INFO/locust.runners: Removing cloud69_fca6b6013ac74902aa78a75c14c75808 client from running clients
+[2021-05-31 16:29:45,134] MacBook-Pro.local/INFO/locust.runners: Removing cloud50_bd2dc1ec39ad476c87b443bbdb77787c client from running clients
+[2021-05-31 16:29:45,134] MacBook-Pro.local/INFO/locust.runners: Client 'cloud50_42d6ecdcb9744b9dab63c5ca0fe221ec' reported as ready. Currently 2 clients ready to swarm.
+[2021-05-31 16:29:45,134] MacBook-Pro.local/INFO/locust.runners: Client 'cloud69_fca6b6013ac74902aa78a75c14c75808' reported as ready. Currently 3 clients ready to swarm.
+[2021-05-31 16:29:45,135] MacBook-Pro.local/INFO/locust.runners: Client 'cloud50_bd2dc1ec39ad476c87b443bbdb77787c' reported as ready. Currently 4 clients ready to swarm.
+[2021-05-31 16:29:45,137] MacBook-Pro.local/INFO/locust.runners: Client 'cloud50_42d6ecdcb9744b9dab63c5ca0fe221ec' quit. Currently 3 clients connected.
+[2021-05-31 16:29:45,140] MacBook-Pro.local/INFO/locust.runners: Client 'cloud69_953e62b0e2c5457fa8018f24e3904f56' quit. Currently 2 clients connected.
+[2021-05-31 16:29:45,140] MacBook-Pro.local/INFO/locust.runners: Client 'cloud69_fca6b6013ac74902aa78a75c14c75808' quit. Currently 1 clients connected.
+[2021-05-31 16:29:45,140] MacBook-Pro.local/INFO/locust.runners: Client 'cloud50_bd2dc1ec39ad476c87b443bbdb77787c' quit. Currently 0 clients connected.
+[2021-05-31 16:29:45,141] MacBook-Pro.local/INFO/locust.runners: The last worker quit, stopping test.
+[2021-05-31 16:29:45,606] MacBook-Pro.local/INFO/locust.main: Shutting down (exit code 1), bye.
+[2021-05-31 16:29:45,606] MacBook-Pro.local/INFO/locust.main: Cleaning up runner...
+[2021-05-31 16:29:45,616] MacBook-Pro.local/INFO/locust.main: Shutting down (exit code 1), bye.
+[2021-05-31 16:29:45,616] MacBook-Pro.local/INFO/locust.main: Cleaning up runner...
+ Name                                                          # reqs      # fails  |     Avg     Min     Max  Median  |   req/s failures/s
+--------------------------------------------------------------------------------------------------------------------------------------------
+ GET /api/v1/oauth-clients/local                                   25     0(0.00%)  |      17       8      35      15  |    1.71    0.00
+ POST /api/v1/users/token                                          25  25(100.00%)  |     126      86     356      95  |    1.71    1.71
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregated                                                        50   25(50.00%)  |      72       8     356      35  |    3.42    1.71
+
+Response time percentiles (approximated)
+ Type     Name                                                              50%    66%    75%    80%    90%    95%    98%    99%  99.9% 99.99%   100% # reqs
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ GET      /api/v1/oauth-clients/local                                        15     16     18     18     34     35     35     35     35     35     35     25
+ POST     /api/v1/users/token                                                95    110    110    120    310    320    360    360    360    360    360     25
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ None     Aggregated                                                         87     94     95    110    120    310    360    360    360    360    360     50
+
+Error report
+ # occurrences      Error                                                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------
+ 25                 POST /api/v1/users/token: "HTTPError('400 Client Error: Bad Request for url: http://cloud74.cluster.lsd.di.uminho.pt:30001/api/v1/users/token')"
+--------------------------------------------------------------------------------------------------------------------------------------------
+

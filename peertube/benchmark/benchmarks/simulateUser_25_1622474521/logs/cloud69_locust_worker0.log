@@ -1,0 +1,59 @@
+[2021-05-31 15:22:52,588] cloud69/WARNING/locust.main: System open file limit '1024' is below minimum setting '10000'. It's not high enough for load testing, and the OS didn't allow locust to increase it by itself. See https://github.com/locustio/locust/wiki/Installation#increasing-maximum-number-of-open-files-limit for more info.
+[2021-05-31 15:22:52,590] cloud69/INFO/locust.main: Starting Locust 1.5.3
+[2021-05-31 15:22:53,012] cloud69/INFO/locust.runners: Spawning 6 users at the rate 0.5 users/s (0 users already running)...
+Traceback (most recent call last):
+  File "src/gevent/greenlet.py", line 906, in gevent._gevent_cgreenlet.Greenlet.run
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/users.py", line 166, in run_user
+    user.run()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/users.py", line 132, in run
+    self.on_start()
+  File "/home/gsd/benchmark/peertube/locustfiles/mixed.py", line 65, in on_start
+    self.token = resptoken.json()['access_token']
+KeyError: 'access_token'
+2021-05-31T15:22:53Z <Greenlet at 0x7f721ba66370: run_user(<mixed.QuickstartUser object at 0x7f721ba53400>)> failed with KeyError
+
+Traceback (most recent call last):
+  File "src/gevent/greenlet.py", line 906, in gevent._gevent_cgreenlet.Greenlet.run
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/users.py", line 166, in run_user
+    user.run()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/users.py", line 132, in run
+    self.on_start()
+  File "/home/gsd/benchmark/peertube/locustfiles/mixed.py", line 65, in on_start
+    self.token = resptoken.json()['access_token']
+KeyError: 'access_token'
+2021-05-31T15:22:55Z <Greenlet at 0x7f721ba66480: run_user(<mixed.QuickstartUser object at 0x7f7219f98d30>)> failed with KeyError
+
+Traceback (most recent call last):
+  File "src/gevent/greenlet.py", line 906, in gevent._gevent_cgreenlet.Greenlet.run
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/users.py", line 166, in run_user
+    user.run()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/users.py", line 132, in run
+    self.on_start()
+  File "/home/gsd/benchmark/peertube/locustfiles/mixed.py", line 65, in on_start
+    self.token = resptoken.json()['access_token']
+KeyError: 'access_token'
+2021-05-31T15:22:57Z <Greenlet at 0x7f721ba666a0: run_user(<mixed.QuickstartUser object at 0x7f7219f98c70>)> failed with KeyError
+
+Traceback (most recent call last):
+  File "src/gevent/greenlet.py", line 906, in gevent._gevent_cgreenlet.Greenlet.run
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/users.py", line 166, in run_user
+    user.run()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/users.py", line 132, in run
+    self.on_start()
+  File "/home/gsd/benchmark/peertube/locustfiles/mixed.py", line 65, in on_start
+    self.token = resptoken.json()['access_token']
+KeyError: 'access_token'
+2021-05-31T15:22:59Z <Greenlet at 0x7f721ba669d0: run_user(<mixed.QuickstartUser object at 0x7f7219fcfc10>)> failed with KeyError
+
+Traceback (most recent call last):
+  File "src/gevent/greenlet.py", line 906, in gevent._gevent_cgreenlet.Greenlet.run
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/users.py", line 166, in run_user
+    user.run()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/users.py", line 132, in run
+    self.on_start()
+  File "/home/gsd/benchmark/peertube/locustfiles/mixed.py", line 65, in on_start
+    self.token = resptoken.json()['access_token']
+KeyError: 'access_token'
+2021-05-31T15:23:01Z <Greenlet at 0x7f721ba666a0: run_user(<mixed.QuickstartUser object at 0x7f7219f98a60>)> failed with KeyError
+
+[2021-05-31 15:23:03,019] cloud69/INFO/locust.runners: All users spawned: QuickstartUser: 6 (1 total running)

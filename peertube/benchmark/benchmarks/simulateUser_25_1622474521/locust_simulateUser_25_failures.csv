@@ -1,0 +1,2 @@
+Method,Name,Error,Occurrences
+POST,/api/v1/users/token,HTTPError('400 Client Error: Bad Request for url: http://cloud74.cluster.lsd.di.uminho.pt:30001/api/v1/users/token'),25

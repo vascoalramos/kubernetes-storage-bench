@@ -35,11 +35,11 @@ class QuickstartUser(HttpUser):
         #    "password":"vekiduvesavipiko"
         #})
 
-        self.videos = ["/download/videos/800f387f-a5f1-4530-ad9c-5e1b4590beb6-720.mp4",
-                    "/download/videos/cb65b685-b871-4703-aa39-956e0ccd1240-720.mp4",
-                    "/download/videos/ca68e186-ed43-46a0-9eda-02e7ccbdce5b-720.mp4",
-                    "/download/videos/84825856-240d-4d01-800d-14124a533acf-720.mp4",
-                    "/download/videos/ea39059c-0b44-4731-80b8-1c863562e52f-720.mp4"]
+        self.videos = ["/download/videos/087e0cc0-6f08-4666-b3d2-59ffa0527c12-720.mp4",
+                    "/download/videos/6d5253be-78ec-4cf9-b35f-3759629672ec-720.mp4",
+                    "/download/videos/4ed20867-4cb9-45e4-b987-2483aa830c33-720.mp4",
+                    "/download/videos/0dd78ad0-4cf9-4858-b454-19bf9f34c5f2-720.mp4",
+                    "/download/videos/b70ffc25-12da-4aac-b52b-cecdebce49a0-720.mp4"]
         
         #self.count=0
         #self.token = resptoken.json()['access_token']
