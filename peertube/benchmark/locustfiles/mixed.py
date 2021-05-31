@@ -49,17 +49,17 @@ class QuickstartUser(HttpUser):
             "grant_type":"password",
             "response_type":"code",
             "username":"root",
-            "password":"vekiduvesavipiko"
+            "password":"leyosijuhaqeqeti"
         })
 
         #self.path = os.path.abspath("../videos")
         #self.videos = os.listdir(self.path)
 
-        self.videos = ["/download/videos/5b4e4e1f-aa6f-4d97-851e-454de4e2d8ad-720.mp4",
-                    "/download/videos/607cb2c4-6bbb-44d8-ace9-a009f06caf75-720.mp4",
-                    "/download/videos/e13e1b16-0d29-4fa5-b8ff-6780033d763b-720.mp4",
-                    "/download/videos/799782f3-af98-4a58-9c97-527da7c7732a-720.mp4",
-                    "/download/videos/8a273bd9-63ae-40f5-87bd-7f307f2c057f-720.mp4"]
+        self.videos = ["/download/videos/800f387f-a5f1-4530-ad9c-5e1b4590beb6-720.mp4",
+                    "/download/videos/cb65b685-b871-4703-aa39-956e0ccd1240-720.mp4",
+                    "/download/videos/ca68e186-ed43-46a0-9eda-02e7ccbdce5b-720.mp4",
+                    "/download/videos/84825856-240d-4d01-800d-14124a533acf-720.mp4",
+                    "/download/videos/ea39059c-0b44-4731-80b8-1c863562e52f-720.mp4"]
         
         self.count=0
         self.token = resptoken.json()['access_token']
