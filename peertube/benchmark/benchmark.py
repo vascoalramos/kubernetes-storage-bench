@@ -84,7 +84,7 @@ if __name__ == "__main__":
         print("Starting Locust master...")
         with open(f"{folder}/logs/locust_master.log", "w") as log:
             master = subprocess.Popen(f"locust --conf={scenario}Master.conf --users={users} --spawn-rate={SPAWN_RATES[str(users)]} \
-                        --csv={folder}/locust_{scenario}_{users} --html={folder}/report.html", shell=True, stdout=log, stderr=log)
+                        --csv={folder}/locust_{scenario}_{users} --html={folder}/report.html --csv-full-history", shell=True, stdout=log, stderr=log)
 
         # Check if processes are still alive
         isExecuting = True
