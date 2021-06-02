@@ -1,3 +1,0 @@
-Method,Name,Error,Occurrences
-POST,/api/v1/videos/upload,HTTPError('422 Client Error: Unprocessable Entity for url: http://cloud74.cluster.lsd.di.uminho.pt:30001/api/v1/videos/upload'),613
-POST,/api/v1/users/token,HTTPError('429 Client Error: Too Many Requests for url: http://cloud74.cluster.lsd.di.uminho.pt:30001/api/v1/users/token'),10
