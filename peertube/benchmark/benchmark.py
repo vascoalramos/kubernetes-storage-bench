@@ -15,7 +15,7 @@ def terminate(procPid):
 
 # Environment configuration
 CLUSTER_MACHINES = ["cloud74", "cloud75", "cloud76"]
-STORAGE_MACHINES = ["cloud108"]
+STORAGE_MACHINES = ["cloud106", "cloud107", "cloud108"]
 LOCUST_MACHINES = ["cloud50", "cloud69"]
 LOCUST_MACHINES_CORES = 2
 SPAWN_RATES = {"1": 1, "25": 2, "50": 1, "75": 1.5, "100": 2}

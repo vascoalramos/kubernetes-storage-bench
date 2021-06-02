@@ -26,9 +26,10 @@ autoscaling:
 
 persistence:
     enabled: true
-    storageClass: nfs-client
-    accessMode: ReadWriteMany
-    size: 25Gi
+    #storageClass: nfs-client
+    #accessMode: ReadWriteMany
+    #size: 25Gi
+    existingClaim: peertube-data
 
 postgresql:
     enabled: true
@@ -44,9 +45,10 @@ postgresql:
             size: 10Gi
     persistence:
         enabled: true
-        storageClass: nfs-client
-        accessMode: ReadWriteMany
-        size: 10Gi
+        #storageClass: nfs-client
+        #accessMode: ReadWriteMany
+        #size: 10Gi
+        existingClaim: peertube-postgresql
 
 redis:
   enabled: true
@@ -54,9 +56,10 @@ redis:
   master:
     persistence:
       enabled: true
-      storageClass: nfs-client
-      accessMode: ReadWriteMany
-      size: 5Gi
+      #storageClass: nfs-client
+      #accessMode: ReadWriteMany
+      #size: 5Gi
+      existingClaim: redis-data-peertube-redis-master-0
   slave:
     replicas: 2
     persistence:

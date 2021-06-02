@@ -1,0 +1,41 @@
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: peertube-postgresql
+spec:
+  storageClassName: manual
+  volumeName: cephfs-vol4
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 10Gi
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: redis-data-peertube-redis-master-0
+spec:
+  storageClassName: manual
+  volumeName: cephfs-vol5
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 8Gi
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: peertube-data
+spec:
+  storageClassName: manual
+  volumeName: cephfs-vol6
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 25Gi

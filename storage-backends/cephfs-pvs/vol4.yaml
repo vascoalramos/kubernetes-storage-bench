@@ -14,7 +14,7 @@ spec:
   cephfs:
       monitors:
       - 192.168.112.106:6789
-      - 192.168.112.106:6789
+      - 192.168.112.107:6789
       path: /vol4
       user: admin
       secretRef:

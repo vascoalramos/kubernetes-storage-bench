@@ -1,0 +1,13 @@
+[2021-06-02 13:51:48,651] cloud69/WARNING/locust.main: System open file limit '1024' is below minimum setting '10000'. It's not high enough for load testing, and the OS didn't allow locust to increase it by itself. See https://github.com/locustio/locust/wiki/Installation#increasing-maximum-number-of-open-files-limit for more info.
+[2021-06-02 13:51:48,652] cloud69/INFO/locust.main: Starting Locust 1.5.3
+[2021-06-02 13:51:49,073] cloud69/INFO/locust.runners: Spawning 19 users at the rate 0.375 users/s (0 users already running)...
+[2021-06-02 13:52:37,096] cloud69/INFO/locust.runners: All users spawned: StaticBenchmarkWrite: 19 (19 total running)
+[2021-06-02 14:06:49,070] cloud69/INFO/locust.runners: Stopping 19 users
+[2021-06-02 14:06:49,144] cloud69/INFO/locust.runners: 19 Users have been stopped, 0 still running
+[2021-06-02 14:06:49,145] cloud69/INFO/locust.runners: Got quit message from master, shutting down...
+[2021-06-02 14:06:49,145] cloud69/INFO/locust.main: Running teardowns...
+[2021-06-02 14:06:49,145] cloud69/INFO/locust.main: Shutting down (exit code 0), bye.
+[2021-06-02 14:06:49,145] cloud69/INFO/locust.main: Cleaning up runner...
+b'<?xml version="1.0" encoding="utf-8"?>\n<d:error xmlns:d="DAV:" xmlns:s="http://sabredav.org/ns">\n  <s:exception>OCA\\DAV\\Connector\\Sabre\\Exception\\FileLocked</s:exception>\n  <s:message>"admin/files/_generated1622641909.074622.pdf.upload.part" is locked, existing lock on file: exclusive</s:message>\n</d:error>\n'
+b'<?xml version="1.0" encoding="utf-8"?>\n<d:error xmlns:d="DAV:" xmlns:s="http://sabredav.org/ns">\n  <s:exception>OCA\\DAV\\Connector\\Sabre\\Exception\\FileLocked</s:exception>\n  <s:message>"admin/files/_generated1622641911.74237.pdf.upload.part" is locked, existing lock on file: exclusive</s:message>\n</d:error>\n'
+b'<?xml version="1.0" encoding="utf-8"?>\n<d:error xmlns:d="DAV:" xmlns:s="http://sabredav.org/ns">\n  <s:exception>OCA\\DAV\\Connector\\Sabre\\Exception\\FileLocked</s:exception>\n  <s:message>"admin/files/_generated1622641917.079198.pdf.upload.part" is locked, existing lock on file: exclusive</s:message>\n</d:error>\n'

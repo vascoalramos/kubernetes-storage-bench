@@ -1,0 +1,35 @@
+[2021-06-02 13:36:35,963] pop-os/INFO/root: Waiting for workers to be ready, 0 of 4 connected
+[2021-06-02 13:36:36,965] pop-os/INFO/root: Waiting for workers to be ready, 0 of 4 connected
+[2021-06-02 13:36:36,988] pop-os/INFO/locust.runners: Client 'cloud50_9a349ef9b7724f04b201997a448630ad' reported as ready. Currently 1 clients ready to swarm.
+[2021-06-02 13:36:36,989] pop-os/INFO/locust.runners: Client 'cloud50_0c82a889a8014b158bac41800f55e8e0' reported as ready. Currently 2 clients ready to swarm.
+[2021-06-02 13:36:37,119] pop-os/INFO/locust.runners: Client 'cloud69_07615f7c7c764635ba8b10ea8f00f924' reported as ready. Currently 3 clients ready to swarm.
+[2021-06-02 13:36:37,129] pop-os/INFO/locust.runners: Client 'cloud69_6e5bdf130a554eadbdb9126928d412ab' reported as ready. Currently 4 clients ready to swarm.
+[2021-06-02 13:36:37,967] pop-os/INFO/locust.runners: Sending spawn jobs of 25 users and 0.50 spawn rate to 4 ready clients
+[2021-06-02 13:36:37,968] pop-os/INFO/locust.main: Run time limit set to 900 seconds
+[2021-06-02 13:36:37,972] pop-os/INFO/locust.main: Starting Locust 1.4.4
+[2021-06-02 13:51:37,967] pop-os/INFO/locust.main: Time limit reached. Stopping Locust.
+[2021-06-02 13:51:37,989] pop-os/INFO/locust.runners: Removing cloud50_9a349ef9b7724f04b201997a448630ad client from running clients
+[2021-06-02 13:51:37,989] pop-os/INFO/locust.runners: Client 'cloud50_9a349ef9b7724f04b201997a448630ad' reported as ready. Currently 4 clients ready to swarm.
+[2021-06-02 13:51:37,990] pop-os/INFO/locust.runners: Removing cloud50_0c82a889a8014b158bac41800f55e8e0 client from running clients
+[2021-06-02 13:51:37,990] pop-os/INFO/locust.runners: Client 'cloud50_0c82a889a8014b158bac41800f55e8e0' reported as ready. Currently 4 clients ready to swarm.
+[2021-06-02 13:51:37,991] pop-os/INFO/locust.runners: Client 'cloud50_9a349ef9b7724f04b201997a448630ad' quit. Currently 1 clients connected.
+[2021-06-02 13:51:37,991] pop-os/INFO/locust.runners: Removing cloud69_07615f7c7c764635ba8b10ea8f00f924 client from running clients
+[2021-06-02 13:51:37,992] pop-os/INFO/locust.runners: Removing cloud69_6e5bdf130a554eadbdb9126928d412ab client from running clients
+[2021-06-02 13:51:37,992] pop-os/INFO/locust.runners: Client 'cloud50_0c82a889a8014b158bac41800f55e8e0' quit. Currently 0 clients connected.
+[2021-06-02 13:51:37,992] pop-os/INFO/locust.runners: The last worker quit, stopping test.
+[2021-06-02 13:51:38,528] pop-os/INFO/locust.main: Running teardowns...
+[2021-06-02 13:51:39,029] pop-os/INFO/locust.main: Shutting down (exit code 0), bye.
+[2021-06-02 13:51:39,030] pop-os/INFO/locust.main: Cleaning up runner...
+ Name                                                          # reqs      # fails  |     Avg     Min     Max  Median  |   req/s failures/s
+--------------------------------------------------------------------------------------------------------------------------------------------
+ GET Get file                                                   21467     0(0.00%)  |      87      35    1137      70  |   23.85    0.00
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregated                                                     21467     0(0.00%)  |      87      35    1137      70  |   23.85    0.00
+
+Response time percentiles (approximated)
+ Type     Name                                                              50%    66%    75%    80%    90%    95%    98%    99%  99.9% 99.99%   100% # reqs
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ GET      Get file                                                           70     79     88     95    120    160    370    430    640   1100   1100  21467
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ None     Aggregated                                                         70     79     88     95    120    160    370    430    640   1100   1100  21467
+

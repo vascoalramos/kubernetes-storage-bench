@@ -1,0 +1,39 @@
+[2021-06-02 08:21:00,115] pop-os/INFO/root: Waiting for workers to be ready, 0 of 4 connected
+[2021-06-02 08:21:01,084] pop-os/INFO/locust.runners: Client 'cloud50_359c28b6f88a45d88e5e7dc18e932bd6' reported as ready. Currently 1 clients ready to swarm.
+[2021-06-02 08:21:01,084] pop-os/INFO/locust.runners: Client 'cloud50_e1582d49b2224d2c967166f5300b1fe8' reported as ready. Currently 2 clients ready to swarm.
+[2021-06-02 08:21:01,116] pop-os/INFO/root: Waiting for workers to be ready, 2 of 4 connected
+[2021-06-02 08:21:01,234] pop-os/INFO/locust.runners: Client 'cloud69_002ae19b90d64201b758281b297f0967' reported as ready. Currently 3 clients ready to swarm.
+[2021-06-02 08:21:01,237] pop-os/INFO/locust.runners: Client 'cloud69_79ba028991b34910bc15747851d3a479' reported as ready. Currently 4 clients ready to swarm.
+[2021-06-02 08:21:02,117] pop-os/INFO/locust.runners: Sending spawn jobs of 6 users and 0.12 spawn rate to 4 ready clients
+[2021-06-02 08:21:02,118] pop-os/INFO/locust.main: Run time limit set to 900 seconds
+[2021-06-02 08:21:02,121] pop-os/INFO/locust.main: Starting Locust 1.4.4
+[2021-06-02 08:36:02,118] pop-os/INFO/locust.main: Time limit reached. Stopping Locust.
+[2021-06-02 08:36:02,138] pop-os/INFO/locust.runners: Removing cloud50_e1582d49b2224d2c967166f5300b1fe8 client from running clients
+[2021-06-02 08:36:02,139] pop-os/INFO/locust.runners: Client 'cloud50_e1582d49b2224d2c967166f5300b1fe8' reported as ready. Currently 4 clients ready to swarm.
+[2021-06-02 08:36:02,139] pop-os/INFO/locust.runners: Removing cloud50_359c28b6f88a45d88e5e7dc18e932bd6 client from running clients
+[2021-06-02 08:36:02,140] pop-os/INFO/locust.runners: Client 'cloud50_359c28b6f88a45d88e5e7dc18e932bd6' reported as ready. Currently 4 clients ready to swarm.
+[2021-06-02 08:36:02,140] pop-os/INFO/locust.runners: Removing cloud69_002ae19b90d64201b758281b297f0967 client from running clients
+[2021-06-02 08:36:02,140] pop-os/INFO/locust.runners: Removing cloud69_79ba028991b34910bc15747851d3a479 client from running clients
+[2021-06-02 08:36:02,140] pop-os/INFO/locust.runners: Client 'cloud50_e1582d49b2224d2c967166f5300b1fe8' quit. Currently 1 clients connected.
+[2021-06-02 08:36:02,140] pop-os/INFO/locust.runners: Client 'cloud69_002ae19b90d64201b758281b297f0967' reported as ready. Currently 2 clients ready to swarm.
+[2021-06-02 08:36:02,140] pop-os/INFO/locust.runners: Client 'cloud69_79ba028991b34910bc15747851d3a479' reported as ready. Currently 3 clients ready to swarm.
+[2021-06-02 08:36:02,140] pop-os/INFO/locust.runners: Client 'cloud50_359c28b6f88a45d88e5e7dc18e932bd6' quit. Currently 2 clients connected.
+[2021-06-02 08:36:02,141] pop-os/INFO/locust.runners: Client 'cloud69_002ae19b90d64201b758281b297f0967' quit. Currently 1 clients connected.
+[2021-06-02 08:36:02,141] pop-os/INFO/locust.runners: Client 'cloud69_79ba028991b34910bc15747851d3a479' quit. Currently 0 clients connected.
+[2021-06-02 08:36:02,141] pop-os/INFO/locust.runners: The last worker quit, stopping test.
+[2021-06-02 08:36:02,689] pop-os/INFO/locust.main: Running teardowns...
+[2021-06-02 08:36:03,191] pop-os/INFO/locust.main: Shutting down (exit code 0), bye.
+[2021-06-02 08:36:03,191] pop-os/INFO/locust.main: Cleaning up runner...
+ Name                                                          # reqs      # fails  |     Avg     Min     Max  Median  |   req/s failures/s
+--------------------------------------------------------------------------------------------------------------------------------------------
+ GET Get file                                                    4328     0(0.00%)  |      89      36    1031      73  |    4.81    0.00
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregated                                                      4328     0(0.00%)  |      89      36    1031      73  |    4.81    0.00
+
+Response time percentiles (approximated)
+ Type     Name                                                              50%    66%    75%    80%    90%    95%    98%    99%  99.9% 99.99%   100% # reqs
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ GET      Get file                                                           73     79     87     92    110    140    370    410    510   1000   1000   4328
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ None     Aggregated                                                         73     79     87     92    110    140    370    410    510   1000   1000   4328
+
