@@ -1,0 +1,40 @@
+[2021-06-02 13:58:21,224] pop-os/INFO/root: Waiting for workers to be ready, 0 of 4 connected
+[2021-06-02 13:58:21,564] pop-os/INFO/locust.runners: Client 'cloud50_5a1eec80798b47da97b90a093fdee83b' reported as ready. Currently 1 clients ready to swarm.
+[2021-06-02 13:58:21,564] pop-os/INFO/locust.runners: Client 'cloud50_35702d7d48f24cf891bb1a3ad61f09a3' reported as ready. Currently 2 clients ready to swarm.
+[2021-06-02 13:58:22,096] pop-os/INFO/locust.runners: Client 'cloud69_864d31a3615a450784ae83fd9f195888' reported as ready. Currently 3 clients ready to swarm.
+[2021-06-02 13:58:22,097] pop-os/INFO/locust.runners: Client 'cloud69_4d63fef5d15541b9acbe9818f96bbf6a' reported as ready. Currently 4 clients ready to swarm.
+[2021-06-02 13:58:22,225] pop-os/INFO/locust.runners: Sending spawn jobs of 6 users and 0.12 spawn rate to 4 ready clients
+[2021-06-02 13:58:22,226] pop-os/INFO/locust.main: Run time limit set to 900 seconds
+[2021-06-02 13:58:22,227] pop-os/INFO/locust.main: Starting Locust 1.4.4
+[2021-06-02 14:13:22,226] pop-os/INFO/locust.main: Time limit reached. Stopping Locust.
+[2021-06-02 14:13:22,268] pop-os/INFO/locust.runners: Removing cloud50_35702d7d48f24cf891bb1a3ad61f09a3 client from running clients
+[2021-06-02 14:13:22,269] pop-os/INFO/locust.runners: Client 'cloud50_35702d7d48f24cf891bb1a3ad61f09a3' reported as ready. Currently 4 clients ready to swarm.
+[2021-06-02 14:13:22,270] pop-os/INFO/locust.runners: Removing cloud69_4d63fef5d15541b9acbe9818f96bbf6a client from running clients
+[2021-06-02 14:13:22,270] pop-os/INFO/locust.runners: Removing cloud50_5a1eec80798b47da97b90a093fdee83b client from running clients
+[2021-06-02 14:13:22,270] pop-os/INFO/locust.runners: Removing cloud69_864d31a3615a450784ae83fd9f195888 client from running clients
+[2021-06-02 14:13:22,271] pop-os/INFO/locust.runners: Client 'cloud50_35702d7d48f24cf891bb1a3ad61f09a3' quit. Currently 0 clients connected.
+[2021-06-02 14:13:22,271] pop-os/INFO/locust.runners: The last worker quit, stopping test.
+[2021-06-02 14:13:22,794] pop-os/INFO/locust.main: Running teardowns...
+[2021-06-02 14:13:23,297] pop-os/INFO/locust.main: Shutting down (exit code 1), bye.
+[2021-06-02 14:13:23,297] pop-os/INFO/locust.main: Cleaning up runner...
+ Name                                                          # reqs      # fails  |     Avg     Min     Max  Median  |   req/s failures/s
+--------------------------------------------------------------------------------------------------------------------------------------------
+ MKCOL Create folder                                              134     0(0.00%)  |     217     123     767     180  |    0.15    0.00
+ PUT Upload file                                                 2517     1(0.04%)  |     319     157    1451     280  |    2.80    0.00
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregated                                                      2651     1(0.04%)  |     313     123    1451     270  |    2.95    0.00
+
+Response time percentiles (approximated)
+ Type     Name                                                              50%    66%    75%    80%    90%    95%    98%    99%  99.9% 99.99%   100% # reqs
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ MKCOL    Create folder                                                     180    200    210    220    290    470    650    750    770    770    770    134
+ PUT      Upload file                                                       280    310    340    360    500    600    810    930   1300   1500   1500   2517
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ None     Aggregated                                                        270    300    330    350    490    590    800    930   1300   1500   1500   2651
+
+Error report
+ # occurrences      Error                                                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------
+ 1                  PUT Upload file: "HTTPError('423 Client Error: Locked for url: Upload file')"                       
+--------------------------------------------------------------------------------------------------------------------------------------------
+
