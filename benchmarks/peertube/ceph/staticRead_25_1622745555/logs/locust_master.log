@@ -1,0 +1,38 @@
+[2021-06-03 19:40:06,508] MacBook-Pro.local/INFO/root: Waiting for workers to be ready, 0 of 4 connected
+[2021-06-03 19:40:06,633] MacBook-Pro.local/INFO/locust.runners: Client 'cloud50_221029658e0948739819c5c83a66b4f6' reported as ready. Currently 1 clients ready to swarm.
+[2021-06-03 19:40:06,851] MacBook-Pro.local/INFO/locust.runners: Client 'cloud69_9a1f8bf775ad437cbcc686d7a86da3eb' reported as ready. Currently 2 clients ready to swarm.
+[2021-06-03 19:40:06,870] MacBook-Pro.local/INFO/locust.runners: Client 'cloud69_ef626cf0127f4f459d3a3e2efb80e14a' reported as ready. Currently 3 clients ready to swarm.
+[2021-06-03 19:40:07,168] MacBook-Pro.local/INFO/locust.runners: Client 'cloud50_d3c016cd07004c88a645ac5e54120cf5' reported as ready. Currently 4 clients ready to swarm.
+[2021-06-03 19:40:07,511] MacBook-Pro.local/INFO/locust.runners: Sending spawn jobs of 6 users and 0.50 spawn rate to 4 ready clients
+[2021-06-03 19:40:07,512] MacBook-Pro.local/INFO/locust.main: Run time limit set to 900 seconds
+[2021-06-03 19:40:07,512] MacBook-Pro.local/INFO/locust.main: Starting Locust 1.4.4
+[2021-06-03 19:55:07,512] MacBook-Pro.local/INFO/locust.main: Time limit reached. Stopping Locust.
+[2021-06-03 19:55:07,542] MacBook-Pro.local/INFO/locust.runners: Removing cloud50_221029658e0948739819c5c83a66b4f6 client from running clients
+[2021-06-03 19:55:07,543] MacBook-Pro.local/INFO/locust.runners: Removing cloud50_d3c016cd07004c88a645ac5e54120cf5 client from running clients
+[2021-06-03 19:55:07,543] MacBook-Pro.local/INFO/locust.runners: Client 'cloud50_221029658e0948739819c5c83a66b4f6' reported as ready. Currently 3 clients ready to swarm.
+[2021-06-03 19:55:07,543] MacBook-Pro.local/INFO/locust.runners: Client 'cloud50_d3c016cd07004c88a645ac5e54120cf5' reported as ready. Currently 4 clients ready to swarm.
+[2021-06-03 19:55:07,544] MacBook-Pro.local/INFO/locust.runners: Removing cloud69_ef626cf0127f4f459d3a3e2efb80e14a client from running clients
+[2021-06-03 19:55:07,545] MacBook-Pro.local/INFO/locust.runners: Client 'cloud69_ef626cf0127f4f459d3a3e2efb80e14a' reported as ready. Currently 4 clients ready to swarm.
+[2021-06-03 19:55:07,545] MacBook-Pro.local/INFO/locust.runners: Client 'cloud50_221029658e0948739819c5c83a66b4f6' quit. Currently 2 clients connected.
+[2021-06-03 19:55:07,545] MacBook-Pro.local/INFO/locust.runners: Client 'cloud50_d3c016cd07004c88a645ac5e54120cf5' quit. Currently 1 clients connected.
+[2021-06-03 19:55:07,545] MacBook-Pro.local/INFO/locust.runners: Removing cloud69_9a1f8bf775ad437cbcc686d7a86da3eb client from running clients
+[2021-06-03 19:55:07,545] MacBook-Pro.local/INFO/locust.runners: Client 'cloud69_9a1f8bf775ad437cbcc686d7a86da3eb' reported as ready. Currently 2 clients ready to swarm.
+[2021-06-03 19:55:07,551] MacBook-Pro.local/INFO/locust.runners: Client 'cloud69_ef626cf0127f4f459d3a3e2efb80e14a' quit. Currently 1 clients connected.
+[2021-06-03 19:55:07,551] MacBook-Pro.local/INFO/locust.runners: Client 'cloud69_9a1f8bf775ad437cbcc686d7a86da3eb' quit. Currently 0 clients connected.
+[2021-06-03 19:55:07,551] MacBook-Pro.local/INFO/locust.runners: The last worker quit, stopping test.
+[2021-06-03 19:55:08,071] MacBook-Pro.local/INFO/locust.main: Running teardowns...
+[2021-06-03 19:55:08,573] MacBook-Pro.local/INFO/locust.main: Shutting down (exit code 0), bye.
+[2021-06-03 19:55:08,573] MacBook-Pro.local/INFO/locust.main: Cleaning up runner...
+ Name                                                          # reqs      # fails  |     Avg     Min     Max  Median  |   req/s failures/s
+--------------------------------------------------------------------------------------------------------------------------------------------
+ GET download                                                    2245     0(0.00%)  |       7       4      23       8  |    2.50    0.00
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregated                                                      2245     0(0.00%)  |       7       4      23       8  |    2.50    0.00
+
+Response time percentiles (approximated)
+ Type     Name                                                              50%    66%    75%    80%    90%    95%    98%    99%  99.9% 99.99%   100% # reqs
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ GET      download                                                            8      8      9      9     11     12     13     14     22     23     23   2245
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ None     Aggregated                                                          8      8      9      9     11     12     13     14     22     23     23   2245
+

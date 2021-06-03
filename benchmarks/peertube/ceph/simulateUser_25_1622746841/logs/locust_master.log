@@ -1,0 +1,50 @@
+[2021-06-03 20:01:32,485] MacBook-Pro.local/INFO/root: Waiting for workers to be ready, 0 of 4 connected
+[2021-06-03 20:01:32,695] MacBook-Pro.local/INFO/locust.runners: Client 'cloud50_20c743a9201f498092d171c5ab6b4bc9' reported as ready. Currently 1 clients ready to swarm.
+[2021-06-03 20:01:32,696] MacBook-Pro.local/INFO/locust.runners: Client 'cloud50_617bf5d636c94eb99af181a515a52c72' reported as ready. Currently 2 clients ready to swarm.
+[2021-06-03 20:01:32,979] MacBook-Pro.local/INFO/locust.runners: Client 'cloud69_64adf62576b54fdf900f646c15a9064a' reported as ready. Currently 3 clients ready to swarm.
+[2021-06-03 20:01:32,980] MacBook-Pro.local/INFO/locust.runners: Client 'cloud69_63c5a9c4adfa4dfbb85f5db09a627072' reported as ready. Currently 4 clients ready to swarm.
+[2021-06-03 20:01:33,487] MacBook-Pro.local/INFO/locust.runners: Sending spawn jobs of 6 users and 0.50 spawn rate to 4 ready clients
+[2021-06-03 20:01:33,488] MacBook-Pro.local/INFO/locust.main: Run time limit set to 900 seconds
+[2021-06-03 20:01:33,489] MacBook-Pro.local/INFO/locust.main: Starting Locust 1.4.4
+[2021-06-03 20:16:33,495] MacBook-Pro.local/INFO/locust.main: Time limit reached. Stopping Locust.
+[2021-06-03 20:16:33,633] MacBook-Pro.local/INFO/locust.runners: Removing cloud50_617bf5d636c94eb99af181a515a52c72 client from running clients
+[2021-06-03 20:16:33,634] MacBook-Pro.local/INFO/locust.runners: Removing cloud69_64adf62576b54fdf900f646c15a9064a client from running clients
+[2021-06-03 20:16:33,634] MacBook-Pro.local/INFO/locust.runners: Client 'cloud69_64adf62576b54fdf900f646c15a9064a' reported as ready. Currently 3 clients ready to swarm.
+[2021-06-03 20:16:33,634] MacBook-Pro.local/INFO/locust.runners: Removing cloud50_20c743a9201f498092d171c5ab6b4bc9 client from running clients
+[2021-06-03 20:16:33,646] MacBook-Pro.local/INFO/locust.runners: Client 'cloud50_20c743a9201f498092d171c5ab6b4bc9' reported as ready. Currently 3 clients ready to swarm.
+[2021-06-03 20:16:33,646] MacBook-Pro.local/INFO/locust.runners: Removing cloud69_63c5a9c4adfa4dfbb85f5db09a627072 client from running clients
+[2021-06-03 20:16:33,646] MacBook-Pro.local/INFO/locust.runners: Client 'cloud69_63c5a9c4adfa4dfbb85f5db09a627072' reported as ready. Currently 3 clients ready to swarm.
+[2021-06-03 20:16:33,654] MacBook-Pro.local/INFO/locust.runners: Client 'cloud50_20c743a9201f498092d171c5ab6b4bc9' quit. Currently 2 clients connected.
+[2021-06-03 20:16:33,654] MacBook-Pro.local/INFO/locust.runners: Client 'cloud50_617bf5d636c94eb99af181a515a52c72' reported as ready. Currently 3 clients ready to swarm.
+[2021-06-03 20:16:33,655] MacBook-Pro.local/INFO/locust.runners: Client 'cloud50_617bf5d636c94eb99af181a515a52c72' quit. Currently 2 clients connected.
+[2021-06-03 20:16:33,690] MacBook-Pro.local/INFO/locust.runners: Client 'cloud69_64adf62576b54fdf900f646c15a9064a' quit. Currently 1 clients connected.
+[2021-06-03 20:16:33,690] MacBook-Pro.local/INFO/locust.runners: Client 'cloud69_63c5a9c4adfa4dfbb85f5db09a627072' quit. Currently 0 clients connected.
+[2021-06-03 20:16:33,691] MacBook-Pro.local/INFO/locust.runners: The last worker quit, stopping test.
+[2021-06-03 20:16:34,052] MacBook-Pro.local/INFO/locust.main: Running teardowns...
+[2021-06-03 20:16:34,556] MacBook-Pro.local/INFO/locust.main: Shutting down (exit code 1), bye.
+[2021-06-03 20:16:34,556] MacBook-Pro.local/INFO/locust.main: Cleaning up runner...
+ Name                                                          # reqs      # fails  |     Avg     Min     Max  Median  |   req/s failures/s
+--------------------------------------------------------------------------------------------------------------------------------------------
+ GET /api/v1/oauth-clients/local                                   25     0(0.00%)  |      17       7      32      16  |    0.03    0.00
+ POST /api/v1/users/token                                          25     0(0.00%)  |     159     109     380     130  |    0.03    0.00
+ POST /api/v1/videos/upload                                       200  100(50.00%)  |     518      87    1902     250  |    0.22    0.11
+ GET download                                                    1091     0(0.00%)  |       8       2     166       7  |    1.21    0.00
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregated                                                      1341   100(7.46%)  |      87       2    1902       7  |    1.49    0.11
+
+Response time percentiles (approximated)
+ Type     Name                                                              50%    66%    75%    80%    90%    95%    98%    99%  99.9% 99.99%   100% # reqs
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ GET      /api/v1/oauth-clients/local                                        16     18     19     22     32     32     33     33     33     33     33     25
+ POST     /api/v1/users/token                                               130    140    140    150    350    370    380    380    380    380    380     25
+ POST     /api/v1/videos/upload                                             720    890    910    930    970   1000   1200   1400   1900   1900   1900    200
+ GET      download                                                            7      8      8      8      9     11     19    100    160    170    170   1091
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ None     Aggregated                                                          7      8      9     15    120    890    950   1000   1400   1900   1900   1341
+
+Error report
+ # occurrences      Error                                                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------
+ 100                POST /api/v1/videos/upload: "HTTPError('422 Client Error: Unprocessable Entity for url: http://cloud74.cluster.lsd.di.uminho.pt:30001/api/v1/videos/upload')"
+--------------------------------------------------------------------------------------------------------------------------------------------
+
