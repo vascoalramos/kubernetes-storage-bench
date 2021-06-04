@@ -35,9 +35,11 @@ postgresql:
       size: 30Gi
   persistence:
     enabled: true
-    storageClass: nfs-client
-    accessMode: ReadWriteMany
-    size: 30Gi
+    #storageClass: nfs-client
+    #accessMode: ReadWriteMany
+    #size: 30Gi
+    existingClaim: wiki-postgresql
+
 
 
 resources:
