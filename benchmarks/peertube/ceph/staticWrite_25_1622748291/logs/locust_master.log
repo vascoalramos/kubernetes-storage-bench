@@ -1,0 +1,49 @@
+[2021-06-03 20:25:42,843] MacBook-Pro.local/INFO/root: Waiting for workers to be ready, 0 of 4 connected
+[2021-06-03 20:25:43,845] MacBook-Pro.local/INFO/root: Waiting for workers to be ready, 0 of 4 connected
+[2021-06-03 20:25:43,985] MacBook-Pro.local/INFO/locust.runners: Client 'cloud69_e4e0eeff37514cd5b0c59cfadeb612f3' reported as ready. Currently 1 clients ready to swarm.
+[2021-06-03 20:25:43,986] MacBook-Pro.local/INFO/locust.runners: Client 'cloud69_1d7b7441ec20420c96fe9bdbcaf06a1f' reported as ready. Currently 2 clients ready to swarm.
+[2021-06-03 20:25:44,045] MacBook-Pro.local/INFO/locust.runners: Client 'cloud50_e3b9904c01454a77a7b24cc369cab73d' reported as ready. Currently 3 clients ready to swarm.
+[2021-06-03 20:25:44,045] MacBook-Pro.local/INFO/locust.runners: Client 'cloud50_a9c16c1d19d44195a94c71aeda7f508e' reported as ready. Currently 4 clients ready to swarm.
+[2021-06-03 20:25:44,850] MacBook-Pro.local/INFO/locust.runners: Sending spawn jobs of 6 users and 0.50 spawn rate to 4 ready clients
+[2021-06-03 20:25:44,851] MacBook-Pro.local/INFO/locust.main: Run time limit set to 900 seconds
+[2021-06-03 20:25:44,851] MacBook-Pro.local/INFO/locust.main: Starting Locust 1.4.4
+[2021-06-03 20:40:44,850] MacBook-Pro.local/INFO/locust.main: Time limit reached. Stopping Locust.
+[2021-06-03 20:40:44,909] MacBook-Pro.local/INFO/locust.runners: Removing cloud69_1d7b7441ec20420c96fe9bdbcaf06a1f client from running clients
+[2021-06-03 20:40:44,909] MacBook-Pro.local/INFO/locust.runners: Removing cloud69_e4e0eeff37514cd5b0c59cfadeb612f3 client from running clients
+[2021-06-03 20:40:44,910] MacBook-Pro.local/INFO/locust.runners: Client 'cloud69_1d7b7441ec20420c96fe9bdbcaf06a1f' reported as ready. Currently 3 clients ready to swarm.
+[2021-06-03 20:40:44,910] MacBook-Pro.local/INFO/locust.runners: Client 'cloud69_e4e0eeff37514cd5b0c59cfadeb612f3' reported as ready. Currently 4 clients ready to swarm.
+[2021-06-03 20:40:44,910] MacBook-Pro.local/INFO/locust.runners: Removing cloud50_a9c16c1d19d44195a94c71aeda7f508e client from running clients
+[2021-06-03 20:40:44,910] MacBook-Pro.local/INFO/locust.runners: Client 'cloud50_a9c16c1d19d44195a94c71aeda7f508e' reported as ready. Currently 4 clients ready to swarm.
+[2021-06-03 20:40:44,910] MacBook-Pro.local/INFO/locust.runners: Client 'cloud69_1d7b7441ec20420c96fe9bdbcaf06a1f' quit. Currently 2 clients connected.
+[2021-06-03 20:40:44,945] MacBook-Pro.local/INFO/locust.runners: Removing cloud50_e3b9904c01454a77a7b24cc369cab73d client from running clients
+[2021-06-03 20:40:44,945] MacBook-Pro.local/INFO/locust.runners: Client 'cloud50_e3b9904c01454a77a7b24cc369cab73d' reported as ready. Currently 3 clients ready to swarm.
+[2021-06-03 20:40:44,946] MacBook-Pro.local/INFO/locust.runners: Client 'cloud50_a9c16c1d19d44195a94c71aeda7f508e' quit. Currently 2 clients connected.
+[2021-06-03 20:40:44,946] MacBook-Pro.local/INFO/locust.runners: Client 'cloud69_e4e0eeff37514cd5b0c59cfadeb612f3' quit. Currently 1 clients connected.
+[2021-06-03 20:40:45,003] MacBook-Pro.local/INFO/locust.runners: Client 'cloud50_e3b9904c01454a77a7b24cc369cab73d' quit. Currently 0 clients connected.
+[2021-06-03 20:40:45,003] MacBook-Pro.local/INFO/locust.runners: The last worker quit, stopping test.
+[2021-06-03 20:40:45,411] MacBook-Pro.local/INFO/locust.main: Running teardowns...
+[2021-06-03 20:40:45,919] MacBook-Pro.local/INFO/locust.main: Shutting down (exit code 1), bye.
+[2021-06-03 20:40:45,920] MacBook-Pro.local/INFO/locust.main: Cleaning up runner...
+ Name                                                          # reqs      # fails  |     Avg     Min     Max  Median  |   req/s failures/s
+--------------------------------------------------------------------------------------------------------------------------------------------
+ GET /api/v1/oauth-clients/local                                   25     0(0.00%)  |      69       8     191      47  |    0.03    0.00
+ POST /api/v1/users/token                                          25     0(0.00%)  |     272     127     544     230  |    0.03    0.00
+ POST /api/v1/videos/upload                                      1092  568(52.01%)  |     676      83    6700     370  |    1.21    0.63
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregated                                                      1142  568(49.74%)  |     654       8    6700     290  |    1.27    0.63
+
+Response time percentiles (approximated)
+ Type     Name                                                              50%    66%    75%    80%    90%    95%    98%    99%  99.9% 99.99%   100% # reqs
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ GET      /api/v1/oauth-clients/local                                        47     84     85     93    190    190    190    190    190    190    190     25
+ POST     /api/v1/users/token                                               230    350    400    410    410    420    540    540    540    540    540     25
+ POST     /api/v1/videos/upload                                             370    910   1000   1100   1400   1600   2800   3500   6100   6700   6700   1092
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ None     Aggregated                                                        290    900    970   1100   1300   1600   2800   3500   6100   6700   6700   1142
+
+Error report
+ # occurrences      Error                                                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------
+ 568                POST /api/v1/videos/upload: "HTTPError('422 Client Error: Unprocessable Entity for url: http://cloud74.cluster.lsd.di.uminho.pt:30001/api/v1/videos/upload')"
+--------------------------------------------------------------------------------------------------------------------------------------------
+

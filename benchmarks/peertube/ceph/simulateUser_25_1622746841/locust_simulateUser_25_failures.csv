@@ -1,0 +1,2 @@
+Method,Name,Error,Occurrences
+POST,/api/v1/videos/upload,HTTPError('422 Client Error: Unprocessable Entity for url: http://cloud74.cluster.lsd.di.uminho.pt:30001/api/v1/videos/upload'),100

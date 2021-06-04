@@ -51,7 +51,7 @@ if __name__ == "__main__":
     print("Getting IP address...")
     #ip_exec = subprocess.run(["ip","-json","-f","inet","addr","show","tun0"], capture_output=True)
     #ip = json.loads(ip_exec.stdout.decode("utf-8"))[0]["addr_info"][0]["local"]
-    ip = "10.100.100.14"
+    ip = "10.100.100.26"
     # Start benchmark
     try:
         # Start monitoring cluster
