@@ -1,0 +1,696 @@
+[2021-06-08 19:40:16,106] cloud69/WARNING/locust.main: System open file limit '1024' is below minimum setting '10000'. It's not high enough for load testing, and the OS didn't allow locust to increase it by itself. See https://github.com/locustio/locust/wiki/Installation#increasing-maximum-number-of-open-files-limit for more info.
+[2021-06-08 19:40:16,108] cloud69/INFO/locust.main: Starting Locust 1.5.3
+[2021-06-08 19:40:16,735] cloud69/INFO/locust.runners: Spawning 12 users at the rate 0.25 users/s (0 users already running)...
+[2021-06-08 19:40:57,745] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:41:00,752] cloud69/INFO/locust.runners: All users spawned: SimulateUserBenchmark: 12 (12 total running)
+[2021-06-08 19:41:12,710] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:41:12,712] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:41:22,853] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:41:35,299] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:41:35,306] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:41:44,912] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:42:07,675] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:42:07,682] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:42:07,884] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:42:58,077] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:43:16,512] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:43:38,173] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:43:38,791] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:43:48,649] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:44:09,582] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:44:13,336] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:44:45,394] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:46:00,490] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:46:24,033] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:46:44,664] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:47:00,289] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:47:04,323] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:47:05,668] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:47:27,474] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:48:17,535] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:48:23,622] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:48:29,529] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:48:53,097] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:49:08,789] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:49:40,132] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:50:31,810] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:50:58,563] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:51:12,788] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:51:34,658] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:51:43,266] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:52:10,968] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:52:24,052] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:52:24,176] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:53:00,759] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:53:00,904] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:53:26,861] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:53:58,176] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:53:58,183] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:54:27,969] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:54:30,862] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:54:30,976] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:54:36,405] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:55:05,167] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 19:55:16,735] cloud69/INFO/locust.runners: Stopping 12 users
+[2021-06-08 19:55:16,737] cloud69/INFO/locust.runners: 12 Users have been stopped, 0 still running
+[2021-06-08 19:55:16,738] cloud69/INFO/locust.runners: Got quit message from master, shutting down...
+[2021-06-08 19:55:16,738] cloud69/INFO/locust.main: Running teardowns...
+[2021-06-08 19:55:16,738] cloud69/INFO/locust.main: Shutting down (exit code 0), bye.
+[2021-06-08 19:55:16,739] cloud69/INFO/locust.main: Cleaning up runner...

@@ -1,0 +1,2 @@
+Method,Name,Error,Occurrences
+POST,Create Folder,"ConnectionError(MaxRetryError(""HTTPConnectionPool(host='cloud74', port=30002): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x....>: Failed to establish a new connection: [Errno 110] Connection timed out'))""))",1

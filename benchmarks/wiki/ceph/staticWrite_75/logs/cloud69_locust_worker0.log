@@ -1,0 +1,1300 @@
+[2021-06-08 18:31:49,561] cloud69/WARNING/locust.main: System open file limit '1024' is below minimum setting '10000'. It's not high enough for load testing, and the OS didn't allow locust to increase it by itself. See https://github.com/locustio/locust/wiki/Installation#increasing-maximum-number-of-open-files-limit for more info.
+[2021-06-08 18:31:49,563] cloud69/INFO/locust.main: Starting Locust 1.5.3
+[2021-06-08 18:31:50,523] cloud69/INFO/locust.runners: Spawning 19 users at the rate 0.375 users/s (0 users already running)...
+[2021-06-08 18:31:52,898] cloud69/ERROR/locust.user.task: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 88, in generatePage
+    return graphqlQueries.createPage(httpUser, "{}/index".format(slug), "Generated page", page, tags=["locust"])["data"]["pages"]["create"]["page"]["id"]
+TypeError: 'NoneType' object is not subscriptable
+
+[2021-06-08 18:32:38,548] cloud69/INFO/locust.runners: All users spawned: StaticBenchmarkWrite: 19 (19 total running)
+[2021-06-08 18:35:18,176] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:35:25,091] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:35:32,866] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:35:38,186] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:35:40,831] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:35:45,106] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:35:49,508] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:35:52,877] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:35:57,634] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:36:05,119] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:36:17,648] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:36:36,347] cloud69/ERROR/locust.user.task: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 88, in generatePage
+    return graphqlQueries.createPage(httpUser, "{}/index".format(slug), "Generated page", page, tags=["locust"])["data"]["pages"]["create"]["page"]["id"]
+TypeError: 'NoneType' object is not subscriptable
+
+[2021-06-08 18:37:06,510] cloud69/ERROR/locust.user.task: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 88, in generatePage
+    return graphqlQueries.createPage(httpUser, "{}/index".format(slug), "Generated page", page, tags=["locust"])["data"]["pages"]["create"]["page"]["id"]
+TypeError: 'NoneType' object is not subscriptable
+
+[2021-06-08 18:37:26,548] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:37:30,830] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:37:32,815] cloud69/ERROR/locust.user.task: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 88, in generatePage
+    return graphqlQueries.createPage(httpUser, "{}/index".format(slug), "Generated page", page, tags=["locust"])["data"]["pages"]["create"]["page"]["id"]
+TypeError: 'NoneType' object is not subscriptable
+
+[2021-06-08 18:37:41,450] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:38:03,136] cloud69/ERROR/locust.user.task: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 88, in generatePage
+    return graphqlQueries.createPage(httpUser, "{}/index".format(slug), "Generated page", page, tags=["locust"])["data"]["pages"]["create"]["page"]["id"]
+TypeError: 'NoneType' object is not subscriptable
+
+[2021-06-08 18:38:18,626] cloud69/ERROR/locust.user.task: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 88, in generatePage
+    return graphqlQueries.createPage(httpUser, "{}/index".format(slug), "Generated page", page, tags=["locust"])["data"]["pages"]["create"]["page"]["id"]
+TypeError: 'NoneType' object is not subscriptable
+
+[2021-06-08 18:38:38,640] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:38:40,415] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:38:42,308] cloud69/ERROR/locust.user.task: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 88, in generatePage
+    return graphqlQueries.createPage(httpUser, "{}/index".format(slug), "Generated page", page, tags=["locust"])["data"]["pages"]["create"]["page"]["id"]
+TypeError: 'NoneType' object is not subscriptable
+
+[2021-06-08 18:38:49,630] cloud69/ERROR/locust.user.task: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 88, in generatePage
+    return graphqlQueries.createPage(httpUser, "{}/index".format(slug), "Generated page", page, tags=["locust"])["data"]["pages"]["create"]["page"]["id"]
+TypeError: 'NoneType' object is not subscriptable
+
+[2021-06-08 18:38:58,650] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:38:59,212] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:39:19,224] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:39:21,386] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:39:31,505] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:39:51,522] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:40:11,533] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:40:12,179] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:40:32,191] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:40:36,798] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:40:52,203] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:41:07,346] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:41:21,652] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:41:27,359] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:41:36,135] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:41:36,196] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:41:45,591] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:41:47,372] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:42:05,604] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:42:14,355] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:42:21,221] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:42:30,499] cloud69/ERROR/locust.user.task: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 88, in generatePage
+    return graphqlQueries.createPage(httpUser, "{}/index".format(slug), "Generated page", page, tags=["locust"])["data"]["pages"]["create"]["page"]["id"]
+TypeError: 'NoneType' object is not subscriptable
+
+[2021-06-08 18:42:34,853] cloud69/ERROR/locust.user.task: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 88, in generatePage
+    return graphqlQueries.createPage(httpUser, "{}/index".format(slug), "Generated page", page, tags=["locust"])["data"]["pages"]["create"]["page"]["id"]
+TypeError: 'NoneType' object is not subscriptable
+
+[2021-06-08 18:42:38,408] cloud69/ERROR/locust.user.task: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 88, in generatePage
+    return graphqlQueries.createPage(httpUser, "{}/index".format(slug), "Generated page", page, tags=["locust"])["data"]["pages"]["create"]["page"]["id"]
+TypeError: 'NoneType' object is not subscriptable
+
+[2021-06-08 18:42:40,270] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:42:50,512] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:42:54,867] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:43:00,282] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:43:05,265] cloud69/ERROR/locust.user.task: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 88, in generatePage
+    return graphqlQueries.createPage(httpUser, "{}/index".format(slug), "Generated page", page, tags=["locust"])["data"]["pages"]["create"]["page"]["id"]
+TypeError: 'NoneType' object is not subscriptable
+
+[2021-06-08 18:43:20,292] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:43:24,173] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:43:33,468] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:43:34,684] cloud69/ERROR/locust.user.task: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 88, in generatePage
+    return graphqlQueries.createPage(httpUser, "{}/index".format(slug), "Generated page", page, tags=["locust"])["data"]["pages"]["create"]["page"]["id"]
+TypeError: 'NoneType' object is not subscriptable
+
+[2021-06-08 18:43:40,303] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:43:53,479] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:44:01,334] cloud69/ERROR/locust.user.task: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 88, in generatePage
+    return graphqlQueries.createPage(httpUser, "{}/index".format(slug), "Generated page", page, tags=["locust"])["data"]["pages"]["create"]["page"]["id"]
+TypeError: 'NoneType' object is not subscriptable
+
+[2021-06-08 18:44:04,027] cloud69/ERROR/locust.user.task: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 88, in generatePage
+    return graphqlQueries.createPage(httpUser, "{}/index".format(slug), "Generated page", page, tags=["locust"])["data"]["pages"]["create"]["page"]["id"]
+TypeError: 'NoneType' object is not subscriptable
+
+[2021-06-08 18:44:13,494] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:44:15,583] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:44:34,945] cloud69/ERROR/locust.user.task: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 88, in generatePage
+    return graphqlQueries.createPage(httpUser, "{}/index".format(slug), "Generated page", page, tags=["locust"])["data"]["pages"]["create"]["page"]["id"]
+TypeError: 'NoneType' object is not subscriptable
+
+[2021-06-08 18:44:36,341] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:44:45,628] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:44:56,352] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:45:05,638] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:45:16,964] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:45:19,094] cloud69/ERROR/locust.user.task: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 88, in generatePage
+    return graphqlQueries.createPage(httpUser, "{}/index".format(slug), "Generated page", page, tags=["locust"])["data"]["pages"]["create"]["page"]["id"]
+TypeError: 'NoneType' object is not subscriptable
+
+[2021-06-08 18:45:22,497] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:45:30,669] cloud69/ERROR/locust.user.task: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 88, in generatePage
+    return graphqlQueries.createPage(httpUser, "{}/index".format(slug), "Generated page", page, tags=["locust"])["data"]["pages"]["create"]["page"]["id"]
+TypeError: 'NoneType' object is not subscriptable
+
+[2021-06-08 18:45:35,730] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:45:36,976] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:45:46,676] cloud69/ERROR/locust.user.task: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 88, in generatePage
+    return graphqlQueries.createPage(httpUser, "{}/index".format(slug), "Generated page", page, tags=["locust"])["data"]["pages"]["create"]["page"]["id"]
+TypeError: 'NoneType' object is not subscriptable
+
+[2021-06-08 18:45:52,267] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:45:55,741] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:46:15,764] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:46:18,624] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:46:26,770] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:46:34,619] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:46:37,068] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:46:46,779] cloud69/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-08 18:46:50,529] cloud69/INFO/locust.runners: Stopping 19 users
+[2021-06-08 18:46:50,538] cloud69/INFO/locust.runners: 19 Users have been stopped, 0 still running
+[2021-06-08 18:46:50,539] cloud69/INFO/locust.runners: Got quit message from master, shutting down...
+[2021-06-08 18:46:50,539] cloud69/INFO/locust.main: Running teardowns...
+[2021-06-08 18:46:50,539] cloud69/INFO/locust.main: Shutting down (exit code 0), bye.
+[2021-06-08 18:46:50,540] cloud69/INFO/locust.main: Cleaning up runner...

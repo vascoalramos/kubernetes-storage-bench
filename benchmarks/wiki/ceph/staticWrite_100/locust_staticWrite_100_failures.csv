@@ -1,0 +1,8 @@
+Method,Name,Error,Occurrences
+POST,Upload file,HTTPError('400 Client Error: Bad Request for url: Upload file'),2
+POST,Create Folder,HTTPError('500 Server Error: Internal Server Error for url: Create Folder'),178
+POST,Create Folder,"ConnectionError(MaxRetryError(""HTTPConnectionPool(host='cloud74', port=30002): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x....>: Failed to establish a new connection: [Errno 111] Connection refused'))""))",1
+POST,Upload file,"ConnectionError(ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))",21
+POST,Upload file,"ConnectionError(MaxRetryError(""HTTPConnectionPool(host='cloud74', port=30002): Max retries exceeded with url: /u (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x....>: Failed to establish a new connection: [Errno 111] Connection refused'))""))",3
+POST,Create Page,HTTPError('500 Server Error: Internal Server Error for url: Create Page'),3
+POST,List Folders,HTTPError('500 Server Error: Internal Server Error for url: List Folders'),178

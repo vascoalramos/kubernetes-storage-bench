@@ -1,0 +1,36 @@
+[2021-06-08 16:16:47,873] cloud69/WARNING/locust.main: System open file limit '1024' is below minimum setting '10000'. It's not high enough for load testing, and the OS didn't allow locust to increase it by itself. See https://github.com/locustio/locust/wiki/Installation#increasing-maximum-number-of-open-files-limit for more info.
+[2021-06-08 16:16:47,874] cloud69/INFO/locust.main: Starting Locust 1.5.3
+[2021-06-08 16:16:48,051] cloud69/INFO/locust.runners: Spawning 6 users at the rate 0.125 users/s (0 users already running)...
+[2021-06-08 16:17:28,057] cloud69/INFO/locust.runners: All users spawned: StaticBenchmarkWrite: 6 (6 total running)
+[2021-06-08 16:29:03,618] cloud69/ERROR/locust.user.task: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticWrite.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, StaticBenchmarkConfig.media_instances_per_content_category, True)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 47, in generatePage
+    graphqlQueries.createFolder(httpUser, 0, slug)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 15, in createFolder
+    return graphqlQuery(httpUser, "Create Folder", readFile("queries/createFolder.graphql"), {"parentFolderId": parentFolderId, "slug": folderName})
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 6, in graphqlQuery
+    return httpUser.client.post(url="/graphql", name=name, json={"query": query, "variables": variables}, headers={"Connection": "keep-alive", "Authorization": "Bearer {}".format(httpUser.token if hasattr(httpUser, "token") and auth else "")}).json()
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python3/dist-packages/simplejson/__init__.py", line 518, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib/python3/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+simplejson.errors.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+[2021-06-08 16:31:48,018] cloud69/INFO/locust.runners: Stopping 6 users
+[2021-06-08 16:31:48,020] cloud69/INFO/locust.runners: 6 Users have been stopped, 0 still running
+[2021-06-08 16:31:48,021] cloud69/INFO/locust.runners: Got quit message from master, shutting down...
+[2021-06-08 16:31:48,021] cloud69/INFO/locust.main: Running teardowns...
+[2021-06-08 16:31:48,022] cloud69/INFO/locust.main: Shutting down (exit code 0), bye.
+[2021-06-08 16:31:48,022] cloud69/INFO/locust.main: Cleaning up runner...

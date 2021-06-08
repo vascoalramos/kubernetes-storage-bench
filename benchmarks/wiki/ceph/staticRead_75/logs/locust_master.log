@@ -1,0 +1,49 @@
+[2021-06-08 18:12:00,840] daniel-Lenovo/INFO/root: Waiting for workers to be ready, 0 of 4 connected
+[2021-06-08 18:12:01,323] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_ec902396062447baad9adce04b593e27' reported as ready. Currently 1 clients ready to swarm.
+[2021-06-08 18:12:01,323] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_425dedeff15f40cdbc9e4720a51d3f98' reported as ready. Currently 2 clients ready to swarm.
+[2021-06-08 18:12:01,841] daniel-Lenovo/INFO/root: Waiting for workers to be ready, 2 of 4 connected
+[2021-06-08 18:12:02,128] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_c90962c5a0cf4422b24753c82115a23d' reported as ready. Currently 3 clients ready to swarm.
+[2021-06-08 18:12:02,144] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_25f71ea627bc4c4698367e4526fc74a3' reported as ready. Currently 4 clients ready to swarm.
+[2021-06-08 18:12:02,843] daniel-Lenovo/INFO/locust.runners: Sending spawn jobs of 18 users and 0.38 spawn rate to 4 ready clients
+[2021-06-08 18:12:02,845] daniel-Lenovo/INFO/locust.main: Run time limit set to 900 seconds
+[2021-06-08 18:12:02,858] daniel-Lenovo/INFO/locust.main: Starting Locust 1.4.3
+[2021-06-08 18:27:02,844] daniel-Lenovo/INFO/locust.main: Time limit reached. Stopping Locust.
+[2021-06-08 18:27:02,866] daniel-Lenovo/INFO/locust.runners: Removing cloud50_ec902396062447baad9adce04b593e27 client from running clients
+[2021-06-08 18:27:02,866] daniel-Lenovo/INFO/locust.runners: Removing cloud69_25f71ea627bc4c4698367e4526fc74a3 client from running clients
+[2021-06-08 18:27:02,866] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_ec902396062447baad9adce04b593e27' reported as ready. Currently 3 clients ready to swarm.
+[2021-06-08 18:27:02,867] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_25f71ea627bc4c4698367e4526fc74a3' reported as ready. Currently 4 clients ready to swarm.
+[2021-06-08 18:27:02,867] daniel-Lenovo/INFO/locust.runners: Removing cloud50_425dedeff15f40cdbc9e4720a51d3f98 client from running clients
+[2021-06-08 18:27:02,867] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_425dedeff15f40cdbc9e4720a51d3f98' reported as ready. Currently 4 clients ready to swarm.
+[2021-06-08 18:27:02,867] daniel-Lenovo/INFO/locust.runners: Removing cloud69_c90962c5a0cf4422b24753c82115a23d client from running clients
+[2021-06-08 18:27:02,867] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_ec902396062447baad9adce04b593e27' quit. Currently 2 clients connected.
+[2021-06-08 18:27:02,867] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_25f71ea627bc4c4698367e4526fc74a3' quit. Currently 1 clients connected.
+[2021-06-08 18:27:02,868] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_c90962c5a0cf4422b24753c82115a23d' reported as ready. Currently 2 clients ready to swarm.
+[2021-06-08 18:27:02,868] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_425dedeff15f40cdbc9e4720a51d3f98' quit. Currently 1 clients connected.
+[2021-06-08 18:27:02,868] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_c90962c5a0cf4422b24753c82115a23d' quit. Currently 0 clients connected.
+[2021-06-08 18:27:02,868] daniel-Lenovo/INFO/locust.runners: The last worker quit, stopping test.
+[2021-06-08 18:27:03,407] daniel-Lenovo/INFO/locust.main: Running teardowns...
+[2021-06-08 18:27:03,908] daniel-Lenovo/INFO/locust.main: Shutting down (exit code 1), bye.
+[2021-06-08 18:27:03,908] daniel-Lenovo/INFO/locust.main: Cleaning up runner...
+ Name                                                          # reqs      # fails  |     Avg     Min     Max  Median  |   req/s failures/s
+--------------------------------------------------------------------------------------------------------------------------------------------
+ GET Load content                                               79536     0(0.00%)  |      43       2    1213      16  |   88.37    0.00
+ GET Load page                                                   5109    10(0.20%)  |      76      21     499      66  |    5.68    0.01
+ POST Query Page Tree                                           10237     0(0.00%)  |      39       4    1117      35  |   11.37    0.00
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregated                                                     94882    10(0.01%)  |      45       2    1213      18  |  105.42    0.01
+
+Response time percentiles (approximated)
+ Type     Name                                                              50%    66%    75%    80%    90%    95%    98%    99%  99.9% 99.99%   100% # reqs
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ GET      Load content                                                       16     30     47     64    110    180    270    350    580    790   1200  79536
+ GET      Load page                                                          66     79     90     98    120    150    190    240    350    500    500   5109
+ POST     Query Page Tree                                                    35     50     56     61     78     99    130    210   1100   1100   1100  10237
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ None     Aggregated                                                         18     39     55     69    110    170    260    330    590   1100   1200  94882
+
+Error report
+ # occurrences      Error                                                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------
+ 10                 GET Load page: "HTTPError('500 Server Error: Internal Server Error for url: Load page')"            
+--------------------------------------------------------------------------------------------------------------------------------------------
+

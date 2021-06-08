@@ -1,0 +1,50 @@
+[2021-06-08 17:16:47,094] daniel-Lenovo/INFO/root: Waiting for workers to be ready, 0 of 4 connected
+[2021-06-08 17:16:47,646] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_89975419a72242abbc556e9cf5210422' reported as ready. Currently 1 clients ready to swarm.
+[2021-06-08 17:16:47,653] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_97f6ff04f14f4c49982dd6c4a8848213' reported as ready. Currently 2 clients ready to swarm.
+[2021-06-08 17:16:48,022] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_152d74d376624cfe978b82aa337a2b64' reported as ready. Currently 3 clients ready to swarm.
+[2021-06-08 17:16:48,023] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_bb963321b78642f0bca58c2918bc941b' reported as ready. Currently 4 clients ready to swarm.
+[2021-06-08 17:16:48,094] daniel-Lenovo/INFO/locust.runners: Sending spawn jobs of 6 users and 0.12 spawn rate to 4 ready clients
+[2021-06-08 17:16:48,095] daniel-Lenovo/INFO/locust.main: Run time limit set to 900 seconds
+[2021-06-08 17:16:48,095] daniel-Lenovo/INFO/locust.main: Starting Locust 1.4.3
+[2021-06-08 17:31:48,094] daniel-Lenovo/INFO/locust.main: Time limit reached. Stopping Locust.
+[2021-06-08 17:31:48,114] daniel-Lenovo/INFO/locust.runners: Removing cloud69_152d74d376624cfe978b82aa337a2b64 client from running clients
+[2021-06-08 17:31:48,116] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_152d74d376624cfe978b82aa337a2b64' reported as ready. Currently 4 clients ready to swarm.
+[2021-06-08 17:31:48,116] daniel-Lenovo/INFO/locust.runners: Removing cloud50_89975419a72242abbc556e9cf5210422 client from running clients
+[2021-06-08 17:31:48,117] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_89975419a72242abbc556e9cf5210422' reported as ready. Currently 4 clients ready to swarm.
+[2021-06-08 17:31:48,118] daniel-Lenovo/INFO/locust.runners: Removing cloud69_bb963321b78642f0bca58c2918bc941b client from running clients
+[2021-06-08 17:31:48,119] daniel-Lenovo/INFO/locust.runners: Removing cloud50_97f6ff04f14f4c49982dd6c4a8848213 client from running clients
+[2021-06-08 17:31:48,119] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_97f6ff04f14f4c49982dd6c4a8848213' reported as ready. Currently 3 clients ready to swarm.
+[2021-06-08 17:31:48,119] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_bb963321b78642f0bca58c2918bc941b' reported as ready. Currently 4 clients ready to swarm.
+[2021-06-08 17:31:48,120] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_152d74d376624cfe978b82aa337a2b64' quit. Currently 3 clients connected.
+[2021-06-08 17:31:48,120] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_bb963321b78642f0bca58c2918bc941b' quit. Currently 2 clients connected.
+[2021-06-08 17:31:48,121] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_97f6ff04f14f4c49982dd6c4a8848213' quit. Currently 1 clients connected.
+[2021-06-08 17:31:48,131] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_89975419a72242abbc556e9cf5210422' quit. Currently 0 clients connected.
+[2021-06-08 17:31:48,131] daniel-Lenovo/INFO/locust.runners: The last worker quit, stopping test.
+[2021-06-08 17:31:48,669] daniel-Lenovo/INFO/locust.main: Running teardowns...
+[2021-06-08 17:31:49,171] daniel-Lenovo/INFO/locust.main: Shutting down (exit code 1), bye.
+[2021-06-08 17:31:49,171] daniel-Lenovo/INFO/locust.main: Cleaning up runner...
+ Name                                                          # reqs      # fails  |     Avg     Min     Max  Median  |   req/s failures/s
+--------------------------------------------------------------------------------------------------------------------------------------------
+ POST Create Folder                                               766     1(0.13%)  |     307      14  129571      27  |    0.85    0.00
+ POST Create Page                                                 754     0(0.00%)  |    4278    2174   23100    3500  |    0.84    0.00
+ POST List Folders                                                765     0(0.00%)  |      38       7     729      27  |    0.85    0.00
+ POST Upload file                                                8334     0(0.00%)  |     280      23   16302      89  |    9.26    0.00
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregated                                                     10619     1(0.01%)  |     548       7  129571      83  |   11.80    0.00
+
+Response time percentiles (approximated)
+ Type     Name                                                              50%    66%    75%    80%    90%    95%    98%    99%  99.9% 99.99%   100% # reqs
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ POST     Create Folder                                                      27     36     44     52    130    470   2400   3000 130000 130000 130000    766
+ POST     Create Page                                                      3500   4200   4600   5100   6200   8300  15000  20000  23000  23000  23000    754
+ POST     List Folders                                                       27     32     37     41     62     81    110    220    730    730    730    765
+ POST     Upload file                                                        89    140    210    270    490    920   2100   4500  10000  16000  16000   8334
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ None     Aggregated                                                         83    150    240    330   1300   3400   4900   6100  18000  23000 130000  10619
+
+Error report
+ # occurrences      Error                                                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------
+ 1                  POST Create Folder: 'ConnectionError(MaxRetryError("HTTPConnectionPool(host=\'cloud74\', port=30002): Max retries exceeded with url: /graphql (Caused by NewConnectionError(\'<urllib3.connection.HTTPConnection object at 0x....>: Failed to establish a new connection: [Errno 110] Connection timed out\'))"))'
+--------------------------------------------------------------------------------------------------------------------------------------------
+

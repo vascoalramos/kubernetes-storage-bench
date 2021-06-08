@@ -1,0 +1,52 @@
+[2021-06-08 16:54:05,479] cloud69/WARNING/locust.main: System open file limit '1024' is below minimum setting '10000'. It's not high enough for load testing, and the OS didn't allow locust to increase it by itself. See https://github.com/locustio/locust/wiki/Installation#increasing-maximum-number-of-open-files-limit for more info.
+[2021-06-08 16:54:05,480] cloud69/INFO/locust.main: Starting Locust 1.5.3
+[2021-06-08 16:54:06,505] cloud69/INFO/locust.runners: Spawning 12 users at the rate 0.25 users/s (0 users already running)...
+[2021-06-08 16:54:50,516] cloud69/INFO/locust.runners: All users spawned: StaticBenchmarkRead: 12 (12 total running)
+[2021-06-08 16:55:23,414] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticRead.py", line 20, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 16:55:24,703] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticRead.py", line 20, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 16:58:34,031] cloud69/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/home/gsd/.local/lib/python3.8/site-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/staticRead.py", line 20, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-08 17:09:06,537] cloud69/INFO/locust.runners: Stopping 12 users
+[2021-06-08 17:09:06,538] cloud69/INFO/locust.runners: 12 Users have been stopped, 0 still running
+[2021-06-08 17:09:06,539] cloud69/INFO/locust.runners: Got quit message from master, shutting down...
+[2021-06-08 17:09:06,539] cloud69/INFO/locust.main: Running teardowns...
+[2021-06-08 17:09:06,540] cloud69/INFO/locust.main: Shutting down (exit code 0), bye.
+[2021-06-08 17:09:06,540] cloud69/INFO/locust.main: Cleaning up runner...
