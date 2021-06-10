@@ -13,19 +13,21 @@ def make_graph(app, storage, test_name, test_size, dfs, title, y_axis_label, gra
             legend = len(dfs) > 1
         )
 
-    ax.set_title(title, fontweight = 'bold')
+    #ax.set_title(title)
+    #ax.set_fontsize()
 
-    ax.set_xlabel('Tempo desde início do benchmark (HH:MM:SS)', fontweight = 'bold')
-    ax.set_ylabel(y_axis_label, fontweight = 'bold')
+    ax.set_xlabel('Tempo desde início do benchmark (HH:MM:SS)', fontdict={'fontsize':12})
+    ax.set_ylabel(y_axis_label, fontdict={'fontsize':12})
 
     ax.tick_params(axis = 'x', labelrotation = 45)
 
     for tick in ax.xaxis.get_major_ticks():
-        tick.label1.set_fontweight('bold')
+        tick.label1.set_fontsize(14)
+        tick.label1
 
     for tick in ax.yaxis.get_major_ticks():
-        tick.label1.set_fontsize(16)
-        tick.label1.set_fontweight('bold')
+        tick.label1.set_fontsize(14)
+        tick.label1
 
     filepath = f'{app.lower()}/{storage.replace("/", "_").lower()}/{test_name}_{test_size}'
     os.makedirs(filepath, exist_ok = True)
