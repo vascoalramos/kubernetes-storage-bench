@@ -13,16 +13,23 @@ def make_graph(app, storage, test_name, test_size, dfs, title, y_axis_label, gra
             legend = len(dfs) > 1
         )
 
-    ax.set_title(title)
+    ax.set_title(title, fontweight = 'bold')
 
-    ax.set_xlabel('Tempo desde início do benchmark (HH:MM:SS)')
-    ax.set_ylabel(y_axis_label)
+    ax.set_xlabel('Tempo desde início do benchmark (HH:MM:SS)', fontweight = 'bold')
+    ax.set_ylabel(y_axis_label, fontweight = 'bold')
 
     ax.tick_params(axis = 'x', labelrotation = 45)
 
+    for tick in ax.xaxis.get_major_ticks():
+        tick.label1.set_fontweight('bold')
+
+    for tick in ax.yaxis.get_major_ticks():
+        tick.label1.set_fontsize(16)
+        tick.label1.set_fontweight('bold')
+
     filepath = f'{app.lower()}/{storage.replace("/", "_").lower()}/{test_name}_{test_size}'
     os.makedirs(filepath, exist_ok = True)
-    fig.savefig(f'{filepath}/{test_name}_{test_size}_{graph_type}.png')
+    fig.savefig(f'{filepath}/{test_name}_{test_size}_{graph_type}.png', transparent = True, bbox_inches = 'tight')
 
     if close:
         plt.close(fig)
@@ -31,7 +38,7 @@ def make_graph(app, storage, test_name, test_size, dfs, title, y_axis_label, gra
 
 
 def make_system_graphs(app, storage, test_name, test_size, close = True):
-    df = read_dfs_system(app, storage, test_name, test_size)[['cpu_%', 'mem_%', 'net_recv_kb', 'net_send_kb']]
+    df = read_dfs_system(app, storage, test_name, test_size)[['cpu_%', 'mem_%', 'net_recv_mb', 'net_send_mb']]
 
     test_name_simple = test_name.replace('static', '').lower()
 
@@ -64,14 +71,14 @@ def make_system_graphs(app, storage, test_name, test_size, close = True):
     )
 
     usage_net_recv = df.reset_index() \
-        .pivot(index = 'time', columns = 'machine', values = ['net_recv_kb'])['net_recv_kb'] \
+        .pivot(index = 'time', columns = 'machine', values = ['net_recv_mb'])['net_recv_mb'] \
         .sum(axis = 1) \
         .rolling(2).mean() \
         .dropna()
     usage_net_recv.name = 'Network RX'
     
     usage_net_send = df.reset_index() \
-        .pivot(index = 'time', columns = 'machine', values = ['net_send_kb'])['net_send_kb'] \
+        .pivot(index = 'time', columns = 'machine', values = ['net_send_mb'])['net_send_mb'] \
         .sum(axis = 1) \
         .rolling(2).mean() \
         .dropna()
@@ -80,7 +87,7 @@ def make_system_graphs(app, storage, test_name, test_size, close = True):
     make_graph(app, storage, test_name, test_size,
         [usage_net_recv, usage_net_send],
         title = f'Utilização total da rede pelas três máquinas durante o benchmarking do {app} (rolling avg. 10s, teste de {test_name_simple}, backend {storage}, {test_size} utilizadores)',
-        y_axis_label = 'Utilização da rede (Kb/s)',
+        y_axis_label = 'Utilização da rede (Mb/s)',
         graph_type = 'net',
         close = close
     )

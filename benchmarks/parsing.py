@@ -48,7 +48,10 @@ def read_df_system(file, machine):
 
     df.insert(4, 'mem_%', (df['mem_used_kb'] / df['mem_total_kb'] * 100).round().astype(int))
 
-    df.drop(columns = ['#Date', 'Time', 'mem_total_kb', 'mem_used_kb'], inplace = True)
+    df['net_recv_mb'] = df['net_recv_kb'] / 1000
+    df['net_send_mb'] = df['net_send_kb'] / 1000
+
+    df.drop(columns = ['#Date', 'Time', 'mem_total_kb', 'mem_used_kb', 'net_recv_kb', 'net_send_kb'], inplace = True)
 
     return df
 
