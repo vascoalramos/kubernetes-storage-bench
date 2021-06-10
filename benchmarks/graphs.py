@@ -1,6 +1,7 @@
-import matplotlib.pyplot as plt
-
 from parsing import *
+
+import matplotlib.pyplot as plt
+import os
 
 
 def make_graph(app, storage, test_name, test_size, dfs, title, y_axis_label, graph_type, close = True):
@@ -19,7 +20,9 @@ def make_graph(app, storage, test_name, test_size, dfs, title, y_axis_label, gra
 
     ax.tick_params(axis = 'x', labelrotation = 45)
 
-    fig.savefig(f'{app.lower()}/{storage.lower()}/{test_name}_{test_size}/{test_name}_{test_size}_{graph_type}.png')
+    filepath = f'{app.lower()}/{storage.replace("/", "_").lower()}/{test_name}_{test_size}'
+    os.makedirs(filepath, exist_ok = True)
+    fig.savefig(f'{filepath}/{test_name}_{test_size}_{graph_type}.png')
 
     if close:
         plt.close(fig)
@@ -135,6 +138,33 @@ def make_disk_ceph_graph(app, test_name, test_size, close = True):
     )
 
 
+def make_disk_comparation_graph(app, test_name, test_size, close = True, type = 'write'):
+    df_nfs = read_df_io(app, 'nfs', test_name, test_size, 'cloud108').loc['cloud108']
+    df_ceph = read_dfs_io(app, 'ceph', test_name, test_size)
+
+    test_name_simple = test_name.replace('static', '').lower()
+
+    series_nfs = df_nfs[type + '_mb'] \
+        .rolling(2).mean() \
+        .dropna()
+    series_nfs.name = 'Leitura NFS' if type == 'read' else 'Escrita NFS'
+
+    series_ceph = df_ceph.reset_index() \
+        .pivot(index = 'time', columns = 'machine', values = [type + '_mb'])[type + '_mb'] \
+        .sum(axis = 1) \
+        .rolling(2).mean() \
+        .dropna()
+    series_ceph.name = 'Leitura Ceph' if type == 'read' else 'Escrita Ceph'
+
+    make_graph(app, 'NFS/Ceph', test_name, test_size,
+        [series_nfs, series_ceph],
+        title = f'Comparação da utilização total dos discos entre NFS e Ceph durante o benchmarking do {app} (rolling avg. 10s, teste de {test_name_simple}, {test_size} utilizadores)',
+        y_axis_label = 'Utilização do disco (MB/s)',
+        graph_type = 'disk',
+        close = close
+    )
+
+
 def make_locust_graphs(app, storage, test_name, test_size, close = True):
     df = read_df_reporthtml(app, storage, test_name, test_size)[['current_rps', 'current_fail_per_sec', 'response_time_percentile_50']]
 
@@ -158,7 +188,7 @@ def make_locust_graphs(app, storage, test_name, test_size, close = True):
 
     make_graph(app, storage, test_name, test_size,
         [responsetimes_series],
-        title = f'Tempos de resposta médios obtidos durante o benchmarking do {app} (rolling avg. 10s, teste de {test_name_simple}, backend {storage}, {test_size} utilizadores)',
+        title = f'Tempos de resposta medianos obtidos durante o benchmarking do {app} (rolling avg. 10s, teste de {test_name_simple}, backend {storage}, {test_size} utilizadores)',
         y_axis_label = 'Tempo de resposta (ms)',
         graph_type = 'responsetimes',
         close = close

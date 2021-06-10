@@ -54,10 +54,10 @@ def read_df_system(file, machine):
 
 
 def read_dfs_system(app, storage, test_name, test_size):
-    df = read_df_system(f'{app}/{storage}/{test_name}_{test_size}/cloud74_{test_name}_{test_size}_system.csv', 'cloud74')
+    df = read_df_system(f'{app.lower()}/{storage.lower()}/{test_name}_{test_size}/cloud74_{test_name}_{test_size}_system.csv', 'cloud74')
     
     for i in range(75, 77):
-        df2 = read_df_system(f'{app}/{storage}/{test_name}_{test_size}/cloud{i}_{test_name}_{test_size}_system.csv', f'cloud{i}')
+        df2 = read_df_system(f'{app.lower()}/{storage.lower()}/{test_name}_{test_size}/cloud{i}_{test_name}_{test_size}_system.csv', f'cloud{i}')
 
         df = df.append(df2)
     
@@ -69,7 +69,7 @@ def read_df_io(app, storage, test_name, test_size, machine):
     # Skip first row as it's useless
     # Only select the desired columns
     # Make sure #Date, Time columns are strings so we can easily parse them later
-    df = pd.read_csv(f'{app}/{storage}/{test_name}_{test_size}/{machine}_{test_name}_{test_size}_io.csv',
+    df = pd.read_csv(f'{app.lower()}/{storage.lower()}/{test_name}_{test_size}/{machine}_{test_name}_{test_size}_io.csv',
         skiprows = 1,
         usecols = ['#Date', 'Time', '[DSK]ReadKBTot', '[DSK]WriteKBTot'],
         dtype = {
@@ -123,7 +123,7 @@ def read_df_reporthtml(app, storage, test_name, test_size):
     global RESPONSETIMES_PATTERN
 
     # Parse the report.html file for the data, since the CSV doesn't contain the data that we want
-    filepath = f'{app}/{storage}/{test_name}_{test_size}/report.html'
+    filepath = f'{app.lower()}/{storage.lower()}/{test_name}_{test_size}/report.html'
 
     with open(filepath, encoding = 'utf8') as f:
         d = pq(f.read())
