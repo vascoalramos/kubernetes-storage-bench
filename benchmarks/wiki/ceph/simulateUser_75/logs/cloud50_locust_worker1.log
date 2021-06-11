@@ -1,0 +1,2750 @@
+[2021-06-11 13:56:50,794] cloud50/WARNING/locust.main: System open file limit '1024' is below minimum setting '10000'. It's not high enough for load testing, and the OS didn't allow locust to increase it by itself. See https://github.com/locustio/locust/wiki/Installation#increasing-maximum-number-of-open-files-limit for more info.
+[2021-06-11 13:56:50,795] cloud50/INFO/locust.main: Starting Locust 1.5.3
+[2021-06-11 13:56:51,550] cloud50/INFO/locust.runners: Spawning 19 users at the rate 0.375 users/s (0 users already running)...
+[2021-06-11 13:56:51,575] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 13:57:08,361] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 13:57:18,241] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 13:57:23,831] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 13:57:28,608] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 13:57:32,151] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 13:57:35,250] cloud50/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, SimulateUser.media_instances_per_content_category, False)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-11 13:57:36,918] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 13:57:37,322] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 13:57:37,322] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 13:57:37,339] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 13:57:39,575] cloud50/INFO/locust.runners: All users spawned: SimulateUserBenchmark: 19 (19 total running)
+[2021-06-11 13:57:48,625] cloud50/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, SimulateUser.media_instances_per_content_category, False)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-11 13:57:52,581] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 13:57:57,213] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 13:57:57,215] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 13:57:57,215] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 13:57:57,711] cloud50/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, SimulateUser.media_instances_per_content_category, False)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-11 13:57:59,399] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 13:58:03,913] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 13:58:06,446] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 13:58:16,362] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 13:58:17,255] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 13:58:18,667] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 13:58:25,893] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 13:58:27,352] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 13:58:27,355] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 13:58:27,358] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 13:58:30,792] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 13:58:31,481] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 13:58:37,327] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 13:58:37,345] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 13:58:37,346] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 13:58:37,371] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 13:58:37,424] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 13:58:39,125] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 13:58:44,501] cloud50/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, SimulateUser.media_instances_per_content_category, False)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-11 13:58:52,153] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 13:58:52,203] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 13:58:55,859] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 13:58:57,393] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 13:58:59,651] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 13:59:02,262] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 13:59:02,294] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 13:59:09,801] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 13:59:13,992] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 13:59:13,993] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 13:59:14,003] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 13:59:30,100] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 13:59:33,481] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 13:59:42,524] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 13:59:42,918] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 13:59:47,991] cloud50/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, SimulateUser.media_instances_per_content_category, False)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-11 13:59:51,757] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 13:59:52,886] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:00:06,340] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:00:07,395] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:00:07,957] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:00:10,890] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:00:11,678] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:00:16,501] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:00:22,137] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:00:24,053] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:00:31,978] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:00:32,657] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:00:42,613] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:00:42,903] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:01:05,967] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:01:07,115] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:01:09,849] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:01:17,263] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:01:30,855] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:01:37,044] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:01:37,219] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:01:40,642] cloud50/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, SimulateUser.media_instances_per_content_category, False)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-11 14:01:50,728] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:01:56,669] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:02:01,040] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:02:01,107] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:02:09,096] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:02:20,577] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:02:20,578] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:02:20,870] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:02:27,398] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:02:32,000] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:02:33,283] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:02:36,935] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:02:43,918] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:02:47,779] cloud50/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, SimulateUser.media_instances_per_content_category, False)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-11 14:02:49,024] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:02:51,624] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:02:55,033] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:03:01,045] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:03:06,294] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:03:06,418] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:03:09,741] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:03:13,057] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:03:17,134] cloud50/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, SimulateUser.media_instances_per_content_category, False)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-11 14:03:35,488] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:03:39,985] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:03:46,491] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:03:51,987] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:03:59,300] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:04:10,825] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:04:13,275] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:04:13,703] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:04:16,208] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:04:16,211] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:04:18,569] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:04:24,005] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:04:26,087] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:04:27,977] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:04:28,172] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:04:38,349] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:04:39,602] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:04:43,778] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:04:59,207] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:05:15,387] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:05:19,859] cloud50/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, SimulateUser.media_instances_per_content_category, False)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-11 14:05:20,897] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:05:22,809] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:05:23,508] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:05:36,129] cloud50/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, SimulateUser.media_instances_per_content_category, False)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-11 14:05:45,407] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:05:52,292] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:05:58,237] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:06:08,295] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:06:22,867] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:06:26,764] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:06:31,120] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:06:39,507] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:06:40,968] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:06:41,001] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:06:43,834] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:06:52,537] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:06:55,369] cloud50/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, SimulateUser.media_instances_per_content_category, False)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-11 14:07:09,864] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:07:12,833] cloud50/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, SimulateUser.media_instances_per_content_category, False)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-11 14:07:28,086] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:07:28,143] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:07:28,785] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:07:29,442] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:07:29,805] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:07:38,619] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:07:39,654] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:07:42,185] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:07:43,921] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:07:50,586] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:07:53,678] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:08:00,177] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:08:00,196] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:08:06,406] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:08:07,806] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:08:11,560] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:08:18,784] cloud50/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, SimulateUser.media_instances_per_content_category, False)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-11 14:08:23,376] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:08:36,264] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:08:36,265] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:08:42,179] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:08:47,091] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:08:47,194] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:08:50,028] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:08:57,677] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:09:10,483] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:09:12,756] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:09:18,577] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:09:26,986] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:09:27,901] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:09:30,265] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:09:33,773] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:09:33,776] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:09:44,179] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:09:51,713] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:09:58,847] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:10:06,809] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:10:34,722] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:10:36,811] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:10:38,344] cloud50/ERROR/locust.user.task: 'pages'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 31, in readPage
+    page = actions.getSinglePage(self)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 110, in getSinglePage
+    page_tree = list(filter(lambda x: GENERATED_FOLDER_PREFIX in x["title"], graphqlQueries.pageTreeInParent(httpUser, 0)))
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 9, in pageTreeInParent
+    return graphqlQuery(httpUser, "Query Page Tree", readFile("queries/pageTreeInParent.graphql"), {"parent": parent})["data"]["pages"]["tree"]
+KeyError: 'pages'
+
+[2021-06-11 14:10:45,164] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:11:07,494] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:11:08,839] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:11:08,842] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:11:36,876] cloud50/ERROR/locust.user.task: Cannot choose from an empty sequence
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 37, in readPage
+    actions.loadPage(self, random.choice(pages)["path"])
+  File "/usr/lib/python3.8/random.py", line 290, in choice
+    raise IndexError('Cannot choose from an empty sequence') from None
+IndexError: Cannot choose from an empty sequence
+
+[2021-06-11 14:11:42,207] cloud50/ERROR/locust.user.task: 'assets'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 290, in run
+    self.execute_next_task()
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 315, in execute_next_task
+    self.execute_task(self._task_queue.pop(0))
+  File "/usr/local/lib/python3.8/dist-packages/locust/user/task.py", line 428, in execute_task
+    task(self.user)
+  File "/home/gsd/benchmark/wiki/locustfiles/simulateUser.py", line 26, in writePage
+    actions.generatePage(self, dataset.data, SimulateUser.media_instances_per_content_category, False)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/content.py", line 50, in generatePage
+    folders = graphqlQueries.listFoldersInParent(httpUser, 0)
+  File "/home/gsd/benchmark/wiki/locustfiles/actions/graphqlQueries.py", line 12, in listFoldersInParent
+    return graphqlQuery(httpUser, "List Folders", readFile("queries/listFoldersInParent.graphql"), {"parentFolderId": parent})["data"]["assets"]["folders"]
+KeyError: 'assets'
+
+[2021-06-11 14:11:51,546] cloud50/INFO/locust.runners: Stopping 19 users
+[2021-06-11 14:11:51,548] cloud50/INFO/locust.runners: 19 Users have been stopped, 0 still running
+[2021-06-11 14:11:51,548] cloud50/INFO/locust.runners: Got quit message from master, shutting down...
+[2021-06-11 14:11:51,549] cloud50/INFO/locust.main: Running teardowns...
+[2021-06-11 14:11:51,549] cloud50/INFO/locust.main: Shutting down (exit code 0), bye.
+[2021-06-11 14:11:51,549] cloud50/INFO/locust.main: Cleaning up runner...

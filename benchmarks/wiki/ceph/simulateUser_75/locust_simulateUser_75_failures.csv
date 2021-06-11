@@ -1,0 +1,7 @@
+Method,Name,Error,Occurrences
+POST,Query Page Tree,HTTPError('500 Server Error: Internal Server Error for url: Query Page Tree'),398
+POST,Create Folder,HTTPError('500 Server Error: Internal Server Error for url: Create Folder'),81
+GET,Load page,HTTPError('500 Server Error: Internal Server Error for url: Load page'),7
+POST,Query Page Tree,"ConnectionError(MaxRetryError(""HTTPConnectionPool(host='cloud74', port=30002): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x....>: Failed to establish a new connection: [Errno 111] Connection refused'))""))",2
+POST,Query Page Tree,"ConnectionError(MaxRetryError(""HTTPConnectionPool(host='cloud74', port=30002): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x....>: Failed to establish a new connection: [Errno 110] Connection timed out'))""))",1
+POST,List Folders,HTTPError('500 Server Error: Internal Server Error for url: List Folders'),81

@@ -1,0 +1,59 @@
+[2021-06-11 13:56:49,997] daniel-Lenovo/INFO/root: Waiting for workers to be ready, 0 of 4 connected
+[2021-06-11 13:56:50,320] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_d330690f31ef4fc98a746853960dab3e' reported as ready. Currently 1 clients ready to swarm.
+[2021-06-11 13:56:50,321] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_05273ce116c94251afaa2f3509b4b52c' reported as ready. Currently 2 clients ready to swarm.
+[2021-06-11 13:56:50,925] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_09a7c68e1fd542cdb30a728ecc1564d1' reported as ready. Currently 3 clients ready to swarm.
+[2021-06-11 13:56:50,925] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_f1371a9b585941748f3d2e9fdcf8946d' reported as ready. Currently 4 clients ready to swarm.
+[2021-06-11 13:56:50,998] daniel-Lenovo/INFO/locust.runners: Sending spawn jobs of 18 users and 0.38 spawn rate to 4 ready clients
+[2021-06-11 13:56:50,999] daniel-Lenovo/INFO/locust.main: Run time limit set to 900 seconds
+[2021-06-11 13:56:51,000] daniel-Lenovo/INFO/locust.main: Starting Locust 1.4.3
+[2021-06-11 14:11:51,538] daniel-Lenovo/INFO/locust.main: Time limit reached. Stopping Locust.
+[2021-06-11 14:11:51,559] daniel-Lenovo/INFO/locust.runners: Removing cloud50_d330690f31ef4fc98a746853960dab3e client from running clients
+[2021-06-11 14:11:51,559] daniel-Lenovo/INFO/locust.runners: Removing cloud50_05273ce116c94251afaa2f3509b4b52c client from running clients
+[2021-06-11 14:11:51,559] daniel-Lenovo/INFO/locust.runners: Removing cloud69_f1371a9b585941748f3d2e9fdcf8946d client from running clients
+[2021-06-11 14:11:51,559] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_d330690f31ef4fc98a746853960dab3e' reported as ready. Currently 2 clients ready to swarm.
+[2021-06-11 14:11:51,560] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_05273ce116c94251afaa2f3509b4b52c' reported as ready. Currently 3 clients ready to swarm.
+[2021-06-11 14:11:51,560] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_f1371a9b585941748f3d2e9fdcf8946d' reported as ready. Currently 4 clients ready to swarm.
+[2021-06-11 14:11:51,560] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_d330690f31ef4fc98a746853960dab3e' quit. Currently 2 clients connected.
+[2021-06-11 14:11:51,560] daniel-Lenovo/INFO/locust.runners: Client 'cloud50_05273ce116c94251afaa2f3509b4b52c' quit. Currently 1 clients connected.
+[2021-06-11 14:11:51,561] daniel-Lenovo/INFO/locust.runners: Removing cloud69_09a7c68e1fd542cdb30a728ecc1564d1 client from running clients
+[2021-06-11 14:11:51,561] daniel-Lenovo/INFO/locust.runners: Client 'cloud69_f1371a9b585941748f3d2e9fdcf8946d' quit. Currently 0 clients connected.
+[2021-06-11 14:11:51,561] daniel-Lenovo/INFO/locust.runners: The last worker quit, stopping test.
+[2021-06-11 14:11:52,118] daniel-Lenovo/INFO/locust.main: Running teardowns...
+[2021-06-11 14:11:52,620] daniel-Lenovo/INFO/locust.main: Shutting down (exit code 1), bye.
+[2021-06-11 14:11:52,620] daniel-Lenovo/INFO/locust.main: Cleaning up runner...
+ Name                                                          # reqs      # fails  |     Avg     Min     Max  Median  |   req/s failures/s
+--------------------------------------------------------------------------------------------------------------------------------------------
+ POST Create Folder                                               534   81(15.17%)  |     225       3    5074      34  |    0.59    0.09
+ POST Create Page                                                 452     0(0.00%)  |    4739    2220   19118    4000  |    0.50    0.00
+ POST List Folders                                                534   81(15.17%)  |      29       3     270      20  |    0.59    0.09
+ GET Load content                                               39175     0(0.00%)  |      64       2    5339      18  |   43.52    0.00
+ GET Load page                                                   1989     7(0.35%)  |     145      21    3891      90  |    2.21    0.01
+ POST Query Page Tree                                            6106   401(6.57%)  |      91       3  129176      13  |    6.78    0.45
+ POST Upload file                                                5807     0(0.00%)  |     315      23   11535     110  |    6.45    0.00
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregated                                                     54597   570(1.04%)  |     136       2  129176      25  |   60.65    0.63
+
+Response time percentiles (approximated)
+ Type     Name                                                              50%    66%    75%    80%    90%    95%    98%    99%  99.9% 99.99%   100% # reqs
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ POST     Create Folder                                                      34     46     57     70    520   1600   2700   3200   5100   5100   5100    534
+ POST     Create Page                                                      4000   4700   5400   5700   7000   9500  15000  16000  19000  19000  19000    452
+ POST     List Folders                                                       20     25     29     33     52     83    230    240    270    270    270    534
+ GET      Load content                                                       18     35     56     77    140    240    380    550   3700   4900   5300  39175
+ GET      Load page                                                          90    120    140    150    210    300    630   1600   3700   3900   3900   1989
+ POST     Query Page Tree                                                    13     23     32     38     65    130    770   1900   4000 129000 129000   6106
+ POST     Upload file                                                       110    180    250    310    550    910   3700   4800  10000  12000  12000   5807
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ None     Aggregated                                                         25     50     78     97    200    350    940   3300   7400  16000 129000  54597
+
+Error report
+ # occurrences      Error                                                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------
+ 398                POST Query Page Tree: "HTTPError('500 Server Error: Internal Server Error for url: Query Page Tree')"
+ 81                 POST Create Folder: "HTTPError('500 Server Error: Internal Server Error for url: Create Folder')"   
+ 81                 POST List Folders: "HTTPError('500 Server Error: Internal Server Error for url: List Folders')"     
+ 7                  GET Load page: "HTTPError('500 Server Error: Internal Server Error for url: Load page')"            
+ 2                  POST Query Page Tree: 'ConnectionError(MaxRetryError("HTTPConnectionPool(host=\'cloud74\', port=30002): Max retries exceeded with url: /graphql (Caused by NewConnectionError(\'<urllib3.connection.HTTPConnection object at 0x....>: Failed to establish a new connection: [Errno 111] Connection refused\'))"))'
+ 1                  POST Query Page Tree: 'ConnectionError(MaxRetryError("HTTPConnectionPool(host=\'cloud74\', port=30002): Max retries exceeded with url: /graphql (Caused by NewConnectionError(\'<urllib3.connection.HTTPConnection object at 0x....>: Failed to establish a new connection: [Errno 110] Connection timed out\'))"))'
+--------------------------------------------------------------------------------------------------------------------------------------------
+
