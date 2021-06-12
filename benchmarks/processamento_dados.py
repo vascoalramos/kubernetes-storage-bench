@@ -1,14 +1,10 @@
 
-from pyquery import PyQuery as pq
 from multiprocessing import Pool
-
-import demjson
-import pandas as pd
-import matplotlib.pyplot as plt
-import re
 
 from parsing import *
 from graphs import *
+
+from datetime import datetime
 
 
 def f(x):
@@ -30,24 +26,38 @@ def make_graphs():
                     if app == 'PeerTube' and test_size > 25:
                         continue
                     
-                    # Excepção temporária: o Wiki ainda não tem Ceph num certo cenário, mas assim que tiver, basta remover isto
-                    if app == 'Wiki' and storage == 'Ceph' and test_size >= 75 and test_name == 'simulateUser':
-                        continue
-                    
                     graphs.append((make_system_graphs, (app, storage, test_name, test_size)))
                     graphs.append((make_disk_nfs_graph, (app, test_name, test_size)) if storage == 'NFS' \
                         else (make_disk_ceph_graph, (app, test_name, test_size)))
-                    graphs.append((make_locust_graphs, (app, storage, test_name, test_size)))
+                    graphs.append((make_locust_report_graphs, (app, storage, test_name, test_size)))
+
+                if test_name == 'staticWrite' and app != 'PeerTube': # O PeerTube é tão mau, tão mau, que como não tem test_size > 25, dá asneira aqui
+                    graphs.append((make_locust_csv_graphs, (app, storage, test_name)))
 
     graphs.append((make_disk_comparation_graph, ('NextCloud', 'staticWrite', 100)))
     graphs.append((make_disk_comparation_graph, ('Wiki', 'staticWrite', 100)))
+
+    for app in ['Wiki', 'NextCloud']:
+        for test_size  in [25, 50, 75, 100]:
+            graphs.append((make_reqfails_comparation_graph, (app, 'staticRead', test_size)))
+            graphs.append((make_reqfails_comparation_graph, (app, 'simulateUser', test_size)))
+
+            graphs.append((make_responsetimes_comparation_graph, (app, 'staticRead', test_size)))
+            graphs.append((make_responsetimes_comparation_graph, (app, 'simulateUser', test_size)))
 
     with Pool(4) as p:
         p.map(f, graphs)
 
 
 def main():
+    t0 = datetime.now()
     make_graphs()
+    t1 = datetime.now()
+
+    diff = t1 - t0
+
+    print()
+    print(f'Built all graphs in {diff}ms')
 
 
 if __name__ == '__main__':

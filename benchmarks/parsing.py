@@ -140,7 +140,7 @@ def read_df_reporthtml(app, storage, test_name, test_size):
 
     # Process the columns to extract the value from the column, ignoring the users per second as that's a separate column already in the dataframe
     for column in df.columns[1:]:
-        df[column] = df[column].apply(lambda x: x['value'])
+        df[column] = df[column].apply(lambda x: float(x['value']))
     
     # Build a time series with Timestamp objects from the time column
     timeseries = df['time'].apply(lambda s: pd.Timestamp(s))
@@ -152,5 +152,26 @@ def read_df_reporthtml(app, storage, test_name, test_size):
     # Set new index and drop old column
     df.index = timeindex
     df.drop(columns = 'time', inplace = True)
+
+    return df
+
+
+def read_df_locustcsv(app, storage, test_name):
+    df = None
+    
+    for test_size in [25, 50, 75, 100]:
+        df2 = pd.read_csv(f'{app.lower()}/{storage.lower()}/{test_name}_{test_size}/locust_{test_name}_{test_size}_stats.csv')
+        df2 = df2[df2['Name'] == 'Aggregated']
+        df2 = df2[['Median Response Time', 'Requests/s']]
+
+        df2.set_index('Median Response Time', inplace = True)
+
+        if df is None:
+            df = df2
+        else:
+            df = df.append(df2)
+    
+    df['Requests/s'] = round(df['Requests/s'], 2)
+    df.index = round(df.reset_index()['Median Response Time'] / 1000, 3)
 
     return df
