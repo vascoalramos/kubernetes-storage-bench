@@ -34,9 +34,6 @@ def make_graphs():
                 if test_name == 'staticWrite' and app != 'PeerTube': # O PeerTube é tão mau, tão mau, que como não tem test_size > 25, dá asneira aqui
                     graphs.append((make_locust_csv_graphs, (app, storage, test_name)))
 
-    graphs.append((make_disk_comparation_graph, ('NextCloud', 'staticWrite', 100)))
-    graphs.append((make_disk_comparation_graph, ('Wiki', 'staticWrite', 100)))
-
     for app in ['Wiki', 'NextCloud']:
         for test_size  in [25, 50, 75, 100]:
             graphs.append((make_reqfails_comparation_graph, (app, 'staticRead', test_size)))
@@ -44,6 +41,8 @@ def make_graphs():
 
             graphs.append((make_responsetimes_comparation_graph, (app, 'staticRead', test_size)))
             graphs.append((make_responsetimes_comparation_graph, (app, 'simulateUser', test_size)))
+
+            graphs.append((make_disk_comparation_graph, (app, 'staticWrite', test_size)))
 
     with Pool(4) as p:
         p.map(f, graphs)
