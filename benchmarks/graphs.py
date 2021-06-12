@@ -193,7 +193,7 @@ def make_locust_csv_graphs(app, storage, test_name, close = True):
     
     make_graph(app, storage, test_name, 'all',
         draw,
-        x_axis_label = 'Tempo de resposta (ms)',
+        x_axis_label = 'Tempo de resposta (s)',
         y_axis_label = 'Nº de pedidos/s',
         graph_type = 'rps_of_responsetimes',
         close = close,
