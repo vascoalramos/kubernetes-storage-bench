@@ -228,7 +228,7 @@ def make_reqfails_comparation_graph(app, test_name, test_size, close = True):
 
     make_graph(app, 'NFS/Ceph', test_name, test_size,
         draw,
-        y_axis_label = 'Nº de pedidos/s',
+        y_axis_label = 'Throughput (nº pedidos/s)',
         graph_type = 'rpsfps',
         close = close
     )
