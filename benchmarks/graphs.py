@@ -172,7 +172,7 @@ def make_locust_report_graphs(app, storage, test_name, test_size, close = True):
 
     make_graph(app, storage, test_name, test_size,
         [rps_series, fps_series],
-        y_axis_label = 'Nº de pedidos/s',
+        y_axis_label = 'Throughput (nº pedidos/s)',
         graph_type = 'rpsfps',
         close = close
     )
@@ -194,7 +194,7 @@ def make_locust_csv_graphs(app, storage, test_name, close = True):
     make_graph(app, storage, test_name, 'all',
         draw,
         x_axis_label = 'Tempo de resposta (s)',
-        y_axis_label = 'Nº de pedidos/s',
+        y_axis_label = 'Throughput (nº pedidos/s)',
         graph_type = 'rps_of_responsetimes',
         close = close,
         rotate_xlabel = False
