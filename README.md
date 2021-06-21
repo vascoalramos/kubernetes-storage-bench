@@ -27,7 +27,7 @@ To switch to a different namespace:
 kubectl config set-context --current --namespace=<NAMESPACE_NAME>
 ```
 
-After installing, access [cloud74:30000](http://cloud74:30000).
+After installing, access [IP:30000](http://IP:30000).
 
 ## Wiki
 
@@ -46,7 +46,7 @@ helm install -n wiki wiki helm -f wiki.yml --create-namespace
 helm uninstall -n wiki wiki
 ```
 
-After installing, access [cloud74:30002](http://cloud74:30002).
+After installing, access [IP:30002](http://IP:30002).
 
 ## Peertube
 
@@ -65,7 +65,7 @@ helm install -n peertube peertube helm -f peertube.yml --create-namespace
 helm uninstall -n peertube peertube
 ```
 
-After installing, access [cloud74.cluster.lsd.di.uminho.pt:30001](http://cloud74.cluster.lsd.di.uminho.pt:30001).
+After installing, access [IP:30001](http://IP:30001).
 
 To switch to a different namespace:
 
